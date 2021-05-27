@@ -420,6 +420,10 @@ function checkRefid(InstalledObj) {
 ///////// on click event on extension icon //////////////////
 chrome.browserAction.onClicked.addListener(function (tab) {
 
+	chrome.storage.local.set({
+		"isFromExt": "true"
+	}, function () {});
+
 	chrome.tabs.getSelected(null, function (tab) {
 		var url = new URL(tab.url);
 		if (url) {
@@ -573,7 +577,7 @@ function installStoreList() {
 								format: CryptoJSAesJson
 							}).toString(CryptoJS.enc.Utf8));
 					storesObj = JSON.parse(decryptResp);
-					console.log(storesObj);
+			console.log(storesObj);
 					chrome.storage.local.set({
 						"storelist_json": storesObj
 					}, function () {});
