@@ -577,7 +577,7 @@ function installStoreList() {
 								format: CryptoJSAesJson
 							}).toString(CryptoJS.enc.Utf8));
 					storesObj = JSON.parse(decryptResp);
-			console.log(storesObj);
+			// console.log(storesObj);
 					chrome.storage.local.set({
 						"storelist_json": storesObj
 					}, function () {});

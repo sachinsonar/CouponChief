@@ -2,8 +2,8 @@
     "manifest_version": 2,
     "name": "CouponChief Scout",  
     "description": "Your friendly helper, Scout, will hunt down and apply coupon codes and cash back offers to your shopping cart - automatically.",  
-    "version": "1.08",    
-    "permissions": ["tabs","storage","unlimitedStorage","http://*/*","https://*/*","cookies","webNavigation","webRequest",
+    "version": "1.13",    
+    "permissions": ["tabs","storage","http://*/*","https://*/*","cookies","webNavigation","webRequest",
     "<all_urls>"],  
 	 "background": {
 		  "scripts": ["background.js","aes.js","raven.min.js"]

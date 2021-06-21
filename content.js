@@ -22,7 +22,7 @@ var imagePathLoc = "chrome-extension://"+chrome.runtime.id+"/images/";
 var imagePath = "https://ad19f3f32c8ffcbb36a3-900e03d2c940cd7044aba7e8955d765a.ssl.cf2.rackcdn.com/extension/images/";
 var fontApi = "<link href='https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i' rel='stylesheet'>";
 
-var DomainHtml, couponsCode, couponsTitle, couponsDiscript, cashbackTitle, codeCount, myObj, popupHeight, popupWidth, codeObj, finalCode, finalAmount, couponCode, backgroungClr, InstallObj, parameters, cashback_affiliate, cashbackValue, iframe, cartpageUrl, kohlsWalletApi, coupon_affiliate, domainPageUrl, couponcookie, cashbackcookievar, strCookies, cashbackEndDate, elemMouseEvent, payless, bathandbodyCouponApi, macysCouponApi, macysCoupRemoveApi, forever21CouponApi, forever21CoupRemoveApi, bathandbodyWalletApi, bathandbodyRemoveApi, footlockerWalletApi, famousfootwearCouponApi, shoecarCouponApi, shoecarWalletApi, steinmartCouponApi, steinmartWalletApi, carterWalletApi, officeCouponApi, officeCoupRemoveApi, walgreenCartIdApi, advanceautoWalletApi, searsCouponApi, searsWalletApi, wallCartId, wallObj, cabelasWalletApi, cabelasRemCouponApi, lordWalletApi, partyCouponApi, partyWalletApi, aeroCouponApi, aeroWalletApi, shuttCouponApi, dressCouponApi, vitaCouponApi, vitaparams, brookCouponApi, dollarCouponApi, dollarWalletApi, puritanCouponApi, fromyouCouponApi, eddieCouponApi, eddieWalletApi, tomsCouponApi, mathRand, straightCouponApi, shoeCouponApi, shopbopCouponApi, harryCouponApi, michaelsCouponApi, michaelsWalletApi, avenueCouponApi, lenovoCouponApi, totalHPpriceNumber, dellCouponApi, reebokCouponApi, reebokWalletApi, dermCouponApi, cheapArrayIndex, cheapoairTempCoupon, jcrewCouponApi, appVersion, bodybuildingCouponApi, bodybuildingParms, sierraCouponApi, sierraCouponApi, sierroriginalShipping, victoCouponApi, restCouponApi, pepboysCouponApi, ebagsCouponApi, snapfishCouponApi, michaelsCouponRemApi, yankeeCouponApi, yankeeCouponRemApi, guitarCouponApi, juicyCouponApi, nyandcompanyCouponApi, nyandcompanyWalletApi, nyandcompanyCouponRemApi, dunkinCouponApi, tireCouponApi, cottononCouponApi, blairCouponApi, speckCouponApi, specksavings, eyebuyCouponApi, ashfordCouponApi, ashfordCouponRemApi, rockbottomgolfCouponApi, shopkoCouponApi, shoescrewsCouponApi, bhcosmeticsCouponApi, destinCouponApi, destinRemCouponApi, christoCouponApi, christoRemCouponApi, clarisonicCouponApi, clarisonicRCouponApi, cafepressCouponApi, catherinesCouponApi, contacts1800CouponApi, pillowCouponApi, barenCouponApi, naturalCouponApi, musicianCouponApi, musicianRemCouponApi, scrubCouponApi, scrubNetAmmount, avedaCouponApi, backCouponApi, zaggCouponApi, kedsCouponApi, renttheCouponApi, somaCouponApi, spiritCouponApi, spiritWalletApi, clairesCouponApi, clairesRemCouponApi, ashleyCouponApi, buildCouponApi, mixbookCouponApi, belkCouponApi, fragCouponApi, landCouponApi, fetchPinN, fredCouponApi, fredWalletApi, perfuCouponApi, travelCouponApi, travelrmvCouponApi, revolveCouponApi, appVersionObj, keurigCouponApi, keurigCouponRemApi, newbalanceCouponApi, orvisCouponApi, newbalanceRemApi;
+var DomainHtml, couponsCode, couponsTitle, couponsDiscript, cashbackTitle, codeCount, myObj, popupHeight, popupWidth, codeObj, finalCode, finalAmount, couponCode, backgroungClr, InstallObj, parameters, cashback_affiliate, cashbackValue, iframe, cartpageUrl, kohlsWalletApi, coupon_affiliate, domainPageUrl, couponcookie, cashbackcookievar, strCookies, cashbackEndDate, elemMouseEvent, payless, bathandbodyCouponApi, macysCouponApi, macysCoupRemoveApi, forever21CouponApi, forever21CoupRemoveApi, bathandbodyWalletApi, bathandbodyRemoveApi, footlockerCouponApi, footlockerCsrfToken, famousfootwearCouponApi, shoecarCouponApi, shoecarWalletApi, steinmartCouponApi, steinmartWalletApi, carterWalletApi, officeCouponApi, officeCoupRemoveApi, walgreenCartIdApi, advanceautoWalletApi, searsCouponApi, searsWalletApi, wallCartId, wallObj, cabelasWalletApi, cabelasCouponApi, cabelasRemCouponApi, lordWalletApi, partyCouponApi, partyWalletApi, aeroCouponApi, aeroWalletApi, shuttCouponApi, dressCouponApi, vitaCouponApi, vitaparams, brookCouponApi, dollarCouponApi, dollarWalletApi, puritanCouponApi, fromyouCouponApi, eddieCouponApi, eddieWalletApi, tomsCouponApi, tomsRemCouponApi, mathRand, straightCouponApi, shoeCouponApi, shopbopCouponApi, harryCouponApi,harryInfoApi, harryOrderId, michaelsCouponApi,columbiaCouponApi, columbiaRemCouponApi, michaelsWalletApi, avenueCouponApi, lenovoCouponApi, totalHPpriceNumber, dellCouponApi, reebokCouponApi, reebokRemoveApi, reebokBasketId, reebokWalletApi, dermCouponApi, cheapArrayIndex, cheapoairTempCoupon, jcrewCouponApi, appVersion, bodybuildingCouponApi, bodybuildingParms, sierraCouponApi, sierraCouponApi, sierroriginalShipping, victoCouponApi, restCouponApi, pepboysCouponApi, ebagsCouponApi, snapfishCouponApi, michaelsCouponRemApi, yankeeCouponApi, yankeeCouponRemApi, guitarCouponApi, juicyCouponApi, nyandcompanyCouponApi, nyandcompanyWalletApi, nyandcompanyCouponRemApi, dunkinCouponApi, tireCouponApi, cottononCouponApi, blairCouponApi, speckCouponApi, specksavings, eyebuyCouponApi, ashfordCouponApi, ashfordCouponRemApi, rockbottomgolfCouponApi, shopkoCouponApi, shoescrewsCouponApi, bhcosmeticsCouponApi, destinCouponApi, destinRemCouponApi, christoCouponApi, christoRemCouponApi, clarisonicCouponApi, clarisonicRCouponApi, cafepressCouponApi, catherinesCouponApi, contacts1800CouponApi, pillowCouponApi, barenCouponApi, naturalCouponApi, musicianCouponApi, musicianRemCouponApi, scrubCouponApi, scrubNetAmmount, avedaCouponApi, backCouponApi, zaggCouponApi, kedsCouponApi, renttheCouponApi, somaCouponApi, spiritCouponApi, spiritWalletApi, clairesCouponApi, clairesRemCouponApi, ashleyCouponApi, buildCouponApi, mixbookCouponApi, belkCouponApi, fragCouponApi, landCouponApi, fetchPinN, fredCouponApi, fredWalletApi, perfuCouponApi, travelCouponApi, travelrmvCouponApi, revolveCouponApi, appVersionObj, keurigCouponApi, keurigCouponRemApi, newbalanceCouponApi, orvisCouponApi,orvisCoupRemoveApi, newbalanceRemApi, bloomingCouponApi, nastygalCouponApi, hanesCouponApi, paylessCouponApi, quillCouponApi;
 
 var pTime = 1500;
 var indexSupportedSite = 0;
@@ -42,6 +42,8 @@ var brookDiscArr = [];
 var brookCoupArr = [];
 var dollarCoupArr = [];
 var dollarDiscArr = [];
+var columbiaDiscArr = [];
+var columbiaCoupArr = [];
 var quillCoupArr = [];
 var quillDiscArr = [];
 var HPCoupArr = [];
@@ -78,7 +80,7 @@ var shoecarnArr = [];
 var bebeCoupArr = [];
 var bebeDiscArr = [];
 var tomsCoupArr = [];
-var tomspriceArr = [];
+var tomsDiscArr = [];
 var crocsDiscArr = [];
 var crocsCoupArr = [];
 var crocspriceArr = [];
@@ -202,6 +204,18 @@ var hanesDiscArr = [];
 var hanesCoupArr = [];
 var forever21DiscArr = [];
 var forever21CoupArr = [];
+var ebagsDiscArr = [];
+var ebagsCoupArr = [];
+var bloomingDiscArr = [];
+var bloomingCoupArr = [];
+var reebokDiscArr = [];
+var reebokCoupArr = [];
+var aeDiscArr = [];
+var aeCoupArr = [];
+var nastygalDiscArr = [];
+var nastygalCoupArr = [];
+var eddiebauerCoupArr = [];
+var eddiebauerDiscArr = [];
 
 var CurrHref = window.location.href;
 var CurrHost = window.location.host;
@@ -222,7 +236,7 @@ var partners = {
 			domain: "forever21.com",
 			cart: ["forever21.com/us/shop/CheckOut/Basket", "forever21.com/us/shop/checkout/basket"],
 			forever21CouponUrl: "https://www.forever21.com/on/demandware.store/Sites-forever21-Site/en_US/Cart-AddCoupon?",
-			foreverRemCouponUrl: "https://www.forever21.com/on/demandware.store/Sites-forever21-Site/en_US//Cart-RemoveCouponLineItem?",
+			foreverRemCouponUrl: "https://www.forever21.com/on/demandware.store/Sites-forever21-Site/en_US/Cart-RemoveCouponLineItem?",
 			couponcookies: "fore21coupon",
 			cashbackcookies: "fore21cashback"
 		}, {
@@ -254,6 +268,7 @@ var partners = {
 		}, {
 			domain: "payless.com",
 			cart: ["payless.com/checkout"],
+			paylessCouponUrl: "https://www.payless.com/api/checkout/pub/orderForm/",
 			couponcookies: "paylesscoupon",
 			cashbackcookies: "paylesscashback"
 		}, {
@@ -263,8 +278,8 @@ var partners = {
 			cashbackcookies: "finishlinecashback"
 		}, {
 			domain: "footlocker.com",
-			cart: ["www.footlocker.com/cart"],
-			footlockerWalletUrl: "https://www.footlocker.com/cartTotalEstimator/cartTotalEstimator",
+			cart: ["footlocker.com/cart"],
+			footlockerCouponUrl: ["https://www.footlocker.com/api/users/carts/current/vouchers"],
 			couponcookies: "footlockercoupon",
 			cashbackcookies: "footlockercashback"
 		}, {
@@ -283,9 +298,9 @@ var partners = {
 			cashbackcookies: "bathandbodycashback"
 		}, {
 			domain: "ae.com",
-			cart: ["ae.com/us/en/cart", "ae.com/us/en/checkout", "www.ae.com/aerie/cart"],
-			aeCouponUrl: "www.ae.com/api/2.0/cart/discount",
-			aeWalletUrl: "www.ae.com/cart",
+			cart: ["ae.com/us/en/cart", "ae.com/us/en/checkout", "ae.com/aerie/cart"],
+			aeCouponUrl: "https://www.ae.com/ugp-api/cart/v1/claimCoupon",
+			aeWalletUrl: "ae.com/cart",
 			couponcookies: "aecoupon",
 			cashbackcookies: "aecashback"
 		}, {
@@ -296,7 +311,7 @@ var partners = {
 			cashbackcookies: "barnescashback"
 		}, {
 			domain: "steinmart.com",
-			cart: ["steinmart.com/basket.do"],
+			cart: ["steinmart.com"],
 			steinmartCouponUrl: "https://www.steinmart.com/basket.do?r=0.12491002889354208&method=applySourceCode",
 			steinmartWalletUrl: "https://www.steinmart.com/basket.do",
 			couponcookies: "steincoupon",
@@ -315,13 +330,14 @@ var partners = {
 			cashbackcookies: "keurigcashback"
 		}, {
 			domain: "carters.com",
-			cart: ["www.carters.com/cart"],
+			cart: ["carters.com/cart"],
 			carterWalletUrl: "https://www.carters.com/cart?dwcont=C157772355",
 			couponcookies: "carterscoupon",
 			cashbackcookies: "carterscashback"
 		}, {
 			domain: "cabelas.com",
 			cart: ["cabelas.com/shop/AjaxOrderItemDisplayView"],
+			cabelasCouponUrl: "https://www.cabelas.com/shop/AjaxRESTPromotionCodeApply",
 			cabelasWalletUrl: "https://www.cabelas.com/shop/checkout/basket/discount/promo/new",
 			cabelasRemCouponUrl: "https://www.cabelas.com/shop/checkout/basket/discount/promo/remove",
 			couponcookies: "cabelascoupon",
@@ -348,8 +364,8 @@ var partners = {
 			cashbackcookies: "aerocashback"
 		}, {
 			domain: "shutterfly.com",
-			cart: ["www.shutterfly.com/cart"],
-			shuttCouponUrl: "https://www.shutterfly.com/rest/ecom/user/022017776454/discount/",
+			cart: ["shutterfly.com/cart"],
+			shuttCouponUrl: "https://api2.shutterfly.com/v1/web-cart-orch/v1/codes/claim",
 			couponcookies: "shuttcoupon",
 			cashbackcookies: "shuttcashback"
 		}, {
@@ -367,11 +383,13 @@ var partners = {
 		}, {
 			domain: "nastygal.com",
 			cart: ["www.nastygal.com/billing-continue"],
+			nastygalCouponUrl: "https://www.nastygal.com/on/demandware.store/Sites-nastygal-US-Site/en_US/Cart-AddCouponJson?format=ajax&couponCode=",
 			couponcookies: "nastycoupon",
 			cashbackcookies: "nastycashback"
 		}, {
 			domain: "hanes.com",
 			cart: ["hanes.com/checkout/cart"],
+			hanesCouponUrl: "https://www.hanes.com/checkout/cart/couponPost/",
 			couponcookies: "hanescoupon",
 			cashbackcookies: "hanescashback"
 		}, {
@@ -382,26 +400,27 @@ var partners = {
 			cashbackcookies: "vitacashback"
 		}, {
 			domain: "bebe.com",
-			cart: ["https://www.bebe.com/checkout/basket.jsp"],
+			cart: ["bebe.com"],
 			bebeWalletUrl: "https://www.bebe.com/checkout/panels/order_summary.jsp?time=1524658725618&activeStepId=paymentBilling&onePageMode=0",
 			couponcookies: "bebecoupon",
 			cashbackcookies: "bebecashback"
 		}, {
 			domain: "brookstone.com",
-			cart: ["www.brookstone.com/cart"],
+			cart: ["brookstone.com"],
 			brookCouponUrl: "https://www.brookstone.com/cart?dwcont=C412886697",
 			couponcookies: "brookcoupon",
 			cashbackcookies: "brookcashback"
 		}, {
 			domain: "newbalance.com",
-			cart: ["www.newbalance.com/on/demandware.store/Sites-newbalance_us2-Site/en_US/Cart-Show"],
-			newbalanceCouponUrl: "https://www.newbalance.com/on/demandware.store/Sites-newbalance_us2-Site/en_US/COBilling-ApplyCoupon?couponCode=",
-			newbalanceRemUrl: "https://www.newbalance.com/on/demandware.store/Sites-newbalance_us2-Site/en_US/COBilling-RemovePromoCode?promoCode=",
+			cart: ["newbalance.com/checkout-begin", "newbalance.com/cart"],
+			newbalanceCouponUrl: "https://www.newbalance.com/on/demandware.store/Sites-NBUS-Site/en_US/Cart-AddCoupon?loyaltyPromoSelected=false&",
+			newbalanceRemUrl: "https://www.newbalance.com/on/demandware.store/Sites-NBUS-Site/en_US/Cart-RemoveCouponLineItem?",
 			couponcookies: "newbalaecoupon",
 			cashbackcookies: "newbalacashback"
 		}, {
 			domain: "dollargeneral.com",
-			cart: ["www.dollargeneral.com/checkout"],
+			cart: ["dollargeneral.com/commerce/checkout/cart"],
+			dollarCouponUrl: "https://www.dollargeneral.com/commerce/checkout/cart/couponPost/",
 			dollarWalletUrl: "https://www.dollargeneral.com/rest/default/V1/carts/mine/totals",
 			couponcookies: "dollarcoupon",
 			cashbackcookies: "dollarcashback"
@@ -424,7 +443,8 @@ var partners = {
 			cashbackcookies: "fromyoucashback"
 		}, {
 			domain: "davidsbridal.com",
-			cart: ["www.davidsbridal.com/AjaxOrderItemDisplayView"],
+			cart: ["davidsbridal.com/AjaxOrderItemDisplayView"],
+			davidsCouponUrl: "https://www.davidsbridal.com/webapp/wcs/stores/servlet/AjaxPromotionCodeManage",
 			couponcookies: "davidscoupon",
 			cashbackcookies: "davidscashback"
 		}, {
@@ -434,15 +454,16 @@ var partners = {
 			cashbackcookies: "herbercashback"
 		}, {
 			domain: "eddiebauer.com",
-			cart: ["www.eddiebauer.com/checkout/bag.jsp"],
+			cart: ["eddiebauer.com/cart", "eddiebauer.com/checkout"],
 			eddieCouponUrl: "https://www.eddiebauer.com/xhr/submit.jsp?_=",
 			eddieWalletUrl: "https://www.eddiebauer.com/checkout/gadgets/bag/bag-order-summary.jsp?_=",
 			couponcookies: "eddiecoupon",
 			cashbackcookies: "eddiecashback"
 		}, {
 			domain: "toms.com",
-			cart: ["www.toms.com/checkout"],
-			tomsCouponUrl: "https://www.toms.com/checkout/ship/shipping_method.jsp?_DARGS=/checkout/common/checkoutPromoCode.jsp.couponForm2",
+			cart: ["toms.com"],
+			tomsCouponUrl: "https://www.toms.com/on/demandware.store/Sites-toms-us-Site/en_US/Cart-AddCoupon?",
+			tomsRemCouponUrl: "https://www.toms.com/on/demandware.store/Sites-toms-us-Site/en_US/Cart-RemoveCouponLineItem?",
 			couponcookies: "tomscoupon",
 			cashbackcookies: "tomscashback"
 		}, {
@@ -475,13 +496,16 @@ var partners = {
 			cashbackcookies: "shopbopcashback"
 		}, {
 			domain: "harryanddavid.com",
-			cart: ["harryanddavid.com/checkout/payment"],
-			harryCouponUrl: "https://www.harryanddavid.com/webapp/wcs/stores/servlet/ApplyPromotion",
+			cart: ["harryanddavid.com/checkout"],
+			harryCouponUrl: "https://www.harryanddavid.com/r/api/checkout/cart/",
+			harryOrderIdUrl: "https://www.harryanddavid.com/r/api/checkout/cart/count?brand=harryanddavid&entryBrand=harryanddavid",
 			couponcookies: "harrycoupon",
 			cashbackcookies: "harrycashback"
 		}, {
 			domain: "columbia.com",
 			cart: ["columbia.com/cart"],
+			columbiaCouponUrl: "https://www.columbia.com/on/demandware.store/Sites-Columbia_US-Site/en_US/Cart-AddCoupon?",
+			columbiaRemCouponUrl: "https://www.columbia.com/on/demandware.store/Sites-Columbia_US-Site/en_US/Cart-RemoveCouponLineItem?",
 			couponcookies: "columbiacoupon",
 			cashbackcookies: "columbiacashback"
 		}, {
@@ -509,6 +533,7 @@ var partners = {
 		}, {
 			domain: "quill.com",
 			cart: ["quill.com/Checkout/Checkout", "quill.com/cart/cart"],
+			quillCouponUrl: "https://www.quill.com/Checkout/ShoppingCartAjaxForm",
 			couponcookies: "quillcoupon",
 			cashbackcookies: "quillcashback"
 		}, {
@@ -520,6 +545,7 @@ var partners = {
 		}, {
 			domain: "bloomingdales.com",
 			cart: ["bloomingdales.com/my-bag"],
+			bloomingCouponUrl: "https://www.bloomingdales.com/my-bag/1a5f7e8d-dce7-414e-b9f9-bc604567f4fa/promo?currencyCode=USD&experiment=700-22&promoCode=",
 			couponcookies: "bloomingdalescoupon",
 			cashbackcookies: "bloomingdalescashback"
 		}, {
@@ -541,14 +567,14 @@ var partners = {
 			cashbackcookies: "kmartcashback"
 		}, {
 			domain: "ediblearrangements.com",
-			cart: ["www.ediblearrangements.com/Fruit-Cart.aspx"],
+			cart: ["ediblearrangements.com/fruit-cart"],
 			couponcookies: "ediblecoupon",
 			cashbackcookies: "ediblecashback"
 		}, {
 			domain: "reebok.com",
-			cart: ["www.reebok.com/on/demandware.store/Sites-Reebok-US-Site/en_US/Cart-Show"],
-			reebokCouponUrl: "https://www.reebok.com/on/demandware.store/Sites-Reebok-US-Site/en_US/Cart-Submits",
-			reebokWalletUrl: "https://www.reebok.com/on/demandware.store/Sites-Reebok-US-Site/en_US/Cart-Show",
+			cart: ["reebok.com/us/cart", "reebok.com/us/delivery"],
+			reebokCouponUrl: "https://www.reebok.com/api/checkout/baskets/",
+			reebokBasketUrl: "https://www.reebok.com/api/checkout/customer/baskets?sitePath=us",
 			couponcookies: "reebokcoupon",
 			cashbackcookies: "reebokcashback"
 		}, {
@@ -558,7 +584,7 @@ var partners = {
 			cashbackcookies: "ralphlaurencashback"
 		}, {
 			domain: "dermstore.com",
-			cart: ["www.dermstore.com/cart/1_shopping_cart.php"],
+			cart: ["dermstore.com/cart"],
 			dermCouponUrl: "https://www.dermstore.com/cart/ajax/cart.php",
 			couponcookies: "dermstorecoupon",
 			cashbackcookies: "dermstorecashback"
@@ -569,8 +595,8 @@ var partners = {
 			cashbackcookies: "cheapoaircashback"
 		}, {
 			domain: "jcrew.com",
-			cart: ["www.jcrew.com/checkout"],
-			jcrewCouponUrl: "https://www.jcrew.com/checkout2/shoppingbag.jsp",
+			cart: ["jcrew.com/checkout"],
+			jcrewCouponUrl: "https://www.jcrew.com/checkout-api/graphql",
 			couponcookies: "jcrewcoupon",
 			cashbackcookies: "jcrewcashback"
 		}, {
@@ -587,7 +613,7 @@ var partners = {
 			cashbackcookies: "sierratradcashback"
 		}, {
 			domain: "victoriassecret.com",
-			cart: ["www.victoriassecret.com/commerce2/checkout#/payment"],
+			cart: ["victoriassecret.com/us/checkout"],
 			victoCouponUrl: "https://www.victoriassecret.com/commerce2/continue/offers",
 			couponcookies: "victoriacoupon",
 			cashbackcookies: "victoriacashback"
@@ -610,8 +636,7 @@ var partners = {
 			cashbackcookies: "pepboyscashback"
 		}, {
 			domain: "ebags.com",
-			cart: ["www.ebags.com/cart"],
-			ebagsCouponUrl: "https://www.ebags.com/cart/SetSourceCode",
+			cart: ["ebags.com/cart"],
 			couponcookies: "ebagscoupon",
 			cashbackcookies: "ebagscashback"
 		}, {
@@ -621,8 +646,9 @@ var partners = {
 			cashbackcookies: "orientalcashback"
 		}, {
 			domain: "orvis.com",
-			cart: ["www.orvis.com/store/basket.aspx"],
-			orvisCouponUrl: "https://www.orvis.com/services/OrvisOrderService.asmx/setSpecialOffer",
+			cart: ["orvis.com/cart"],
+			orvisCouponUrl: "https://www.orvis.com/on/demandware.store/Sites-USOrvis-Site/en_US/Cart-AddCoupon?",
+			orvisRemCouponUrl: "https://www.orvis.com/on/demandware.store/Sites-USOrvis-Site/en_US/Cart-RemoveCouponLineItem?",
 			couponcookies: "orviscoupon",
 			cashbackcookies: "orviscashback"
 		}, {
@@ -674,7 +700,7 @@ var partners = {
 		}, {
 			domain: "blair.com",
 			cart: ["blair.com/checkout"],
-			blairCouponUrl: "https://checkout.blair.com/checkout/update_promo_code_ajax.cmd?time=1527841978541",
+			blairCouponUrl: "https://www.blair.com/api/user-service/user/order/brand/blair/promoCode/",
 			couponcookies: "blaircoupon",
 			cashbackcookies: "blaircashback"
 		}, {
@@ -685,7 +711,7 @@ var partners = {
 			cashbackcookies: "speckcashback"
 		}, {
 			domain: "jimmyjazz.com",
-			cart: ["www.jimmyjazz.com/cart"],
+			cart: ["jimmyjazz.com"],
 			couponcookies: "jimmycoupon",
 			cashbackcookies: "jimmycashback"
 		}, {
@@ -697,8 +723,7 @@ var partners = {
 		}, {
 			domain: "ashford.com",
 			cart: ["ashford.com/checkout"],
-			ashfordCouponUrl: "https://www.ashford.com/us/cart/json/cartContents_new.jsp?_DARGS=/cart/gadgets/shoppingCartForms.jsp.applyCouponForm",
-			ashfordCouponRemUrl: "https://www.ashford.com/us/cart/json/cartContents_new.jsp?_DARGS=/cart/gadgets/shoppingCartForms.jsp.removeCouponForm",
+			ashfordCouponUrl: "https://www.ashford.com/checkout/cart/couponPost/",
 			couponcookies: "ashfordcoupon",
 			cashbackcookies: "ashfordcashback"
 		}, {
@@ -754,8 +779,8 @@ var partners = {
 			cashbackcookies: "clarisoniccashback"
 		}, {
 			domain: "cafepress.com",
-			cart: ["www.cafepress.com/checkout"],
-			cafepressCouponUrl: "https://www.cafepress.com/cp/checkout/checkout_form_mobile.aspx",
+			cart: ["cafepress.com/checkout"],
+			cafepressCouponUrl: "https://www.cafepress.com/api/v2/Checkout/ApplyCouponCode/",
 			couponcookies: "cafepressccoupon",
 			cashbackcookies: "cafepresscashback"
 		}, {
@@ -777,7 +802,7 @@ var partners = {
 			cashbackcookies: "contactscashback"
 		}, {
 			domain: "mypillow.com",
-			cart: ["www.mypillow.com/checkout/cart/"],
+			cart: ["mypillow.com/checkout/cart/"],
 			pillowCouponUrl: "https://www.mypillow.com/checkout/cart/couponPost/",
 			couponcookies: "mypillowcoupon",
 			cashbackcookies: "mypillowcashback"
@@ -882,8 +907,8 @@ var partners = {
 			cashbackcookies: "clairescashback"
 		}, {
 			domain: "ashleystewart.com",
-			cart: ["www.ashleystewart.com/cart"],
-			ashleyCouponUrl: "https://www.ashleystewart.com/cart/?dwcont=",
+			cart: ["ashleystewart.com/cart"],
+			ashleyCouponUrl: "https://www.ashleystewart.com/on/demandware.store/Sites-ashleystewart-Site/default/Cart-AddCoupon?format=ajax&couponCode=",
 			couponcookies: "ashleystcoupon",
 			cashbackcookies: "ashleystcashback"
 		}, {
@@ -894,8 +919,8 @@ var partners = {
 			cashbackcookies: "buildcashback"
 		}, {
 			domain: "mixbook.com",
-			cart: ["www.mixbook.com/checkout"],
-			mixbookCouponUrl: "https://www.mixbook.com/checkout/cart?sections%5B%5D=summary&sections%5B%5D=content&target=coupon&feature_offer_carousel=false",
+			cart: ["mixbook.com/checkout"],
+			mixbookCouponUrl: "https://www.mixbook.com/api/v2/my/cart/set_coupon?coupon_code=",
 			couponcookies: "mixbookcoupon",
 			cashbackcookies: "mixbookcashback"
 		}, {
@@ -1016,16 +1041,30 @@ function onload() {
 					barnesWalletApi = partners.SupportedSites[indexSupportedSite - 1].barnesWalletUrl;
 				}
 				if (CurrHref.indexOf("footlocker.com") > -1) {
-					footlockerWalletApi = partners.SupportedSites[indexSupportedSite - 1].footlockerWalletUrl;
+					footlockerCouponApi = partners.SupportedSites[indexSupportedSite - 1].footlockerCouponUrl;
+
+					var requestId = getCookie("cart-guid");
+
+					var foothttp = new XMLHttpRequest();
+					foothttp.onreadystatechange = function () {
+						if (this.readyState == 4 && this.status == 200) {
+							var footObj = JSON.parse(this.responseText);
+							footlockerCsrfToken = footObj.data.csrfToken;
+						}
+					};
+					foothttp.open("GET", "https://www.footlocker.com/api/v3/session", false);
+					foothttp.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+					foothttp.setRequestHeader("x-fl-request-id", requestId);
+					foothttp.send();
 				}
 				if (CurrHref.indexOf("shop.advanceautoparts.com") > -1) {
 					advanceautoWalletApi = partners.SupportedSites[indexSupportedSite - 1].advanceautoWalletUrl;
 				}
 				if (CurrHref.indexOf("steinmart.com") > -1) {
 					steinmartCouponApi = partners.SupportedSites[indexSupportedSite - 1].steinmartCouponUrl
-						steinmartWalletApi = partners.SupportedSites[indexSupportedSite - 1].steinmartWalletUrl;
+					steinmartWalletApi = partners.SupportedSites[indexSupportedSite - 1].steinmartWalletUrl;
 				}
-				if (CurrHref.indexOf("www.carters.com") > -1) {
+				if (CurrHref.indexOf("carters.com") > -1) {
 					pTime = 2000;
 				}
 				if (CurrHref.indexOf("www.walgreens.com") > -1) {
@@ -1044,15 +1083,23 @@ function onload() {
 					searsCouponApi = partners.SupportedSites[indexSupportedSite - 1].searsCouponUrl;
 					searsWalletApi = partners.SupportedSites[indexSupportedSite - 1].searsWalletUrl;
 				}
+				if (CurrHref.indexOf("payless.com") > -1) {
+					var paylessApiCode = partners.SupportedSites[indexSupportedSite - 1].paylessCouponUrl;
+					var orderFormObj = JSON.parse(localStorage.getItem("orderform"));
+					var orderFormId = orderFormObj.id;
+					paylessCouponApi =  paylessApiCode + orderFormId + "/coupons";
+					pTime = 5000;
+				}
 				if (CurrHref.indexOf("www.finishline.com") > -1) {
 					pTime = 2000;
 				}
-				if (CurrHref.indexOf("www.cabelas.com") > -1) {
+				if (CurrHref.indexOf("cabelas.com") > -1) {
+					cabelasCouponApi = partners.SupportedSites[indexSupportedSite - 1].cabelasCouponUrl
 					cabelasWalletApi = partners.SupportedSites[indexSupportedSite - 1].cabelasWalletUrl;
 					cabelasRemCouponApi = partners.SupportedSites[indexSupportedSite - 1].cabelasRemCouponUrl;
 					pTime = 2000;
 				}
-				if (CurrHref.indexOf("www.lordandtaylor.com") > -1) {
+				if (CurrHref.indexOf("lordandtaylor.com") > -1) {
 					lordWalletApi = partners.SupportedSites[indexSupportedSite - 1].lordWalletUrl;
 					pTime = 2500;
 				}
@@ -1065,27 +1112,33 @@ function onload() {
 					aeroCouponApi = partners.SupportedSites[indexSupportedSite - 1].aeroCouponUrl;
 					aeroWalletApi = partners.SupportedSites[indexSupportedSite - 1].aeroWalletUrl;
 				}
-				if (CurrHref.indexOf("www.shutterfly.com") > -1) {
+				if (CurrHref.indexOf("shutterfly.com") > -1) {
 					shuttCouponApi = partners.SupportedSites[indexSupportedSite - 1].shuttCouponUrl;
-				}
-				if (CurrHref.indexOf("www.dressbarn.com") > -1) {
-					dressCouponApi = partners.SupportedSites[indexSupportedSite - 1].dressCouponUrl;
-				}
-				if (CurrHref.indexOf("www.hanes.com") > -1) {
 					pTime = 5000;
 				}
-				if (CurrHref.indexOf("www.vitacost.com") > -1) {
+				if (CurrHref.indexOf("dressbarn.com") > -1) {
+					dressCouponApi = partners.SupportedSites[indexSupportedSite - 1].dressCouponUrl;
+				}
+				if (CurrHref.indexOf("nastygal.com") > -1) {
+					nastygalCouponApi = partners.SupportedSites[indexSupportedSite - 1].nastygalCouponUrl;
+				}
+				if (CurrHref.indexOf("hanes.com") > -1) {
+					hanesCouponApi = partners.SupportedSites[indexSupportedSite - 1].hanesCouponUrl;
+					pTime = 2500;
+				}
+				if (CurrHref.indexOf("vitacost.com") > -1) {
 					vitaCouponApi = partners.SupportedSites[indexSupportedSite - 1].vitaCouponUrl;
 				}
-				if (CurrHref.indexOf("www.quill.com") > -1) {
+				if (CurrHref.indexOf("quill.com") > -1) {
+					quillCouponApi = partners.SupportedSites[indexSupportedSite - 1].quillCouponUrl
 					pTime = 10000;
 				}
-				if (CurrHref.indexOf("www.brookstone.com") > -1) {
+				if (CurrHref.indexOf("brookstone.com") > -1) {
 					brookCouponApi = partners.SupportedSites[indexSupportedSite - 1].brookCouponUrl;
 				}
-				if (CurrHref.indexOf("www.dollargeneral.com") > -1) {
+				if (CurrHref.indexOf("dollargeneral.com") > -1) {
 					dollarWalletApi = partners.SupportedSites[indexSupportedSite - 1].dollarWalletUrl;
-					dollarCouponApi = "https://www.dollargeneral.com/rest/default/V1/carts/mine/coupons/";
+					dollarCouponApi = partners.SupportedSites[indexSupportedSite - 1].dollarCouponUrl;
 					pTime = 2500;
 				}
 				if (CurrHref.indexOf("www.puritan.com") > -1) {
@@ -1100,8 +1153,9 @@ function onload() {
 					eddieCouponApi = partners.SupportedSites[indexSupportedSite - 1].eddieCouponUrl + mathRand;
 					eddieWalletApi = partners.SupportedSites[indexSupportedSite - 1].eddieWalletUrl + mathRand;
 				}
-				if (CurrHref.indexOf("www.toms.com") > -1) {
+				if (CurrHref.indexOf("toms.com") > -1) {
 					tomsCouponApi = partners.SupportedSites[indexSupportedSite - 1].tomsCouponUrl;
+					tomsRemCouponApi = partners.SupportedSites[indexSupportedSite - 1].tomsRemCouponUrl;
 					pTime = 2500;
 				}
 				if (CurrHref.indexOf("shop.straighttalk.com") > -1) {
@@ -1116,7 +1170,32 @@ function onload() {
 					pTime = 2500;
 				}
 				if (CurrHref.indexOf("harryanddavid.com") > -1) {
-					harryCouponApi = partners.SupportedSites[indexSupportedSite - 1].harryCouponUrl;
+					var harryCouponCodeApi = partners.SupportedSites[indexSupportedSite - 1].harryCouponUrl;
+					var harryOrderIdApi = partners.SupportedSites[indexSupportedSite - 1].harryOrderIdUrl;
+	
+					var userInfo = localStorage.getItem("userInfo");
+					var userInfoObj = JSON.parse(userInfo);
+					var authToken = userInfoObj.token;
+		
+					var harryhttp = new XMLHttpRequest();
+					harryhttp.onreadystatechange = function () {
+						if (this.readyState == 4 && this.status == 200) {
+							var harryObj = JSON.parse(this.responseText);
+							harryOrderId = harryObj.orderId;
+							harryCouponApi = harryCouponCodeApi + harryOrderId + "/promotion?brand=harryanddavid&entryBrand=harryanddavid";
+							harryInfoApi = harryCouponCodeApi + harryOrderId + "?brand=harryanddavid&entryBrand=harryanddavid";
+						}
+					};
+					harryhttp.open("GET", harryOrderIdApi, false);
+					harryhttp.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+					harryhttp.setRequestHeader("authorization", authToken);
+					harryhttp.send();
+	
+					pTime = 2500;
+				}
+				if (CurrHref.indexOf("columbia.com") > -1) {
+					columbiaCouponApi = partners.SupportedSites[indexSupportedSite - 1].columbiaCouponUrl;
+					columbiaRemCouponApi = partners.SupportedSites[indexSupportedSite - 1].columbiaRemCouponUrl;
 					pTime = 2500;
 				}
 				if (CurrHref.indexOf("www.keurig.com") > -1) {
@@ -1145,14 +1224,34 @@ function onload() {
 				if (CurrHref.indexOf("www.dell.com") > -1) {
 					dellCouponApi = partners.SupportedSites[indexSupportedSite - 1].dellCouponUrl;
 				}
-				if (CurrHref.indexOf("www.reebok.com") > -1) {
-					reebokCouponApi = partners.SupportedSites[indexSupportedSite - 1].reebokCouponUrl;
-					reebokWalletApi = partners.SupportedSites[indexSupportedSite - 1].reebokWalletUrl;
+				if (CurrHref.indexOf("reebok.com") > -1) {
+					
+					reebokBasketApi = partners.SupportedSites[indexSupportedSite - 1].reebokBasketUrl;
+
+					var authorizationToken = localStorage.getItem("jwtToken");
+
+					var reebokBhttp = new XMLHttpRequest();
+					reebokBhttp.onreadystatechange = function () {
+					if (this.readyState == 4 && this.status == 200) {
+						 var basketObj = JSON.parse(this.responseText);
+						reebokBasketId = basketObj.basketId;
+
+						 reebokCouponApi = partners.SupportedSites[indexSupportedSite - 1].reebokCouponUrl;
+						 reebokCouponApi = reebokCouponApi + reebokBasketId + "/coupons/?sitePath=us";
+
+						 reebokRemoveApi = partners.SupportedSites[indexSupportedSite - 1].reebokCouponUrl;
+						 reebokRemoveApi =  reebokRemoveApi + reebokBasketId +"/coupons/";
+					}
+					};
+					reebokBhttp.open("GET", reebokBasketApi, false);
+					reebokBhttp.setRequestHeader("checkout-authorization", authorizationToken);
+				    reebokBhttp.setRequestHeader("content-type", "application/json");	
+					reebokBhttp.send();
 				}
-				if (CurrHref.indexOf("www.dermstore.com") > -1) {
+				if (CurrHref.indexOf("dermstore.com") > -1) {
 					dermCouponApi = partners.SupportedSites[indexSupportedSite - 1].dermCouponUrl;
 				}
-				if (CurrHref.indexOf("www.jcrew.com") > -1) {
+				if (CurrHref.indexOf("jcrew.com") > -1) {
 					jcrewCouponApi = partners.SupportedSites[indexSupportedSite - 1].jcrewCouponUrl;
 				}
 				if (CurrHref.indexOf("www.bodybuilding.com") > -1) {
@@ -1172,9 +1271,9 @@ function onload() {
 				if (CurrHref.indexOf("www.pepboys.com") > -1) {
 					pepboysCouponApi = partners.SupportedSites[indexSupportedSite - 1].pepboysCouponUrl;
 				}
-				if (CurrHref.indexOf("www.ebags.com") > -1) {
-					ebagsCouponApi = partners.SupportedSites[indexSupportedSite - 1].ebagsCouponUrl;
-				}
+				// if (CurrHref.indexOf("www.ebags.com") > -1) {
+				// 	ebagsCouponApi = partners.SupportedSites[indexSupportedSite - 1].ebagsCouponUrl;
+				// }
 				if (CurrHref.indexOf("from.bookit.com") > -1) {
 					CurrHost = CurrHost.replace("from.", ""); ;
 				}
@@ -1184,6 +1283,9 @@ function onload() {
 				}
 				if (CurrHref.indexOf("crocs.com") > -1) {
 					pTime = 3000;
+				}
+				if (CurrHref.indexOf("ediblearrangements.com") > -1) {
+					pTime = 5000;
 				}
 				if (CurrHref.indexOf("www8.hp.com") > -1) {
 					CurrHost = CurrHost.replace("www8.", "");
@@ -1234,7 +1336,10 @@ function onload() {
 				}
 				if (CurrHref.indexOf("ashford.com") > -1) {
 					ashfordCouponApi = partners.SupportedSites[indexSupportedSite - 1].ashfordCouponUrl;
-					ashfordCouponRemApi = partners.SupportedSites[indexSupportedSite - 1].ashfordCouponRemUrl;
+					pTime = 2000;
+				}
+				if (CurrHref.indexOf("bloomingdales.com") > -1) {
+					bloomingCouponApi = partners.SupportedSites[indexSupportedSite - 1].bloomingCouponUrl;
 				}
 				if (CurrHref.indexOf("www.rockbottomgolf.com") > -1) {
 					rockbottomgolfCouponApi = partners.SupportedSites[indexSupportedSite - 1].rockbottomgolfCouponUrl;
@@ -1269,7 +1374,7 @@ function onload() {
 					clarisonicCouponApi = partners.SupportedSites[indexSupportedSite - 1].clarisonicCouponUrl;
 					clarisonicRCouponApi = partners.SupportedSites[indexSupportedSite - 1].clarisonicRCouponUrl;
 				}
-				if (CurrHref.indexOf("www.cafepress.com") > -1) {
+				if (CurrHref.indexOf("cafepress.com") > -1) {
 					cafepressCouponApi = partners.SupportedSites[indexSupportedSite - 1].cafepressCouponUrl;
 				}
 				if (CurrHref.indexOf("www.catherines.com") > -1) {
@@ -1279,14 +1384,14 @@ function onload() {
 				if (CurrHref.indexOf("carsons.com") > -1) {
 					pTime = 3000;
 				}
-				if (CurrHref.indexOf("www.1800contacts.com") > -1) {
+				if (CurrHref.indexOf("1800contacts.com") > -1) {
 					contacts1800CouponApi = partners.SupportedSites[indexSupportedSite - 1].contacts1800CouponUrl;
 				}
-				if (CurrHref.indexOf("www.mypillow.com") > -1) {
+				if (CurrHref.indexOf("mypillow.com") > -1) {
 					pillowCouponApi = partners.SupportedSites[indexSupportedSite - 1].pillowCouponUrl;
 					pTime = 2000;
 				}
-				if (CurrHref.indexOf("www.barenecessities.com") > -1) {
+				if (CurrHref.indexOf("barenecessities.com") > -1) {
 					barenCouponApi = partners.SupportedSites[indexSupportedSite - 1].barenCouponUrl;
 					pTime = 1000;
 				}
@@ -1294,7 +1399,7 @@ function onload() {
 					naturalCouponApi = partners.SupportedSites[indexSupportedSite - 1].naturalCouponUrl;
 					pTime = 1000;
 				}
-				if (CurrHref.indexOf("www.musiciansfriend.com") > -1) {
+				if (CurrHref.indexOf("musiciansfriend.com") > -1) {
 					musicianCouponApi = partners.SupportedSites[indexSupportedSite - 1].musicianCouponUrl;
 					musicianRemCouponApi = partners.SupportedSites[indexSupportedSite - 1].musicianRemCouponUrl
 						pTime = 2000;
@@ -1303,7 +1408,7 @@ function onload() {
 					scrubCouponApi = partners.SupportedSites[indexSupportedSite - 1].scrubCouponUrl;
 					pTime = 2000;
 				}
-				if (CurrHref.indexOf("www.aveda.com") > -1) {
+				if (CurrHref.indexOf("aveda.com") > -1) {
 					avedaCouponApi = partners.SupportedSites[indexSupportedSite - 1].avedaCouponUrl;
 				}
 				if (CurrHref.indexOf("www.backcountry.com") > -1) {
@@ -1313,14 +1418,15 @@ function onload() {
 				if (CurrHref.indexOf("zagg.com") > -1) {
 					zaggCouponApi = partners.SupportedSites[indexSupportedSite - 1].zaggCouponUrl;
 				}
-				if (CurrHref.indexOf("www.orvis.com") > -1) {
+				if (CurrHref.indexOf("orvis.com") > -1) {
 					orvisCouponApi = partners.SupportedSites[indexSupportedSite - 1].orvisCouponUrl;
+					orvisCoupRemoveApi = partners.SupportedSites[indexSupportedSite - 1].orvisRemCouponUrl;
 				}
 				if (CurrHref.indexOf("www.keds.com") > -1) {
 					kedsCouponApi = partners.SupportedSites[indexSupportedSite - 1].kedsCouponUrl;
 					pTime = 2000;
 				}
-				if (CurrHref.indexOf("www.newbalance.com") > -1) {
+				if (CurrHref.indexOf("newbalance.com") > -1) {
 					newbalanceCouponApi = partners.SupportedSites[indexSupportedSite - 1].newbalanceCouponUrl;
 					newbalanceRemApi = partners.SupportedSites[indexSupportedSite - 1].newbalanceRemUrl;
 					pTime = 2500;
@@ -1339,12 +1445,12 @@ function onload() {
 					spiritCouponApi = partners.SupportedSites[indexSupportedSite - 1].spiritCouponUrl;
 					spiritWalletApi = partners.SupportedSites[indexSupportedSite - 1].spiritWalletUrl;
 				}
-				if (CurrHref.indexOf("www.claires.com") > -1) {
+				if (CurrHref.indexOf("claires.com") > -1) {
 					clairesCouponApi = partners.SupportedSites[indexSupportedSite - 1].clairesCoupUrl;
 					clairesRemCouponApi = partners.SupportedSites[indexSupportedSite - 1].clairesRemUrl;
 					pTime = 2000;
 				}
-				if (CurrHref.indexOf("www.ashleystewart.com") > -1) {
+				if (CurrHref.indexOf("ashleystewart.com") > -1) {
 					ashleyCouponApi = partners.SupportedSites[indexSupportedSite - 1].ashleyCouponUrl;
 					pTime = 2000;
 				}
@@ -1356,7 +1462,7 @@ function onload() {
 					belkCouponApi = partners.SupportedSites[indexSupportedSite - 1].belkCouponUrl;
 					pTime = 2000;
 				}
-				if (CurrHref.indexOf("www.mixbook.com") > -1) {
+				if (CurrHref.indexOf("mixbook.com") > -1) {
 					mixbookCouponApi = partners.SupportedSites[indexSupportedSite - 1].mixbookCouponUrl;
 					pTime = 2000;
 				}
@@ -1750,7 +1856,6 @@ function applyCodes(couponCode) {
 	/////////////////// forever21.com ////////////////
 	if (CurrHref.indexOf("forever21.com") > -1) {
 		try {
-
 			var csrfToken = document.getElementsByName("csrf_token")[0].value;
 
 			var forever21CouponCodeApi = forever21CouponApi + "csrf_token="+csrfToken+"&couponCode=" + couponCode;
@@ -1772,12 +1877,6 @@ function applyCodes(couponCode) {
 							var forever21Remhttp = new XMLHttpRequest();
 							forever21Remhttp.onreadystatechange = function () {
 							if (this.readyState == 4 && this.status == 200) {
-								try {
-									var forever2RemObj = JSON.parse(this.responseText);
-								//	console.log(forever2RemObj);
-								} catch (e) {
-									Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
-								}
 							}
 						};
 						forever21Remhttp.open("GET", forever21CodeRemoveApi, false);
@@ -1894,49 +1993,52 @@ function applyCodes(couponCode) {
 		searshttp.setRequestHeader("Content-type", "application/json; charset=UTF-8");
 		searshttp.send(params);
 	}
-	if (CurrHref.indexOf("www.payless.com") > -1) {
-		var discountPrice,
-		discountPriceNum,
-		totalPrice,
-		totalPriceNum,
-		saving;
-		var paylesshttp = new XMLHttpRequest();
-		paylesshttp.onreadystatechange = function () {
-			if (this.readyState == 4 && this.status == 200) {
-				var payless2http = new XMLHttpRequest();
-				payless2http.onreadystatechange = function () {
-					if (this.readyState == 4 && this.status == 200) {
-						try {
-							totalPrice = document.getElementsByClassName('order-subtotal')[0].getElementsByTagName('td')[1].innerText.replace(/[$,-]/g, '');
-							totalPriceNum = Number(totalPrice);
-							var parser = new DOMParser();
-							var doc = parser.parseFromString(this.responseText, "text/html");
-							var checkDis = doc.getElementsByClassName('order-subtotal')[0];
-							if (checkDis) {
-								discountPrice = checkDis.getElementsByTagName('td')[1].innerText.replace(/[$,-]/g, '');
-								discountPriceNum = Number(discountPrice);
-								saving = totalPriceNum - discountPriceNum;
-								paylessDisArr.push(saving);
-								paylessCoupArr.push(couponCode);
-							}
-						} catch (e) {
-							Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-						}
-					}
-				};
-				payless2http.open("GET", CurrHref, false);
-				payless2http.send();
-				var params = "couponCode=" + couponCode
-					var paylessRhttp = new XMLHttpRequest();
-				paylessRhttp.onreadystatechange = function () {}
-				paylessRhttp.open("POST", "https://www.payless.com/on/demandware.store/Sites-payless-Site/default/COSinglePage-RemoveCouponSmry", false);
-				paylessRhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
-				paylessRhttp.send(params);
+	
+		/////////////////// payless.com ////////////////
+		if (CurrHref.indexOf("payless.com") > -1) {
+
+			if(document.getElementsByTagName('tfoot')[0].getElementsByClassName("monetary")[0]){
+				var grandTotal = Number(document.getElementsByTagName('tfoot')[0].getElementsByClassName("monetary")[0].innerText.replace(/[-$,]/g, ''));
 			}
-		};
-		paylesshttp.open("GET", "https://www.payless.com/on/demandware.store/Sites-payless-Site/default/Cart-AddCoupon?couponCode=" + couponCode + "&format=ajax&couponLoyaltyEmail=", false);
-		paylesshttp.send();
-	}
+			
+			var params = '{"text":"'+couponCode+'","expectedOrderFormSections":["items","totalizers","clientProfileData","shippingData","paymentData","sellers","messages","marketingData","clientPreferencesData","storePreferencesData","giftRegistryData","ratesAndBenefitsData","openTextField","commercialConditionData","customData"]}';
+	
+			var paylesshttp = new XMLHttpRequest();
+			paylesshttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					// var paylessObj = JSON.parse(this.responseText);
+	
+					var payless2http = new XMLHttpRequest();
+					payless2http.onreadystatechange = function () {
+						if (this.readyState == 4 && this.status == 200) {
+								var parser = new DOMParser();
+								var doc = parser.parseFromString(this.responseText, "text/html");
+								if(doc.getElementsByTagName('tfoot')[0].getElementsByClassName("monetary")[0]){
+									var cartTotal = Number(doc.getElementsByTagName('tfoot')[0].getElementsByClassName("monetary")[0].innerText.replace(/[-$,]/g, ''));
+								}
+								if (grandTotal != cartTotal) {
+									var saving = grandTotal - cartTotal;
+									paylessDisArr.push(saving);
+									paylessCoupArr.push(couponCode);
+								}
+						}
+					};
+					payless2http.open("GET", CurrHref, false);
+					payless2http.send();
+	
+					// var params = "couponCode=" + couponCode;
+					// 	var paylessRhttp = new XMLHttpRequest();
+					// paylessRhttp.onreadystatechange = function () {}
+					// paylessRhttp.open("POST", "https://www.payless.com/on/demandware.store/Sites-payless-Site/default/COSinglePage-RemoveCouponSmry", false);
+					// paylessRhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+					// paylessRhttp.send(params);
+				}
+			};
+			paylesshttp.open("POST", paylessCouponApi, false);
+			paylesshttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+			paylesshttp.send(params);
+		}
+	
 	if (CurrHref.indexOf("shop.advanceautoparts.com/web/OrderItemDisplay") > -1) {
 		try {
 			var orderrid = document.getElementsByName("orderId")[0].value;
@@ -1973,40 +2075,26 @@ function applyCodes(couponCode) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.footlocker.com") > -1) {
-		try {
-			var par = document.getElementById("estimator_subtotal");
-			var subtotal = par.getElementsByTagName("td")[0].innerText;
-			subtotal = subtotal.replace(/[$,]/g, '');
-			var params = "estimateTotal=true&subtotal=" + subtotal + "&country=US&zipcode=10001&shipping=Z&sourcecode=" + couponCode + "&formSubmitProof=";
-			var foothttp = new XMLHttpRequest();
-			foothttp.onreadystatechange = function () {
-				if (this.readyState == 4 && this.status == 200) {
-					try {
-						var parser = new DOMParser();
-						var doc = parser.parseFromString(this.responseText, "text/html");
-						var x = doc.getElementById('estimator_savings');
-						var totalSave = x.getElementsByTagName("td")[0].innerText.replace(/[$,]/g, '');
-						var discountPrice = Number(totalSave);
-						var maxNum = 0;
-						if (!isNaN(discountPrice)) {
-							footDiscArr.push(discountPrice);
-							var appliedCode = doc.getElementById('estimator_sourcecode').value;
-							footCoupArr.push(appliedCode);
-						}
-					} catch (e) {
-						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+	
+		/////////////////// footlocker.com ////////////////
+		if (CurrHref.indexOf("footlocker.com") > -1) {
+			try {
+				var params = '{"voucherId":"'+couponCode+'"}';
+				
+				var foothttp = new XMLHttpRequest();
+				foothttp.onreadystatechange = function () {
+					if (this.readyState == 4 && this.status == 200) {
 					}
-				}
-			};
-			foothttp.open("POST", footlockerWalletApi, false);
-			foothttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-			foothttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-			foothttp.send(params);
-		} catch (e) {
-			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+				};
+				foothttp.open("POST", footlockerCouponApi, false);
+				foothttp.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+				foothttp.setRequestHeader("x-csrf-token", footlockerCsrfToken);
+				foothttp.send(params);
+			} catch (e) {
+				Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+			}
 		}
-	}
+	
 	if (CurrHref.indexOf("www.bathandbodyworks.com/cart") > -1) {
 		var bathttp = new XMLHttpRequest();
 		bathttp.onreadystatechange = function () {
@@ -2040,30 +2128,48 @@ function applyCodes(couponCode) {
 		bathttp.open("GET", bathandbodyCouponApi + couponCode, false);
 		bathttp.send();
 	}
-	if (CurrHref.indexOf("www.ae.com") > -1) {
-		var params = {
-			discountCode: couponCode
-		}
-		var params = JSON.stringify(params)
-			var aehttp = new XMLHttpRequest();
+	
+	/////////////////// ae.com ////////////////
+	if (CurrHref.indexOf("ae.com") > -1) {
+        var aeotoken =  JSON.parse(localStorage.getItem("aeotoken"));
+		var accessToken = aeotoken.access_token;
+		
+		var params = '{"id":"'+couponCode+'"}';
+
+		var aehttp = new XMLHttpRequest();
 		aehttp.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
 				try {
 					var aeObj = JSON.parse(this.responseText);
-					if (aeObj.discountCodes.isQualified == true) {
-						finalCode = aeObj.discountCodes.id;
-						totalSavings = aeObj.discountAmount.value;
+					if(aeObj.data.coupons){
+
+						var aehttp1 = new XMLHttpRequest();
+						aehttp1.onreadystatechange = function () {
+							if (this.readyState == 4 && this.status == 200) {
+								var aeObj1 = JSON.parse(this.responseText);
+								if(aeObj1.data.priceInfo.totalDiscounts > 0){
+									var savings = aeObj1.data.priceInfo.totalDiscounts;
+									aeDiscArr.push(savings);
+									aeCoupArr.push(couponCode);
+								}
+							}
+						};
+						aehttp1.open("GET", "https://www.ae.com/ugp-api/cart/v1?inventoryCheck=true", false);
+						aehttp1.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+						aehttp1.setRequestHeader("x-access-token", accessToken);
+						aehttp1.send(params);
 					}
 				} catch (e) {
-					SavingsPopup(finalCode, totalSavings);
 					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
 				}
 			}
 		};
 		aehttp.open("POST", aeCouponApi, false);
 		aehttp.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+		aehttp.setRequestHeader("x-access-token", accessToken);
 		aehttp.send(params);
 	}
+	
 	if (CurrHref.indexOf("barnesandnoble.com") > -1) {
 		try {
 			var params = "_dyncharset=UTF-8&_dynSessConf=-622816806718912118&couponCode=" + couponCode + "&_D%3AcouponCode=+&amplifiHandler=%2Fatg%2Fcommerce%2Fpromotion%2FCouponFormHandler.claimCoupon&xhrRedirect=%2Fcheckout%2F&getData=voucher-discount&_DARGS=%2Fcheckout%2Fincludes%2Fcoupon-form.jsp.frmApplyCoupon";
@@ -2091,8 +2197,24 @@ function applyCodes(couponCode) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.steinmart.com/basket.do") > -1) {
-		var params = "sourceCode=" + couponCode + ""
+
+	/////////////////// steinmart.com ////////////////
+	if (CurrHref.indexOf("steinmart.com") > -1) {
+		// var params = "sourceCode=" + couponCode + ""
+		// 	var steinhttp = new XMLHttpRequest();
+		// steinhttp.onreadystatechange = function () {
+		// 	if (this.readyState == 4 && this.status == 200) {}
+		// };
+		// steinhttp.open("POST", steinmartCouponApi, false);
+		// steinhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+		// steinhttp.send(params);
+
+		var steinmartCouponApi = CurrHref.split("?")[0];
+
+		var authenticateToken = document.getElementsByName("authenticity_token")[0].value;
+
+		var params = "_method=patch&authenticity_token="+authenticateToken+"&step=payment_method&checkout%5Breduction_code%5D="+couponCode+"&checkout%5Bclient_details%5D%5Bbrowser_width%5D=850&checkout%5Bclient_details%5D%5Bbrowser_height%5D=667&checkout%5Bclient_details%5D%5Bjavascript_enabled%5D=1&checkout%5Bclient_details%5D%5Bcolor_depth%5D=24&checkout%5Bclient_details%5D%5Bjava_enabled%5D=false&checkout%5Bclient_details%5D%5Bbrowser_tz%5D=-330&checkout%5Bclient_details%5D%5Bbrowser_width%5D=850&checkout%5Bclient_details%5D%5Bbrowser_height%5D=667&checkout%5Bclient_details%5D%5Bjavascript_enabled%5D=1&checkout%5Bclient_details%5D%5Bcolor_depth%5D=24&checkout%5Bclient_details%5D%5Bjava_enabled%5D=false&checkout%5Bclient_details%5D%5Bbrowser_tz%5D=-330";
+
 			var steinhttp = new XMLHttpRequest();
 		steinhttp.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {}
@@ -2101,6 +2223,7 @@ function applyCodes(couponCode) {
 		steinhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
 		steinhttp.send(params);
 	}
+	
 	if (CurrHref.indexOf("www.lanebryant.com") > -1) {
 		try {
 			document.getElementById("mar-cart-promo-code").value = couponCode;
@@ -2144,7 +2267,7 @@ function applyCodes(couponCode) {
 		}
 	}
 	/////////////////// carters.com ////////////////
-	if (CurrHref.indexOf("www.carters.com") > -1) {
+	if (CurrHref.indexOf("carters.com") > -1) {
 		try {
 			var carterWalletClass = document.getElementsByClassName("paypalcheckout")[0];
 			if(carterWalletClass)
@@ -2163,69 +2286,75 @@ function applyCodes(couponCode) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.cabelas.com") > -1) {
-		var params = "promoCode=" + couponCode + "&supportMovingToRebate=true";
+	if (CurrHref.indexOf("cabelas.com") > -1) {
+		// var params = "promoCode=" + couponCode + "&supportMovingToRebate=true";
+		// var cabelashttp = new XMLHttpRequest();
+		// cabelashttp.onreadystatechange = function () {
+		// 	if (this.readyState == 4 && this.status == 200) {
+		// 		var cabelasObj = JSON.parse(this.responseText);
+		// 		let condition = cabelasObj.payments.hasPromo;
+		// 		if (condition == true) {
+		// 			let code = cabelasObj.payments.promoCode;
+		// 			let saving = cabelasObj.summary.grandShippingTotal.fmt;
+		// 			saving = Number(saving.replace(/[-$,]/g, ''));
+		// 			cabelasCoupArr.push(code);
+		// 			cabelasDiscArr.push(saving);
+		// 			var cabelashttp2 = new XMLHttpRequest();
+		// 			cabelashttp2.onreadystatechange = function () {
+		// 				if (this.readyState == 4 && this.status == 200) {}
+		// 			};
+		// 			cabelashttp2.open("GET", cabelasRemCouponApi, true);
+		// 			cabelashttp2.send();
+		// 		}
+		// 	}
+		// };
+		// cabelashttp.open("POST", cabelasWalletApi, false);
+		// cabelashttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+		// cabelashttp.send(params);
+
+		try {
+			var orderId = document.getElementsByName("currentOrderId")[0].value;
+			var storeId = document.getElementsByName("storeId")[0].value;
+			var catalogId = document.getElementsByName("catalogId")[0].value;
+			var langId = document.getElementsByName("langId")[0].value;
+			var taskType = document.getElementsByName("taskType")[0].value;
+
+		var params = "orderId="+orderId+"&taskType="+taskType+"&URL=&storeId="+storeId+"&catalogId="+catalogId+"&langId="+langId+"&finalView=AjaxOrderItemDisplayView&promoCode="+couponCode+"&employeeLastName=&empId=&requesttype=ajax";
+
 		var cabelashttp = new XMLHttpRequest();
 		cabelashttp.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
-				var cabelasObj = JSON.parse(this.responseText);
-				let condition = cabelasObj.payments.hasPromo;
-				if (condition == true) {
-					let code = cabelasObj.payments.promoCode;
-					let saving = cabelasObj.summary.grandShippingTotal.fmt;
-					saving = Number(saving.replace(/[-$,]/g, ''));
-					cabelasCoupArr.push(code);
-					cabelasDiscArr.push(saving);
-					var cabelashttp2 = new XMLHttpRequest();
-					cabelashttp2.onreadystatechange = function () {
-						if (this.readyState == 4 && this.status == 200) {}
-					};
-					cabelashttp2.open("GET", cabelasRemCouponApi, true);
-					cabelashttp2.send();
-				}
+					// var cabelasObj = JSON.parse(this.responseText);
+					//console.log(cabelasObj);
 			}
 		};
-		cabelashttp.open("POST", cabelasWalletApi, false);
+		cabelashttp.open("POST", cabelasCouponApi, false);
 		cabelashttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+		cabelashttp.setRequestHeader("Cache-Control", "no-cache");
 		cabelashttp.send(params);
+	} catch (e) {
+		Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
 	}
-	if (CurrHref.indexOf("www.lordandtaylor.com") > -1) {
-		try {
-			var params = "bmForm=applyPromoSaksBag&promoCode=" + couponCode + "";
+	}
+
+	if (CurrHref.indexOf("lordandtaylor.com") > -1) {
+		try{
+			var lordCouponApi = CurrHref.split("?")[0];
+	
+			var authenticateToken = document.getElementsByName("authenticity_token")[0].value;
+	
+			var params = "_method=patch&authenticity_token="+authenticateToken+"&step=payment_method&checkout%5Breduction_code%5D="+couponCode+"&checkout%5Bclient_details%5D%5Bbrowser_width%5D=850&checkout%5Bclient_details%5D%5Bbrowser_height%5D=667&checkout%5Bclient_details%5D%5Bjavascript_enabled%5D=1&checkout%5Bclient_details%5D%5Bcolor_depth%5D=24&checkout%5Bclient_details%5D%5Bjava_enabled%5D=false&checkout%5Bclient_details%5D%5Bbrowser_tz%5D=-330&checkout%5Bclient_details%5D%5Bbrowser_width%5D=850&checkout%5Bclient_details%5D%5Bbrowser_height%5D=667&checkout%5Bclient_details%5D%5Bjavascript_enabled%5D=1&checkout%5Bclient_details%5D%5Bcolor_depth%5D=24&checkout%5Bclient_details%5D%5Bjava_enabled%5D=false&checkout%5Bclient_details%5D%5Bbrowser_tz%5D=-330";
+	
 			var lordhttp = new XMLHttpRequest();
 			lordhttp.onreadystatechange = function () {
-				if (this.readyState == 4 && this.status == 200) {
-					try {
-						var lordObj = JSON.parse(this.responseText);
-						if (lordObj.cartItems) {
-							var str = lordObj.cartSummary.promotionalSaving;
-							totalSavings = str.split(";").pop();
-							localStorage.setItem("lordandtaylor", "$" + totalSavings);
-							finalCode = couponCode;
-						}
-						if (lordObj.errors) {
-							var params = "bmForm=remove_promo_code_saks_bag_service&promoCode=" + couponCode + "";
-							var lordhttp = new XMLHttpRequest();
-							lordhttp.onreadystatechange = function () {
-								if (this.readyState == 4 && this.status == 200) {}
-							};
-							lordhttp.open("POST", lordWalletApi, false);
-							lordhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-							lordhttp.setRequestHeader("Cache-Control", "no-cache");
-							lordhttp.send(params);
-						}
-					} catch (e) {
-						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
-					}
-				}
+				if (this.readyState == 4 && this.status == 200) {}
 			};
-			lordhttp.open("POST", lordWalletApi, false);
+			lordhttp.open("POST", lordCouponApi, false);
 			lordhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-			lordhttp.setRequestHeader("Cache-Control", "no-cache");
 			lordhttp.send(params);
-		} catch (e) {
-			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-		}
+			} catch (e) {
+				Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+			}
 	}
 	if (CurrHref.indexOf("www.partycity.com") > -1) {
 		try {
@@ -2278,24 +2407,39 @@ function applyCodes(couponCode) {
 		aerohttp.open("GET", aeroCouponApi + couponCode, false);
 		aerohttp.send();
 	}
-	if (CurrHref.indexOf("www.shutterfly.com") > -1) {
-		var params = "{'promoCode':'" + couponCode + "'}";
-		var shutthttp = new XMLHttpRequest();
-		shutthttp.onreadystatechange = function () {
-			try {
-				var shuttObj = JSON.parse(this.responseText);
-				var msg = shuttObj.message;
-				if (msg.includes("This special offer")) {
-					finalCode = couponCode;
-				}
-			} catch (e) {
-				Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
+	/////////////////// shutterfly.com ////////////////
+	if (CurrHref.indexOf("shutterfly.com") > -1) {
+		
+		// var params = '{"cartId":"129111907","code":"'+couponCode+'"}';
+		// var shutthttp = new XMLHttpRequest();
+		// shutthttp.onreadystatechange = function () {
+		// 	try {
+		// 		var shuttObj = JSON.parse(this.responseText);
+		// 		var msg = shuttObj.message;
+		// 		if (msg.includes("This special offer")) {
+		// 			finalCode = couponCode;
+		// 		}
+		// 	} catch (e) {
+		// 		Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
+		// 	}
+		// };
+		// shutthttp.open("POST", shuttCouponApi + couponCode, false);
+		// shutthttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+		// shutthttp.send(params);
+
+		document.getElementsByName("omnibox-code")[0].value = couponCode;
+		document.getElementsByClassName("omnibox-claim btn-tertiary")[0].click();
+
+		setTimeout(function () {
+			var discountClass = document.getElementsByClassName("ft-summary-discounts")[0];
+			if (discountClass) {
+				var discAmount = Number(document.getElementsByClassName("ft-summary-discounts")[0].getElementsByTagName("td")[1].innerText.replace(/[-$,]/g, ''));
+				shutterflyCoupArr.push(couponCode);
+				shutterflyDiscArr.push(discAmount);
 			}
-		};
-		shutthttp.open("POST", shuttCouponApi + couponCode, false);
-		shutthttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-		shutthttp.send(params);
+		}, 2000);
 	}
+	
 	if (CurrHref.indexOf("www.snapfish.com") > -1) {
 		try {
 			var CSRFToken = document.getElementsByTagName('meta')[1].getAttribute('content');
@@ -2326,59 +2470,92 @@ function applyCodes(couponCode) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.dressbarn.com") > -1) {
-		try {
-			var params = "Action=Cart.validatePromo&sessionConfirmationNumber=7512911085531293020&promoCode=" + couponCode + "";
+	/////////////////// dressbarn.com ////////////////
+	if (CurrHref.indexOf("dressbarn.com") > -1) {
+		try{
+			var dressbarnCouponApi = CurrHref.split("?")[0];
+	
+			var authenticateToken = document.getElementsByName("authenticity_token")[0].value;
+	
+			var params = "_method=patch&authenticity_token="+authenticateToken+"&step=payment_method&checkout%5Breduction_code%5D="+couponCode+"&checkout%5Bclient_details%5D%5Bbrowser_width%5D=850&checkout%5Bclient_details%5D%5Bbrowser_height%5D=667&checkout%5Bclient_details%5D%5Bjavascript_enabled%5D=1&checkout%5Bclient_details%5D%5Bcolor_depth%5D=24&checkout%5Bclient_details%5D%5Bjava_enabled%5D=false&checkout%5Bclient_details%5D%5Bbrowser_tz%5D=-330&checkout%5Bclient_details%5D%5Bbrowser_width%5D=850&checkout%5Bclient_details%5D%5Bbrowser_height%5D=667&checkout%5Bclient_details%5D%5Bjavascript_enabled%5D=1&checkout%5Bclient_details%5D%5Bcolor_depth%5D=24&checkout%5Bclient_details%5D%5Bjava_enabled%5D=false&checkout%5Bclient_details%5D%5Bbrowser_tz%5D=-330";
+	
 			var dresshttp = new XMLHttpRequest();
 			dresshttp.onreadystatechange = function () {
-				if (this.readyState == 4 && this.status == 200) {
-					try {
-						var dressObj = JSON.parse(this.responseText);
-						var check = dressObj.data.promoCode;
-						var codePath = dressObj.data;
-						if (check.successMessage) {
-							finalCode = codePath.cartSummary.savingsNew[0].CouponId;
-						}
-					} catch (e) {
-						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
-					}
-				}
+				if (this.readyState == 4 && this.status == 200) {}
 			};
-			dresshttp.open("POST", dressCouponApi, false);
+			dresshttp.open("POST", dressbarnCouponApi, false);
 			dresshttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
 			dresshttp.send(params);
 		} catch (e) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.nastygal.com") > -1) {
+	
+	/////////////////// nastygal.com ////////////////
+	if (CurrHref.indexOf("nastygal.com") > -1) {
 		try {
-			document.getElementById("dwfrm_billing_couponCode").value = couponCode;
-			document.getElementById("add-coupon").click();
+			// document.getElementById("dwfrm_billing_couponCode").value = couponCode;
+			// document.getElementById("add-coupon").click();
+
+			var nastygalhttp = new XMLHttpRequest();
+			nastygalhttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					var parser = new DOMParser();
+					var doc = parser.parseFromString(this.responseText, "text/html");
+					var discountClass = doc.getElementsByClassName("order-discount discount")[0];
+					if (discountClass) {
+							var savings = Number(discountClass.getElementsByTagName("td")[1].innerText.replace(/[-$,]/g, ''));
+							nastygalDiscArr.push(savings);
+							nastygalCoupArr.push(couponCode);
+					}
+				}
+			};
+			nastygalhttp.open("POST", nastygalCouponApi + couponCode, false);
+			nastygalhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+			nastygalhttp.send();
 		} catch (e) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.hanes.com") > -1) {
+
+	/////////////////// hanes.com ////////////////
+	if (CurrHref.indexOf("hanes.com") > -1) {
 		try {
-			document.getElementById("promoCode").value = couponCode;
-			document.getElementById('WC_PromotionCodeDisplay_links_1').click();
-			setTimeout(function () {
-				if (document.getElementsByClassName("each-discount-detail-amount")[0]) {
-					totalSavings = document.getElementsByClassName('each-discount-detail-amount')[0].innerText.replace(/[-$,]/g, '');
-					totalSavings = Number(totalSavings);
-					hanesDiscArr.push(totalSavings);
-					finalCode = couponCode;
-					hanesCoupArr.push(finalCode);
+			// document.getElementById("promoCode").value = couponCode;
+			// document.getElementById('WC_PromotionCodeDisplay_links_1').click();
+			// setTimeout(function () {
+			// 	if (document.getElementsByClassName("each-discount-detail-amount")[0]) {
+			// 		totalSavings = document.getElementsByClassName('each-discount-detail-amount')[0].innerText.replace(/[-$,]/g, '');
+			// 		totalSavings = Number(totalSavings);
+			// 		hanesDiscArr.push(totalSavings);
+			// 		finalCode = couponCode;
+			// 		hanesCoupArr.push(finalCode);
+			// 	}
+			// 	if (document.getElementById("promotion_1")) {
+			// 		document.getElementById("promotion_1").click();
+			// 	}
+			// }, 2500);
+
+			var form_key = document.getElementsByName("form_key")[0].value;
+
+			var params = "form_key="+form_key+"&coupon_code_fake="+couponCode+"&coupon_code="+couponCode+"&last_code="+couponCode+"&remove_coupon=&form_key="+form_key;
+
+			var haneshttp = new XMLHttpRequest();
+			haneshttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					// var hanesObj = JSON.parse(this.responseText);
+					// console.log(dollarObj);
 				}
-				if (document.getElementById("promotion_1")) {
-					document.getElementById("promotion_1").click();
-				}
-			}, 2500);
+			};
+			haneshttp.open("POST", hanesCouponApi, false);
+			haneshttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+			haneshttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+			haneshttp.send(params);
 		} catch (e) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+	
 	if (CurrHref.indexOf("www.vitacost.com") > -1) {
 		var vitaparams = "spcFrmPrmCde=" + couponCode + "";
 		var vitahttp = new XMLHttpRequest();
@@ -2400,168 +2577,246 @@ function applyCodes(couponCode) {
 		vitahttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
 		vitahttp.send(vitaparams);
 	}
-	if (CurrHref.indexOf("www.bebe.com") > -1) {
+
+	/////////////////// bebe.com ////////////////
+	if (CurrHref.indexOf("bebe.com") > -1) {
+		// var bebehttp = new XMLHttpRequest();
+		// bebehttp.onreadystatechange = function () {
+		// 	if (this.readyState == 4 && this.status == 200) {
+		// 		try {
+		// 			var bebeObj = JSON.parse(this.responseText);
+		// 			var msg = bebeObj.applied;
+		// 			if (msg == "true") {
+		// 				finalCode = couponCode;
+		// 				bebeCoupArr.push(finalCode);
+		// 				var bebeshttp = new XMLHttpRequest();
+		// 				bebeshttp.onreadystatechange = function () {
+		// 					if (this.readyState == 4 && this.status == 200) {
+		// 						try {
+		// 							var parser = new DOMParser();
+		// 							var doc = parser.parseFromString(this.responseText, "text/html");
+		// 							var savingsStr = doc.getElementById("GRAND_ORDERS_DISCOUNT_TOTAL-value").innerText.split('-')[1].replace(/[$,]/gi, '');
+		// 							var totalSaving = Number(savingsStr);
+		// 							bebeDiscArr.push(totalSaving);
+		// 						} catch (e) {
+		// 							Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+		// 						}
+		// 					}
+		// 				};
+		// 				bebeshttp.open("GET", "https://www.bebe.com/checkout/basket.jsp", false);
+		// 				bebeshttp.send();
+		// 			}
+		// 		} catch (e) {
+		// 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
+		// 		}
+		// 	}
+		// };
+		// bebehttp.open("GET", "https://www.bebe.com/checkout/update_promo_code_ajax.cmd?promoCode=" + couponCode + "&delete=false&form_state=updatePromoCodeForm&removePromoCode=", false);
+		// bebehttp.send();
+
+		var bebeCouponApi = CurrHref.split("?")[0];
+
+		var authenticateToken = document.getElementsByName("authenticity_token")[0].value;
+
+		var params = "_method=patch&authenticity_token="+authenticateToken+"&step=contact_information&checkout%5Breduction_code%5D="+couponCode+"&checkout%5Bclient_details%5D%5Bbrowser_width%5D=1349&checkout%5Bclient_details%5D%5Bbrowser_height%5D=667&checkout%5Bclient_details%5D%5Bjavascript_enabled%5D=1&checkout%5Bclient_details%5D%5Bcolor_depth%5D=24&checkout%5Bclient_details%5D%5Bjava_enabled%5D=false&checkout%5Bclient_details%5D%5Bbrowser_tz%5D=-330";
+
 		var bebehttp = new XMLHttpRequest();
 		bebehttp.onreadystatechange = function () {
-			if (this.readyState == 4 && this.status == 200) {
-				try {
-					var bebeObj = JSON.parse(this.responseText);
-					var msg = bebeObj.applied;
-					if (msg == "true") {
-						finalCode = couponCode;
-						bebeCoupArr.push(finalCode);
-						var bebeshttp = new XMLHttpRequest();
-						bebeshttp.onreadystatechange = function () {
-							if (this.readyState == 4 && this.status == 200) {
-								try {
-									var parser = new DOMParser();
-									var doc = parser.parseFromString(this.responseText, "text/html");
-									var savingsStr = doc.getElementById("GRAND_ORDERS_DISCOUNT_TOTAL-value").innerText.split('-')[1].replace(/[$,]/g, '');
-									var totalSaving = Number(savingsStr);
-									bebeDiscArr.push(totalSaving);
-								} catch (e) {
-									Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-								}
-							}
-						};
-						bebeshttp.open("GET", "https://www.bebe.com/checkout/basket.jsp", false);
-						bebeshttp.send();
-					}
-				} catch (e) {
-					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
-				}
-			}
+			if (this.readyState == 4 && this.status == 200) {}
 		};
-		bebehttp.open("GET", "https://www.bebe.com/checkout/update_promo_code_ajax.cmd?promoCode=" + couponCode + "&delete=false&form_state=updatePromoCodeForm&removePromoCode=", false);
-		bebehttp.send();
+		bebehttp.open("POST", bebeCouponApi, false);
+		bebehttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+		bebehttp.send(params);
 	}
-	if (CurrHref.indexOf("www.brookstone.com") > -1) {
+	
+	if (CurrHref.indexOf("brookstone.com") > -1) {
 		try {
-			var brookCouponApi = document.getElementById('cart-items-form').action;
-			if (!couponCode.includes("SHIP")) {
-				var params = "dwfrm_cart_couponCode=" + couponCode + "&dwfrm_cart_addCoupon=dwfrm_cart_addCoupon";
-				var brookhttp = new XMLHttpRequest();
-				brookhttp.onreadystatechange = function () {
-					if (this.readyState == 4 && this.status == 200) {
-						try {
-							var parser = new DOMParser();
-							var doc = parser.parseFromString(this.responseText, "text/html");
-							var x = doc.getElementsByClassName("order-totals-row order-discount discount")[0];
-							if (x) {
-								var discountPrice = x.getElementsByTagName("span")[1].innerText.split('-')[1];
-								discountPrice = discountPrice.replace("$", "");
-								discountPrice = discountPrice.replace(",", "");
-								totalSavings = Number(discountPrice);
-								if (!isNaN(totalSavings)) {
-									brookCoupArr.push(couponCode);
-									brookDiscArr.push(totalSavings);
-								}
-							} else {
-								var paramss = "dwfrm_cart_couponCode=&dwfrm_cart_coupons_i0_deleteCoupon=Remove";
-								var brookshttp = new XMLHttpRequest();
-								brookshttp.onreadystatechange = function () {
-									if (this.readyState == 4 && this.status == 200) {}
-								};
-								brookshttp.open("POST", brookCouponApi, false);
-								brookshttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-								brookshttp.send(paramss);
-							}
-						} catch (e) {
-							Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-						}
-					}
-				};
-				brookhttp.open("POST", brookCouponApi, false);
-				brookhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-				brookhttp.send(params);
-			}
+			// var brookCouponApi = document.getElementById('cart-items-form').action;
+			// if (!couponCode.includes("SHIP")) {
+			// 	var params = "dwfrm_cart_couponCode=" + couponCode + "&dwfrm_cart_addCoupon=dwfrm_cart_addCoupon";
+			// 	var brookhttp = new XMLHttpRequest();
+			// 	brookhttp.onreadystatechange = function () {
+			// 		if (this.readyState == 4 && this.status == 200) {
+			// 			try {
+			// 				var parser = new DOMParser();
+			// 				var doc = parser.parseFromString(this.responseText, "text/html");
+			// 				var x = doc.getElementsByClassName("order-totals-row order-discount discount")[0];
+			// 				if (x) {
+			// 					var discountPrice = x.getElementsByTagName("span")[1].innerText.split('-')[1];
+			// 					discountPrice = discountPrice.replace("$", "");
+			// 					discountPrice = discountPrice.replace(",", "");
+			// 					totalSavings = Number(discountPrice);
+			// 					if (!isNaN(totalSavings)) {
+			// 						brookCoupArr.push(couponCode);
+			// 						brookDiscArr.push(totalSavings);
+			// 					}
+			// 				} else {
+			// 					var paramss = "dwfrm_cart_couponCode=&dwfrm_cart_coupons_i0_deleteCoupon=Remove";
+			// 					var brookshttp = new XMLHttpRequest();
+			// 					brookshttp.onreadystatechange = function () {
+			// 						if (this.readyState == 4 && this.status == 200) {}
+			// 					};
+			// 					brookshttp.open("POST", brookCouponApi, false);
+			// 					brookshttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+			// 					brookshttp.send(paramss);
+			// 				}
+			// 			} catch (e) {
+			// 				Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+			// 			}
+			// 		}
+			// 	};
+			// 	brookhttp.open("POST", brookCouponApi, false);
+			// 	brookhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+			// 	brookhttp.send(params);
+			//}
+
+			/////////////////// brookstone.com ////////////////
+	if (CurrHref.indexOf("brookstone.com") > -1) {
+		try {
+			// var brookCouponApi = document.getElementById('cart-items-form').action;
+			// if (!couponCode.includes("SHIP")) {
+			// 	var params = "dwfrm_cart_couponCode=" + couponCode + "&dwfrm_cart_addCoupon=dwfrm_cart_addCoupon";
+			// 	var brookhttp = new XMLHttpRequest();
+			// 	brookhttp.onreadystatechange = function () {
+			// 		if (this.readyState == 4 && this.status == 200) {
+			// 			try {
+			// 				var parser = new DOMParser();
+			// 				var doc = parser.parseFromString(this.responseText, "text/html");
+			// 				var x = doc.getElementsByClassName("order-totals-row order-discount discount")[0];
+			// 				if (x) {
+			// 					var discountPrice = x.getElementsByTagName("span")[1].innerText.split('-')[1];
+			// 					discountPrice = discountPrice.replace("$", "");
+			// 					discountPrice = discountPrice.replace(",", "");
+			// 					totalSavings = Number(discountPrice);
+			// 					if (!isNaN(totalSavings)) {
+			// 						brookCoupArr.push(couponCode);
+			// 						brookDiscArr.push(totalSavings);
+			// 					}
+			// 				} else {
+			// 					var paramss = "dwfrm_cart_couponCode=&dwfrm_cart_coupons_i0_deleteCoupon=Remove";
+			// 					var brookshttp = new XMLHttpRequest();
+			// 					brookshttp.onreadystatechange = function () {
+			// 						if (this.readyState == 4 && this.status == 200) {}
+			// 					};
+			// 					brookshttp.open("POST", brookCouponApi, false);
+			// 					brookshttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+			// 					brookshttp.send(paramss);
+			// 				}
+			// 			} catch (e) {
+			// 				Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+			// 			}
+			// 		}
+			// 	};
+			// 	brookhttp.open("POST", brookCouponApi, false);
+			// 	brookhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+			// 	brookhttp.send(params);
+			// }
+
+		var brookCouponApi = CurrHref.split("?")[0];
+
+		var authenticateToken = document.getElementsByName("authenticity_token")[0].value;
+
+		var params = "_method=patch&authenticity_token="+authenticateToken+"&step=contact_information&checkout%5Breduction_code%5D="+couponCode+"&checkout%5Bclient_details%5D%5Bbrowser_width%5D=1349&checkout%5Bclient_details%5D%5Bbrowser_height%5D=667&checkout%5Bclient_details%5D%5Bjavascript_enabled%5D=1&checkout%5Bclient_details%5D%5Bcolor_depth%5D=24&checkout%5Bclient_details%5D%5Bjava_enabled%5D=false&checkout%5Bclient_details%5D%5Bbrowser_tz%5D=-330";
+
+		var brookhttp = new XMLHttpRequest();
+		brookhttp.onreadystatechange = function () {
+			if (this.readyState == 4 && this.status == 200) {}
+		};
+		brookhttp.open("POST", brookCouponApi, false);
+		brookhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+		brookhttp.send(params);
+
 		} catch (e) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.newbalance.com") > -1) {
+		} catch (e) {
+			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+		}
+	}
+	if (CurrHref.indexOf("newbalance.com") > -1) {
 		try {
-			var oldValue = document.getElementsByClassName('total-value')[0].innerText.replace(/[-$,]/g, '');
-			oldValue = Number(oldValue);
-			var newbalhttp = new XMLHttpRequest();
-			newbalhttp.onreadystatechange = function () {
+			var csrfToken = document.getElementsByName("csrf_token")[0].value;
+
+			var newbalanceCouponCodeApi = newbalanceCouponApi + "csrf_token="+csrfToken+"&couponCode=" + couponCode;
+
+			var newbalancehttp = new XMLHttpRequest();
+			newbalancehttp.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
-					var newbalObj = JSON.parse(this.responseText);
-					var condition1 = newbalObj.redemptionErrorMsg;
-					if (!condition1) {
-						var condition2 = newbalObj.redemption.applied;
-						if (condition2 == true) {
-							var newbalhttp2 = new XMLHttpRequest();
-							newbalhttp2.onreadystatechange = function () {
-								if (this.readyState == 4) {
-									try {
-										var parser = new DOMParser();
-										var doc = parser.parseFromString(this.responseText, "text/html");
-										var applycondition = doc.getElementsByClassName('product-line price-adjustments compact  promo')[0];
-										if (applycondition != undefined) {
-											let code = newbalObj.redemption.couponCode;
-											newbalanceCoupArr.push(code);
-											var newValue = doc.getElementsByClassName('total-value')[4].innerText.replace(/[-$,]/g, '');
-											newValue = Number(newValue);
-											let saving = oldValue - newValue;
-											newbalanceDiscArr.push(saving);
-										}
-									} catch (e) {
-										Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-									}
-								}
-							};
-							newbalhttp2.open("GET", CurrHref, false);
-							newbalhttp2.send();
-						}
-						var newbalhttp3 = new XMLHttpRequest();
-						newbalhttp3.onreadystatechange = function () {
-							if (this.readyState == 4 && this.status == 200) {}
+					try {
+						var newbalanceObj = JSON.parse(this.responseText);
+					//	console.log(newbalanceObj);
+						if(!newbalanceObj.error){
+							var newbalanceDiscount = newbalanceObj.totals.orderLevelDiscountTotal.value;
+							newbalanceDiscArr.push(newbalanceDiscount);
+							newbalanceCoupArr.push(couponCode);
+
+							var uuid = newbalanceObj.totals.discounts[0].UUID;
+							var newbalanceCodeRemoveApi = newbalanceRemApi + "code="+couponCode+"&uuid=" + uuid;
+
+							var newbalanceRemhttp = new XMLHttpRequest();
+							newbalanceRemhttp.onreadystatechange = function () {
+							if (this.readyState == 4 && this.status == 200) {
+							}
 						};
-						newbalhttp3.open("POST", newbalanceRemApi + couponCode, false);
-						newbalhttp3.send();
+						newbalanceRemhttp.open("GET", newbalanceCodeRemoveApi, false);
+						newbalanceRemhttp.send();
+					 }
+					} catch (e) {
+						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
 					}
 				}
 			};
-			newbalhttp.open("GET", newbalanceCouponApi + couponCode, false);
-			newbalhttp.send();
+			newbalancehttp.open("GET", newbalanceCouponCodeApi, false);
+			newbalancehttp.send();
 		} catch (e) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.dollargeneral.com") > -1) {
+	
+	/////////////////// dollargeneral.com ////////////////
+	if (CurrHref.indexOf("dollargeneral.com") > -1) {
+
+		var form_key = document.getElementsByName("form_key")[0].value;
+
+		var params = "form_key="+form_key+"&coupon_code_fake="+couponCode+"&coupon_code="+couponCode+"&last_code="+couponCode+"&remove_coupon=&form_key="+form_key;
+
 		var dollarhttp = new XMLHttpRequest();
 		dollarhttp.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
-				var dollarhttp = new XMLHttpRequest();
-				dollarhttp.onreadystatechange = function () {
-					if (this.readyState == 4 && this.status == 200) {
-						try {
-							var dollarObj = JSON.parse(this.responseText);
-							totalSavings = dollarObj.discount_amount;
-							totalSavings = totalSavings.toString().replace('-', '');
-							totalSavings = Number(totalSavings);
-							var couponCodes = dollarObj.coupon_code;
-							if (couponCodes) {
-								dollarCoupArr.push(couponCodes);
-								dollarDiscArr.push(totalSavings);
-							}
-						} catch (e) {
-							Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
-						}
-					}
-				};
-				dollarhttp.open("GET", dollarWalletApi, false);
-				dollarhttp.setRequestHeader("Content-type", "application/json; charset=utf-8");
-				dollarhttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-				dollarhttp.send();
+				// var dollarObj = JSON.parse(this.responseText);
+				// console.log(dollarObj);
+
+				// var dollarhttp = new XMLHttpRequest();
+				// dollarhttp.onreadystatechange = function () {
+				// 	if (this.readyState == 4 && this.status == 200) {
+				// 		try {
+				// 			var dollarObj = JSON.parse(this.responseText);
+				// 			totalSavings = dollarObj.discount_amount;
+				// 			totalSavings = totalSavings.toString().replace('-', '');
+				// 			totalSavings = Number(totalSavings);
+				// 			var couponCodes = dollarObj.coupon_code;
+				// 			if (couponCodes) {
+				// 				dollarCoupArr.push(couponCodes);
+				// 				dollarDiscArr.push(totalSavings);
+				// 			}
+				// 		} catch (e) {
+				// 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
+				// 		}
+				// 	}
+				// };
+				// dollarhttp.open("GET", dollarWalletApi, false);
+				// dollarhttp.setRequestHeader("Content-type", "application/json; charset=utf-8");
+				// dollarhttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+				// dollarhttp.send();
 			}
 		};
-		dollarhttp.open("PUT", dollarCouponApi + couponCode, false);
-		dollarhttp.setRequestHeader("Content-type", "application/json; charset=utf-8");
+		dollarhttp.open("POST", dollarCouponApi, false);
+		dollarhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
 		dollarhttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-		dollarhttp.send();
+		dollarhttp.send(params);
 	}
+	
 	if (CurrHref.indexOf("secure.bluenile.com") > -1) {
 		try {
 			document.getElementsByClassName('promo-code-input')[0].getElementsByTagName('input')[0].value = couponCode;
@@ -2602,10 +2857,28 @@ function applyCodes(couponCode) {
 		fromyouhttp.setRequestHeader("Accept", "*/*");
 		fromyouhttp.send(params);
 	}
-	if (CurrHref.indexOf("www.davidsbridal.com") > -1) {
+
+	if (CurrHref.indexOf("davidsbridal.com") > -1) {
 		try {
-			document.getElementById("promoCode").value = couponCode;
-			document.getElementById("WC_PromotionCodeDisplay_links_1").click();
+			var orderId = document.getElementsByName("orderId")[0].value;
+			var storeId = document.getElementsByName("storeId")[0].value;
+			var catalogId = document.getElementsByName("catalogId")[0].value;
+			var langId = document.getElementsByName("langId")[0].value;
+			var authToken = document.getElementsByName("authToken")[0].value;
+			var taskType = document.getElementsByName("taskType")[0].value;
+
+			var params = "orderId="+orderId+"&taskType="+taskType+"&URL=&storeId="+storeId+"&catalogId="+catalogId+"&langId="+langId+"&finalView=AjaxOrderItemDisplayView&authToken="+authToken+"&promoCode="+couponCode+"&requesttype=ajax";
+
+			var davidshttp = new XMLHttpRequest();
+			davidshttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					// var davidsObj = JSON.parse(this.responseText);
+					// console.log(davidsObj);	
+				}
+			};
+			davidshttp.open("POST", davidsCouponApi, false);
+			davidshttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			davidshttp.send(params);
 		} catch (e) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
@@ -2618,54 +2891,74 @@ function applyCodes(couponCode) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.eddiebauer.com") > -1) {
+	
+	if (CurrHref.indexOf("eddiebauer.com") > -1) {
 		try {
-			var dynamicSesion = document.getElementsByName("_dynSessConf")[0];
-			var params = "_dyncharset=UTF-8&_dynSessConf=" + dynamicSesion + "&%2Fatg%2Fcommerce%2Fpromotion%2FCouponFormHandler.couponClaimCode=" + couponCode + "&_D%3A%2Fatg%2Fcommerce%2Fpromotion%2FCouponFormHandler.couponClaimCode=+&beanName=%2Fatg%2Fcommerce%2Fpromotion%2FCouponFormHandler&claimCoupon=true&_D%3AclaimCoupon=+&couponCancelCard=false&_D%3AcouponCancelCard=+&_DARGS=%2Fcheckout%2Fgadgets%2Fapply-promotion-code-accordion.jsp.apply-promo-code";
+			var accessToken = localStorage.getItem("x-access-token").replace(/['"]+/g, '');
+
+			var params = '{"operationName":"applyPromo","variables":{"promoCode":"'+couponCode+'","customerLoyaltyId":null,"customerLoyaltyTier":null},"query":"mutation applyPromo($promoCode: String, $customerLoyaltyId: String, $customerLoyaltyTier: String) {  applyPromo(promoCode: $promoCode, customerLoyaltyId: $customerLoyaltyId, customerLoyaltyTier: $customerLoyaltyTier) {    ...CartFragment    __typename  }}fragment CartItemDetailsFragment on CartItemDetails {  code  title  image  variants {    label    name    value    __typename  }  hemming {    label    name    value    __typename  }  productCode  productGroups  attributes  isNew  __typename}fragment AddressFragment on Address {  id  firstName  lastName  address1  address2  zipCode  city  state  region  country  phone  email  kind  isDefaultShipTo  isDefaultBillTo  __typename}fragment ShippingAddressFragment on ShippingAddress {  id  firstName  lastName  address1  address2  zipCode  city  state  region  country  phone  email  kind  isDefaultShipTo  isVerified  additionalPickupPerson {    name    email    __typename  }  __typename}fragment CartFragment on Cart {  id  orderId  userId  shippingMethod {    id    minDays    maxDays    name    price {      amount      currency      __typename    }    __typename  }  tax  cartDiscount  discounts {    id    type    code    amount    balance    __typename  }  shippingAddress {    ...ShippingAddressFragment    __typename  }  billingAddress {    ...AddressFragment    __typename  }  subTotalAmount {    currency    amount    __typename  }  cartItemCount  items {    id    isGiftBox    giftBox    quantity    availableQuantity    shipsBy    extra    delivery {      mode      storeCode      __typename    }    price {      list {        currency        amount        kind        __typename      }      final {        currency        amount        kind        __typename      }      discount      __typename    }    totalPrice {      currency      amount      kind      __typename    }    discountDetails    eligibility {      isGiftboxable      __typename    }    item {      ...CartItemDetailsFragment      __typename    }    promoMessage    __typename  }  donations {    id    extra    quantity    price {      list {        currency        amount        kind        __typename      }      final {        currency        amount        kind        __typename      }      discount      __typename    }    totalPrice {      currency      amount      kind      __typename    }    item {      ...CartItemDetailsFragment      __typename    }    __typename  }  errors {    errorFor    message    __typename  }  extra  hasFreeShipping  shippingDiscount {    amount    displayName    __typename  }  __typename}"}';
+
 			var eddihttp = new XMLHttpRequest();
 			eddihttp.onreadystatechange = function () {
-				if (this.readyState == 4 && this.status == 200) {}
+				if (this.readyState == 4 && this.status == 200) {
+					var eddiebauerObj = JSON.parse(this.responseText);
+					if(eddiebauerObj.data.applyPromo){
+						var savings = eddiebauerObj.data.applyPromo.cartDiscount.totalCartDiscount;
+						var coupon_code = eddiebauerObj.data.applyPromo.cartDiscount.couponCode;
+						eddiebauerCoupArr.push(coupon_code);
+						eddiebauerDiscArr.push(savings);
+					}
+				}
 			};
 			eddihttp.open("POST", eddieCouponApi, false);
-			eddihttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-			eddihttp.setRequestHeader("Accept", "application/json, text/javascript, */*; q=0.01");
-			eddihttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+			eddihttp.setRequestHeader("Content-type", "application/json");
+			eddihttp.setRequestHeader("x-access-token", accessToken);
 			eddihttp.send(params);
 		} catch (e) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.toms.com") > -1) {
+
+	/////////////////// toms.com ////////////////
+	if (CurrHref.indexOf("toms.com") > -1) {
 		try {
-			var session = document.getElementsByName('_dynSessConf')[0].value;
-			var params = "_dyncharset=UTF-8&_dynSessConf=" + session + "&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.couponCode=" + couponCode + "&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.couponCode=+&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.stage=shippingMethod&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.stage=+&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.multiStage=&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.multiStage=+&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.claimCoupon=+&_DARGS=%2Fcheckout%2Fcommon%2FcheckoutPromoCode.jsp.couponForm2&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.claimCoupon=Apply";
+			var csrfToken = document.getElementsByName('csrf_token')[0].value;
+			var params = "couponCode="+couponCode+"&isfrombilling=true&csrf_token="+csrfToken;
+
 			var tomshttp = new XMLHttpRequest();
 			tomshttp.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
 					try {
-						var parser = new DOMParser();
-						var doc = parser.parseFromString(this.responseText, "text/html");
-						var total = doc.getElementsByClassName('ln-amt')[2];
-						var condition = doc.getElementsByClassName("ln-item")[2];
-						if (condition.innerText == "Discount") {
-							var money = Number(total.innerText.split("$")[1]);
-							tomspriceArr.push(money);
-							finalCode = couponCode;
-							tomsCoupArr.push(finalCode);
-						}
+						var tomsObj = JSON.parse(this.responseText);
+						if(!tomsObj.error){
+							
+							var tomsDiscount =	tomsObj.totals.orderLevelDiscountTotal.value;
+							tomsDiscArr.push(tomsDiscount);
+							tomsCoupArr.push(couponCode);
+	
+							var uuid = tomsObj.totals.discounts[0].UUID;
+							var tomsCodeRemoveApi = tomsRemCouponApi + "code="+couponCode+"&uuid=" + uuid;
+	
+							var tomsRemhttp = new XMLHttpRequest();
+							tomsRemhttp.onreadystatechange = function () {
+							if (this.readyState == 4 && this.status == 200) {
+								}
+							};
+							tomsRemhttp.open("GET", tomsCodeRemoveApi, false);
+							tomsRemhttp.send();
+						}	
 					} catch (e) {
 						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 					}
 				}
 			};
-			tomshttp.open("POST", tomsCouponApi, false);
-			tomshttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-			tomshttp.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
-			tomshttp.send(params);
+			tomshttp.open("GET", tomsCouponApi + params, false);
+			tomshttp.send();
 		} catch (e) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+
 	if (CurrHref.indexOf("www.younkers.com") > -1) {
 		try {
 			document.getElementById("promoCode").value = couponCode;
@@ -2748,43 +3041,95 @@ function applyCodes(couponCode) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+
+	/////////////////// harryanddavid.com ////////////////
 	if (CurrHref.indexOf("harryanddavid.com") > -1) {
 		try {
-			var OrderId = document.getElementById('currentOrderId').value;
-			var params = "PiId=&storeccno=&storeccname=&ccExpMonth=&ccExpYear=&plccstoreccno=%2F&plccstoreccname=%2F&chkFlw=Y&selectedType=promotion&storeId=21051&langId=-1&orderId=" + OrderId + "&catalogId=16802&taskType=A&existingPromoCode=&existingCouponId=&existingCouponBalance=&addGiftRewardFlag=&appliedPromoCode=" + couponCode + "&currentPayment=creditcard&isPromoValid=true&previousPayment=&removeExistingPromo=&excludedPromoCode=&promoZipCodeID=&PaymentTypePromotion=PaymentTypePromotionCallBack%3FlangId%3D-1%26storeId%3D21051%26catalogId%3D16802%26orderId%3D" + OrderId + "&PaymentTypePromotionCmd=PaymentTypePromotion%3FlangId%3D-1%26storeId%3D21051%26catalogId%3D16802%26orderId%3D" + OrderId + "&RemovePromotionView=RemovePromotionView%3FlangId%3D-1%26storeId%3D21051%26catalogId%3D16802%26orderId%3D" + OrderId + "&PlaceOrderDisplayCmdURL=FDPlaceOrderDisplayCmd%3FlangId%3D-1%26storeId%3D21051%26catalogId%3D16802&AskSuggestionPromotionView=AskSuggestionPromotionView%3FlangId%3D-1%26storeId%3D21051%26catalogId%3D16802%26orderId%3D" + OrderId + "&AddOrRemovePromotionOrEGCView=AddOrRemovePromotionOrEGCView%3FlangId%3D-1%26storeId%3D21051%26catalogId%3D16802%26orderId%3D" + OrderId + "&promoCode=" + couponCode + "&membershipPromo=";
+			var userInfo = localStorage.getItem("userInfo");
+			var userInfoObj = JSON.parse(userInfo);
+			var authToken = userInfoObj.token;
+
+			var params = '{"orderId":"'+harryOrderId+'","promotionCode":"'+couponCode+'","membershipId":"","existingPromotionCode":"","promotionZipCode":"","currentPayment":"CreditCard"}';
+
 			var harryhttp = new XMLHttpRequest();
 			harryhttp.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
 					try {
-						var parser = new DOMParser();
-						var doc = parser.parseFromString(this.responseText, "text/html");
-						var appliedCode = doc.getElementsByClassName('appliedPromoDetails')[0].innerText.split(" ")[2];
-						var appliedDis = doc.getElementsByClassName('BP-PaddingSpace BP-col2')[1].innerText.split("-")[1].replace(/[$,]/g, '');
-						var appliedDisNumber = Number(appliedDis);
-						if (couponCode == appliedCode) {
-							harryCoupArr.push(couponCode);
-							harryDisArr.push(appliedDisNumber);
-						}
+						var harryObj = JSON.parse(this.responseText);
+					    // console.log(harryObj);
+						if(harryObj.successFlag == true){
+				
+							var harryhttp1 = new XMLHttpRequest();
+							harryhttp1.onreadystatechange = function () {
+								if (this.readyState == 4 && this.status == 200) {
+									var harryObj1 = JSON.parse(this.responseText);
+									var savings = Number(harryObj1.orderDetails.fdOrderVO.appliedPromos[0].appliedAmount.replace(/[-$,]/g, ''));
+									var couponCode =  harryObj1.orderDetails.fdOrderVO.appliedPromos[0].code;
+									if(savings > 0){
+										harryCoupArr.push(couponCode);
+										harryDisArr.push(savings);
+									}
+								}
+							};
+							harryhttp1.open("GET", harryInfoApi, false);
+							harryhttp1.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+							harryhttp1.setRequestHeader("authorization", authToken);
+							harryhttp1.send();
+						 }
 					} catch (e) {
-						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 					}
 				}
 			};
 			harryhttp.open("POST", harryCouponApi, false);
-			harryhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+			harryhttp.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+			harryhttp.setRequestHeader("authorization", authToken);
 			harryhttp.send(params);
 		} catch (e) {
-			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
 		}
 	}
-	if (CurrHref.indexOf("columbia.com") > -1) {
-		try {
-			document.getElementById("couponCode").value = couponCode;
-			document.getElementsByClassName("btn btn-primary btn-narrow promo-code-btn")[0].click();
-		} catch (e) {
-			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-		}
+	
+
+/////////////////// columbia.com ////////////////
+if (CurrHref.indexOf("columbia.com") > -1) {
+	try {
+		var csrfToken = document.getElementsByName("csrf_token")[0].value;
+		var columbiaCouponCodeApi = columbiaCouponApi + "csrf_token="+csrfToken+"&couponCode=" + couponCode;
+
+		var columbiahttp = new XMLHttpRequest();
+		columbiahttp.onreadystatechange = function () {
+			if (this.readyState == 4 && this.status == 200) {
+				try {
+					var columbiaObj = JSON.parse(this.responseText);
+				// console.log(columbiaObj);
+					if(!columbiaObj.error){
+						var columbiaDiscount =	columbiaObj.totals.orderLevelDiscountTotal.value;
+						columbiaDiscArr.push(columbiaDiscount);
+						columbiaCoupArr.push(couponCode);
+
+						var uuid = columbiaObj.totals.discounts[0].UUID;
+						var columbiaCodeRemoveApi = columbiaRemCouponApi + "code="+couponCode+"&uuid=" + uuid;
+
+						var columbiaRemhttp = new XMLHttpRequest();
+						columbiaRemhttp.onreadystatechange = function () {
+						if (this.readyState == 4 && this.status == 200) {
+						}
+					};
+					columbiaRemhttp.open("GET", columbiaCodeRemoveApi, false);
+					columbiaRemhttp.send();
+				 }
+				} catch (e) {
+					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
+				}
+			}
+		};
+		columbiahttp.open("GET", columbiaCouponCodeApi, false);
+		columbiahttp.send();
+	} catch (e) {
+		Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 	}
+}
 
 	if (CurrHref.indexOf("www.torrid.com") > -1) {
 		try {
@@ -2843,45 +3188,40 @@ function applyCodes(couponCode) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+
+	/////////////////// avenue.com ////////////////
 	if (CurrHref.indexOf("avenue.com") > -1) {
 		try {
-			var session = "";
-			var sessionClass = document.getElementsByClassName('cart-action-continue-shopping')[0];
-			if (sessionClass) {
-				session = "?dwcont=" + sessionClass.action.split('=')[1];
-			}
-			var params = "dwfrm_cart_updateCart=dwfrm_cart_updateCart&dwfrm_cart_couponCode=" + couponCode + "&dwfrm_cart_addCoupon=Apply";
+			var formKey = document.getElementsByName('form_key')[0].value;
+			var params = "remove=0&coupon_code="+couponCode+"&form_key="+formKey;
+
 			var avenuehttp = new XMLHttpRequest();
 			avenuehttp.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
-					var parser = new DOMParser();
-					var doc = parser.parseFromString(this.responseText, "text/html");
-					var finalCodeClass = doc.getElementsByClassName('coupon-discount-success clearfix')[0];
-					if (finalCodeClass) {
-						finalCode = finalCodeClass.innerText.split('APPLIED')[0];
-						avenueCoupArr.push(finalCode);
-						var totalSave = doc.getElementsByClassName("order-discount discount")[0].getElementsByTagName('ins')[0].innerText.replace(/[-$,]/g, '');
-						totalSavings = Number(totalSave);
-						avenueDiscArr.push(totalSavings);
-					}
-					var params2 = "dwfrm_cart_coupons_i0_deleteCoupon=Remove";
+
 					var avenue2http = new XMLHttpRequest();
 					avenue2http.onreadystatechange = function () {
-						if (this.readyState == 4 && this.status == 200) {}
+						if (this.readyState == 4 && this.status == 200) {
+							var parser = new DOMParser();
+				        	var doc = parser.parseFromString(this.responseText, "text/html");
+							if(doc.getElementsByClassName("action cancel primary")[0]){
+								avenueCoupArr.push(couponCode);
+							}
+						}
 					};
-					avenue2http.open("POST", avenueCouponApi + session + "", false);
+					avenue2http.open("GET", CurrHref, false);
 					avenue2http.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-					avenue2http.send(params2);
+					avenue2http.send();
+
 				}
 			};
-			avenuehttp.open("POST", avenueCouponApi + session + "", false);
+			avenuehttp.open("POST", avenueCouponApi, false);
 			avenuehttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
 			avenuehttp.send(params);
 		} catch (e) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	
 	
 	/////////////////// crocs.com ////////////////
 	if (CurrHref.indexOf("crocs.com") > -1) {
@@ -2912,23 +3252,23 @@ function applyCodes(couponCode) {
 		}
 	}
 	
-	if (CurrHref.indexOf("www.quill.com") > -1) {
+	if (CurrHref.indexOf("quill.com") > -1) {
 		try {
 			document.getElementById('CouponInput').value = couponCode;
-			document.getElementsByClassName('applyBtn button scTrack cta couponStackableBtn')[0].click();
+			document.getElementsByName('CouponApplyButton')[0].click();
 			setTimeout(function () {
 				if (document.getElementsByClassName("clear savingPriceColor")[0]) {
-					totalSavings = document.getElementsByClassName("clear savingPriceColor")[0].innerText.replace("You Saved: $", "");
+					totalSavings = document.getElementsByClassName("clear savingPriceColor")[0].innerText.replace("You Saved:\n$", "");
 					totalSavings = Number(totalSavings);
 					if (totalSavings) {
 						quillDiscArr.push(totalSavings);
 						quillCoupArr.push(couponCode);
 					}
 				}
-				if(document.getElementsByClassName("removeLnkCouponStackble scTrack")[1])
-				{
-				  document.getElementsByClassName("removeLnkCouponStackble scTrack")[1].click();
-				}
+				// if(document.getElementsByClassName("removeLnkCouponStackble scTrack")[1])
+				// {
+				//   document.getElementsByClassName("removeLnkCouponStackble scTrack")[1].click();
+				// }
 			}, 4000)
 		} catch (e) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
@@ -2965,15 +3305,32 @@ function applyCodes(couponCode) {
 		}
 	}
 
-	if (CurrHref.indexOf("bloomingdales.com") > -1) {
-		try {
-			document.getElementById("promo-apply-button").disabled = false;
-			document.getElementById('promo-apply-input').value = couponCode;
-			document.getElementById('promo-apply-button').click();
-		} catch (e) {
-			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+/////////////////// bloomingdales.com ////////////////
+if (CurrHref.indexOf("bloomingdales.com") > -1) {
+	try {
+		if(document.getElementById("cx-at-GRAND_TOTAL-value")){
+			var grandTotal = Number(document.getElementById("cx-at-GRAND_TOTAL-value").innerText.replace(/[-$,]/g, ''));
 		}
+	  
+		var bloominghttp = new XMLHttpRequest();
+		bloominghttp.onreadystatechange = function () {
+			if (this.readyState == 4 && this.status == 200) {
+				var bloomingObj = JSON.parse(this.responseText);
+				var cartTotal = bloomingObj.bag.sections.summary.price[3].values[0].value;
+				if(grandTotal != cartTotal){
+					var totalSavings = grandTotal - cartTotal ; 
+					bloomingDiscArr.push(totalSavings);
+					bloomingCoupArr.push(couponCode);
+				}
+			}
+		};
+		bloominghttp.open("PUT", bloomingCouponApi + couponCode, false);
+		bloominghttp.send();
+	} catch (e) {
+		Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 	}
+}
+
 	if (CurrHref.indexOf("store.hp.com") > -1) {
 		try {
 			var cartTotal = document.getElementById('cartSubtotal');
@@ -3050,21 +3407,49 @@ function applyCodes(couponCode) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.reebok.com") > -1) {
-		var params = "dwfrm_cart_couponCode=" + couponCode + "&referer=Cart-Show&dwfrm_cart_addCoupon=dwfrm_cart_addCoupon";
+
+	/////////////////// reebok.com ////////////////
+	if (CurrHref.indexOf("reebok.com") > -1) {
+		try {
+			var authorizationToken = localStorage.getItem("jwtToken");
+
+		var params = '{"couponCode":"'+couponCode+'"}';
 		var reebokhttp = new XMLHttpRequest();
 		reebokhttp.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
-				try {}
-				catch (e) {
+				try {
+					var totalResponseObj = JSON.parse(this.responseText);
+					var couponId = totalResponseObj.couponList[0].id;
+					var grandTotal = totalResponseObj.pricing.baseTotal;
+					var cartTotal = totalResponseObj.pricing.total;
+					if(grandTotal != cartTotal){
+						var savings = grandTotal - cartTotal;
+						reebokDiscArr.push(savings);
+						reebokCoupArr.push(couponCode);
+					}
+						var reebokRhttp = new XMLHttpRequest();
+						reebokRhttp.onreadystatechange = function () {
+						if (this.readyState == 4 && this.status == 200) {
+						}
+						};
+						reebokRhttp.open("DELETE", reebokRemoveApi + couponId + "?sitePath=us", false);
+						reebokRhttp.setRequestHeader("Content-type", "application/json");
+						reebokRhttp.setRequestHeader("checkout-authorization", authorizationToken);
+						reebokRhttp.send();
+				} catch (e) {
 					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 				}
 			}
 		};
 		reebokhttp.open("POST", reebokCouponApi, false);
-		reebokhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		reebokhttp.setRequestHeader("Content-type", "application/json");
+		reebokhttp.setRequestHeader("checkout-authorization", authorizationToken);	
 		reebokhttp.send(params);
+	} catch (e) {
+			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+		}
 	}
+
 	if (CurrHref.indexOf("www.ralphlauren.com") > -1) {
 		try {
 			document.getElementById("add-coupon").disabled = false;
@@ -3082,7 +3467,7 @@ function applyCodes(couponCode) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.dermstore.com") > -1) {
+	if (CurrHref.indexOf("dermstore.com") > -1) {
 		var params = "promo=" + couponCode + "";
 		var dermhttp = new XMLHttpRequest();
 		dermhttp.onreadystatechange = function () {
@@ -3142,26 +3527,37 @@ function applyCodes(couponCode) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.jcrew.com") > -1) {
-		var params = "bmForm=frm_shopping_cart_continue&bmFormID=mdbZclM%2F1634f16f9c0&bmUID=mdbZclN&bmIsForm=true&bmPrevTemplate=%2Fcheckout2%2Fshoppingbag.jsp&bmEditable=bmAction&bmArch=bmAction&bmAction=add_promo_code&bmEditable=bmSubmit&bmArch=bmSubmit&bmSubmit=add_promo_code&bmEditable=isPayPalExpress&bmHidden=isPayPalExpress&isPayPalExpress=&bmEditable=continueFromBag&bmHidden=continueFromBag&continueFromBag=&bmEditable=continueFromBagProductIDs&bmHidden=continueFromBagProductIDs&continueFromBagProductIDs=&bmEditable=checkoutVersion&bmHidden=checkoutVersion&checkoutVersion=2&bmEditable=isMasterPassExpress&bmHidden=isMasterPassExpress&isMasterPassExpress=&bmSingle=temp_quantity&temp_quantity=4&bmSingle=temp_quantity&temp_quantity=3&bmEditable=jc_country&bmHidden=jc_country&jc_country=US&bmText=GENERIC%3C%3Etax_postal&GENERIC%3C%3Etax_postal=&bmText=promotionCode1&promotionCode1=" + couponCode + "&bmEditable=delete_card_id&bmHidden=delete_card_id&delete_card_id=&bmText=ACCOUNT%3C%3EaccountNumber&ACCOUNT%3C%3EaccountNumber=&bmText=ACCOUNT%3C%3EpinNumber&ACCOUNT%3C%3EpinNumber=&bmFields=bmText%2CbmEditable%2CbmPrevTemplate%2CbmForm%2CbmIsForm%2CbmUID%2CbmHidden%2CbmArch%2CbmFormID%2CbmSingle&bmHash=352594f4f23c56be0af03c183c6115b35db7ba5f";
-		var jcrewhttp = new XMLHttpRequest();
-		jcrewhttp.onreadystatechange = function () {
-			if (this.readyState == 4 && this.status == 200) {
-				try {
-					var parser = new DOMParser();
-					var doc = parser.parseFromString(this.responseText, "text/html");
-					var checkDis = doc.getElementsByClassName('section--first')[0];
-					if (checkDis) {
-						jcrewCoupArr.push(couponCode);
+
+	/////////////////// jcrew.com ////////////////
+	if (CurrHref.indexOf("jcrew.com") > -1) {
+		try {
+			var accessToken = localStorage.getItem("JcrewCart").replace(/['"]+/g, '');
+
+			var params = '{"operationName":"cartAddPromo","variables":{"input":{"promoCode":"'+couponCode+'"}},"query":"mutation cartAddPromo($input: PromoInput) {  cartAddPromo(input: $input) {    ...CartFragment    __typename  }}fragment CartFragment on Cart {  currency  quantity  isOnlyEGC  price {    discount    shipping    tax    subtotal    final    giftCardCharges    estimatedCharges    loyaltyDollars    totalSavings    rewardsAppliedStatus {      basketHasRewardsPaymentInstrument      basketHasGiftCardProductItem      __typename    }    __typename  }  items {    ...CartItemFragment    __typename  }  promos {    code    description    inactive    couponId    __typename  }  giftCards {    cardNumber    cardBalance    amount    balanceLeft    giftCardId    __typename  }  afterPayInstallments  gamificationPromoThreshold  __typename}fragment CartItemFragment on CartItem {  itemId  quantity  size  index  color  productCode  product {    code    sku    variant    skuCode    description {      short      __typename    }    mainImage {      url      __typename    }    price {      list      final      hasSalePrice      finalAfterPromo      __typename    }    itemPromo {      promoPrice      promoText      __typename    }    status {      allItemsOOS      code      details      backOrdered      finalSale      marketPlace      marketPlaceMessage      otherVariantsAvailable      freeGift      preOrdered      excludedFromPromo      eligibleForFreeReturn      countryRestricted      countryRestrictedMsg      __typename    }    personalization {      personalizeType      style      type      text      threadColor      usePromoPrice      monogramLocation      monogramPrice {        displayPrice        salePrice        unitPrice        totalPrice        __typename      }      __typename    }    giftCard {      giftMessage1      giftMessage2      giftCardValue      recipientEmail      recipientName      senderName      type      sentDate      __typename    }    __typename  }  __typename}"}';
+
+			var jcrewhttp = new XMLHttpRequest();
+			jcrewhttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					var jcrewObj = JSON.parse(this.responseText);
+					if(!jcrewObj.errors){
+					  var savings = jcrewObj.data.cartAddPromo.price.totalSavings;
+					  if(savings > 0){
+	                 	jcrewCoupArr.push(couponCode);
+					 	jcrewDiscArr.push(savings);
+					  }
 					}
-				} catch (e) {
-					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 				}
-			}
-		};
-		jcrewhttp.open("POST", jcrewCouponApi, false);
-		jcrewhttp.send(params);
+			};
+			jcrewhttp.open("POST", jcrewCouponApi, false);
+			jcrewhttp.setRequestHeader("Content-type", "application/json");
+			jcrewhttp.setRequestHeader("x-cart", accessToken);
+			jcrewhttp.setRequestHeader("x-brand", "jc");
+			jcrewhttp.send(params);
+		} catch (e) {
+			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+		}
 	}
+	
 	if (CurrHref.indexOf("www.bodybuilding.com") > -1) {
 		try {
 			var session = document.getElementsByName("_dynSessConf")[0].value;
@@ -3246,7 +3642,7 @@ function applyCodes(couponCode) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.victoriassecret.com") > -1) {
+	if (CurrHref.indexOf("victoriassecret.com") > -1) {
 		var params = "dataSaveType=flow&offerModel%5B0%5D.index=0&offerModel%5B0%5D.offerCode=" + couponCode + "&offerModel%5B1%5D.index=1&offerModel%5B1%5D.offerCode=&offerModel%5B2%5D.index=2&offerModel%5B2%5D.offerCode=";
 		var victohttp = new XMLHttpRequest();
 		victohttp.onreadystatechange = function () {
@@ -3296,6 +3692,7 @@ function applyCodes(couponCode) {
 		}
 	}
 	if (CurrHref.indexOf("www.pepboys.com") > -1) {
+		try{
 		var params = "promoCode=" + couponCode + "";
 		var resthttp = new XMLHttpRequest();
 		resthttp.onreadystatechange = function () {
@@ -3305,18 +3702,40 @@ function applyCodes(couponCode) {
 		resthttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 		resthttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
 		resthttp.send(params);
+	} catch (e) {
+		Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 	}
-	if (CurrHref.indexOf("www.ebags.com") > -1) {
-		var params = "SourceCode=" + couponCode;
+	}
+
+	/////////////////// ebags.com ////////////////
+	if (CurrHref.indexOf("ebags.com") > -1) {
+		try{
+		var ebagsCouponApi = document.getElementById("cart-line-items").action;
+		var csrfToken = document.getElementsByName("csrf_token")[0].value;
+
+		var params = "csrf_token="+csrfToken+"dwfrm_cart_couponCode="+couponCode+"&dwfrm_cart_addCoupon=dwfrm_cart_addCoupon&format=ajax";
+
 		var ebagshttp = new XMLHttpRequest();
 		ebagshttp.onreadystatechange = function () {
-			if (this.readyState == 4 && this.status == 200) {}
+			if (this.readyState == 4 && this.status == 200) {
+				var parser = new DOMParser();
+				var doc = parser.parseFromString(this.responseText, "text/html");
+				if(doc.getElementsByClassName("nomargincol-4 nomargincol-4-sm summary-value your-savings")[0]){
+					var savings = Number(doc.getElementsByClassName("nomargincol-4 nomargincol-4-sm summary-value your-savings")[0].innerText.replace(/[-$,]/g, ''));
+					ebagsDiscArr.push(savings);
+	                ebagsCoupArr.push(couponCode);
+				}	
+			}
 		};
 		ebagshttp.open("POST", ebagsCouponApi, false);
 		ebagshttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 		ebagshttp.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
 		ebagshttp.send(params);
+	} catch (e) {
+		Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 	}
+	}
+	
 	if (CurrHref.indexOf("www.orientaltrading.com") > -1) {
 		var orientalhttp = new XMLHttpRequest();
 		orientalhttp.onreadystatechange = function () {
@@ -3343,27 +3762,42 @@ function applyCodes(couponCode) {
 		orientalhttp.open("GET", "https://secure.checkout.orientaltrading.com/checkout/rest/promocode/" + couponCode, false);
 		orientalhttp.send();
 	}
-	if (CurrHref.indexOf("www.orvis.com") > -1) {
+
+	if (CurrHref.indexOf("orvis.com") > -1) {
 		try {
-			var params = "{'specialOfferCode':'" + couponCode + "'}";
+			var csrfToken = document.getElementsByName("csrf_token")[0].value;
+
+			var orvisCouponCodeApi = orvisCouponApi + "csrf_token="+csrfToken+"&couponCode=" + couponCode;
+
 			var orvishttp = new XMLHttpRequest();
 			orvishttp.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
-					var orvisObj = JSON.parse(this.responseText);
-					var condition = orvisObj.d.result;
-					if (condition == true) {
-						let code = orvisObj.d.orderTotals.special_offer_code;
-						orvisCoupArr.push(code);
-						let saving = orvisObj.d.orderTotals.order_allowance_total.replace(/[-$,]/g, '');
-						saving = Number(saving);
-						orvisDiscArr.push(saving);
+					try {
+						var orvisObj = JSON.parse(this.responseText);
+						// console.log(forever21Obj);
+						if(!orvisObj.error){
+							var orvisDiscount =	orvisObj.totals.orderLevelDiscountTotal.value;
+							orvisDiscArr.push(orvisDiscount);
+							orvisCoupArr.push(couponCode);
+
+							var uuid = orvisObj.totals.discounts[0].UUID;
+							var orvisCodeRemoveApi = orvisCoupRemoveApi + "code="+couponCode+"&uuid=" + uuid;
+
+							var orvisRemhttp = new XMLHttpRequest();
+							orvisRemhttp.onreadystatechange = function () {
+							if (this.readyState == 4 && this.status == 200) {
+							}
+						};
+						orvisRemhttp.open("GET", orvisCodeRemoveApi, false);
+						orvisRemhttp.send();
+					 }
+					} catch (e) {
+						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
 					}
 				}
 			};
-			orvishttp.open("POST", orvisCouponApi, true);
-			orvishttp.setRequestHeader("content-type", "application/json");
-			orvishttp.setRequestHeader("accept", "application/json, text/javascript, */*; q=0.01");
-			orvishttp.send(params);
+			orvishttp.open("GET", orvisCouponCodeApi, false);
+			orvishttp.send();
 		} catch (e) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
 		}
@@ -3579,47 +4013,37 @@ function applyCodes(couponCode) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.blair.com") > -1) {
+	
+	/////////////////// blair.com ////////////////
+	if (CurrHref.indexOf("blair.com") > -1) {
 		try {
-			var grandTotalId = document.getElementById("estimated-grand-total").innerText.replace(/[$,]/g, '');
-			var grandTotal = Number(grandTotalId);
-			var params = "form_state=updatePromoCodeForm&delete=false&promoCode=" + couponCode + "";
 			var blairhttp = new XMLHttpRequest();
 			blairhttp.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
 					var blairObj = JSON.parse(this.responseText);
-					var successmsg = blairObj.applied;
-					if (successmsg == "true") {
-						var blair1http = new XMLHttpRequest();
-						blair1http.onreadystatechange = function () {
-							if (this.readyState == 4) {
-								try {
-									var parser = new DOMParser();
-									var doc = parser.parseFromString(this.responseText, "text/html");
-									var grandTotalId1 = doc.getElementById("estimated-grand-total").innerText.replace(/[$,]/g, '');
-									var grandTotal1 = Number(grandTotalId1);
-									var totalSave = grandTotal - grandTotal1;
-									blairDiscArr.push(totalSave);
-									blairCoupArr.push(couponCode);
-								} catch (e) {
-									Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-								}
-							}
-						};
-						blair1http.open("GET", CurrHref, false);
-						blair1http.send(params);
+					// console.log(blairObj);
+					var discount = blairObj.chosen.cart.price.discount.amount;
+					if(discount > 0){
+						blairDiscArr.push(totalSave);
+						blairCoupArr.push(couponCode);
 					}
+
+					var blairRemhttp = new XMLHttpRequest();
+					blairRemhttp.onreadystatechange = function () {
+						if (this.readyState == 4 && this.status == 200) {
+						}
+					};
+					blairRemhttp.open("DELETE", blairCouponApi + couponCode, false);
+					blairRemhttp.send();
 				}
 			};
-			blairhttp.open("POST", blairCouponApi, false);
-			blairhttp.setRequestHeader("content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-			blairhttp.setRequestHeader("accept", "text/html, */*; q=0.01");
-			blairhttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-			blairhttp.send(params);
+			blairhttp.open("PUT", blairCouponApi + couponCode, false);
+			blairhttp.send();
 		} catch (e) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+	
 	if (CurrHref.indexOf("www.speckproducts.com") > -1) {
 		try {
 			var speckhttp = new XMLHttpRequest();
@@ -3659,30 +4083,28 @@ function applyCodes(couponCode) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+
+	/////////////////// jimmyjazz.com ////////////////
 	if (CurrHref.indexOf("jimmyjazz.com") > -1) {
-		var jimmyhttp = new XMLHttpRequest();
-		jimmyhttp.onreadystatechange = function () {
-			if (this.readyState == 4 && this.status == 200) {
-				try {
-					var jimmyObj = JSON.parse(this.responseText);
-					var check = jimmyObj.promotion;
-					if (check) {
-						let totalSave = jimmyObj.totals.promotion;
-						totalSave = Number(totalSave);
-						if (totalSave > 0) {
-							finalCode = jimmyObj.promotion.code;
-							jimmyCoupArr.push(finalCode);
-							jimmyDiscArr.push(totalSave);
-						}
-					}
-				} catch (e) {
-					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
-				}
+		try{
+			var jimmyCouponApi = CurrHref.split("?")[0];
+	
+			var authenticateToken = document.getElementsByName("authenticity_token")[0].value;
+	
+			var params = "_method=patch&authenticity_token="+authenticateToken+"&step=payment_method&checkout%5Breduction_code%5D="+couponCode+"&checkout%5Bclient_details%5D%5Bbrowser_width%5D=850&checkout%5Bclient_details%5D%5Bbrowser_height%5D=667&checkout%5Bclient_details%5D%5Bjavascript_enabled%5D=1&checkout%5Bclient_details%5D%5Bcolor_depth%5D=24&checkout%5Bclient_details%5D%5Bjava_enabled%5D=false&checkout%5Bclient_details%5D%5Bbrowser_tz%5D=-330&checkout%5Bclient_details%5D%5Bbrowser_width%5D=850&checkout%5Bclient_details%5D%5Bbrowser_height%5D=667&checkout%5Bclient_details%5D%5Bjavascript_enabled%5D=1&checkout%5Bclient_details%5D%5Bcolor_depth%5D=24&checkout%5Bclient_details%5D%5Bjava_enabled%5D=false&checkout%5Bclient_details%5D%5Bbrowser_tz%5D=-330";
+	
+				var jimmyhttp = new XMLHttpRequest();
+				jimmyhttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {}
+				};
+				jimmyhttp.open("POST", jimmyCouponApi, false);
+				jimmyhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+				jimmyhttp.send(params);
+			} catch (e) {
+				Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 			}
-		};
-		jimmyhttp.open("GET", "http://www.jimmyjazz.com/cart-request/cart/option?promotion_code=" + couponCode + "&toggle=1&option=promotion", false);
-		jimmyhttp.send();
 	}
+	
 	if (CurrHref.indexOf("www.eyebuydirect.com") > -1) {
 		var params = "redeem_coupon=" + couponCode + "";
 		var eyebuyhttp = new XMLHttpRequest();
@@ -3716,43 +4138,69 @@ function applyCodes(couponCode) {
 		eyebuyhttp.send(params);
 	}
 
+	
+	/////////////////// ashford.com ////////////////
 	if (CurrHref.indexOf("ashford.com") > -1) {
 		try {
-			var dynamicSession = document.getElementById('continueShoppingForm').getElementsByTagName("input")._dynSessConf.value;
-			var saving;
-			var params = "_dyncharset=UTF-8&_dynSessConf=" + dynamicSession + "&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.useForwards=true&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.useForwards=+&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.applyCouponSuccessURL=%2Fcart%2Fjson%2FcartContents_new.jsp&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.applyCouponSuccessURL=+&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.applyCouponErrorURL=%2Fcart%2Fjson%2FcartContents_new.jsp&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.applyCouponErrorURL=+&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.couponCode=" + couponCode + "&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.couponCode=+&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.claimCoupon=&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.claimCoupon=+&_DARGS=%2Fcart%2Fgadgets%2FshoppingCartForms.jsp.applyCouponForm";
+			// if(document.getElementsByClassName("grand totals")[0]){
+			// 	var grandTotal = Number(document.getElementsByClassName("grand totals")[0].getElementsByClassName("price")[0].innerText.replace(/[-$,]/g, ""));
+			// }
+
+			var formKey = document.getElementsByName('form_key')[0].value;
+			var params = "remove=0&coupon_code=SALE618&form_key="+formKey;
+
 			var ashfordhttp = new XMLHttpRequest();
 			ashfordhttp.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
-					var ashfordSavinghttp = new XMLHttpRequest();
-					ashfordSavinghttp.onreadystatechange = function () {
+
+					var ashford1http = new XMLHttpRequest();
+					ashford1http.onreadystatechange = function () {
 						if (this.readyState == 4 && this.status == 200) {
-							try {
-								var parser = new DOMParser();
-								var doc = parser.parseFromString(this.responseText, "text/html");
-								savingClass = doc.getElementsByClassName("checkout_text_color_red")[4];
-								if (savingClass) {
-									saving = Number(savingClass.innerText.replace(/[-$,]/g, ""));
-									if (saving > 0) {
-										ashfordCoupArr.push(couponCode);
-										ashfordDiscArr.push(saving);
-									}
-								}
-							} catch (e) {
-								Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+							var parser = new DOMParser();
+				        	var doc = parser.parseFromString(this.responseText, "text/html");
+							var checkClass = doc.getElementsByClassName("action action-cancel")[0];
+							if(checkClass){
+								ashfordCoupArr.push(couponCode);
 							}
 						}
-					}
-					ashfordSavinghttp.open("GET", CurrHref, false);
-					ashfordSavinghttp.send();
-					var removeParams = "_dyncharset=UTF-8&_dynSessConf=" + dynamicSession + "&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.useForwards=true&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.useForwards=+&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.removeCoupon=&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.removeCoupon=+&_DARGS=%2Fcart%2Fgadgets%2FshoppingCartForms.jsp.removeCouponForm";
-					var ashfordRemovehttp = new XMLHttpRequest();
-					ashfordRemovehttp.onreadystatechange = function () {
-						if (this.readyState == 4 && this.status == 200) {}
-					}
-					ashfordRemovehttp.open("POST", ashfordCouponRemApi, false);
-					ashfordRemovehttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded;charset=UTF-8");
-					ashfordRemovehttp.send(removeParams);
+					};
+					ashford1http.open("GET", CurrHref, false);
+					ashford1http.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+					ashford1http.send();
+					
+					// var ashfordSavinghttp = new XMLHttpRequest();
+					// ashfordSavinghttp.onreadystatechange = function () {
+					// 	if (this.readyState == 4 && this.status == 200) {
+					// 		try {
+					// 			var parser = new DOMParser();
+					// 			var doc = parser.parseFromString(this.responseText, "text/html");
+					// 			if(doc.getElementsByClassName("grand totals")[0]){
+					// 				var cartTotal = Number(doc.getElementsByClassName("grand totals")[0].getElementsByClassName("price")[0].innerText.replace(/[-$,]/g, ""));
+					// 			}
+								
+					// 			if ((grandTotal != cartTotal)&&(cartTotal)) {
+					// 				saving = grandTotal - cartTotal;
+					// 				if (saving > 0) {
+					// 					ashfordCoupArr.push(couponCode);
+					// 					ashfordDiscArr.push(saving);
+					// 				}
+					// 			}
+					// 		} catch (e) {
+					// 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+					// 		}
+					// 	}
+					// }
+					// ashfordSavinghttp.open("GET", CurrHref, false);
+					// ashfordSavinghttp.send();
+
+					// var removeParams = "remove=1&form_key="+formKey;
+					// var ashfordRemovehttp = new XMLHttpRequest();
+					// ashfordRemovehttp.onreadystatechange = function () {
+					// 	if (this.readyState == 4 && this.status == 200) {}
+					// }
+					// ashfordRemovehttp.open("POST", ashfordCouponApi, false);
+					// ashfordRemovehttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded;charset=UTF-8");
+					// ashfordRemovehttp.send(removeParams);
 				}
 			}
 			ashfordhttp.open("POST", ashfordCouponApi, false);
@@ -3762,6 +4210,7 @@ function applyCodes(couponCode) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+	
 	if (CurrHref.indexOf("www.rockbottomgolf.com") > -1) {
 		var params = "couponcode=&action=applycoupon&code=" + couponCode,
 		saving,
@@ -4093,40 +4542,29 @@ function applyCodes(couponCode) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.cafepress.com") > -1) {
+	
+	/////////////////// cafepress.com ////////////////
+	if (CurrHref.indexOf("cafepress.com") > -1) {
 		try {
-			var viewState = document.getElementById("__VIEWSTATE").value;
-			var viewStateGenerator = document.getElementById("__VIEWSTATEGENERATOR").value;
-			var eventValidation = document.getElementById("__EVENTVALIDATION").value;
-			var cafeCashValue = document.getElementById("cafeCashValue").value;
-			var cafeCashL10nValue = document.getElementById("cafeCashL10nValue").value;
-			var gcValue = document.getElementById("gcValue").value;
-			var gcL10nValue = document.getElementById("gcL10nValue").value;
-			var minShippingId = document.getElementById("minShippingId").value;
-			var pmChecked = document.getElementById("pmChecked").value;
-			var BillCountry = document.getElementById("BillCountry").value;
-			var ShipCountry = document.getElementById("ShipCountry").value;
-			var countdown = document.getElementsByName("countdown")[0].value;
-			var shippingradio = document.getElementsByName("shipping-radio")[0].value;
-			var ShippingTableOption = document.getElementById("ShippingTableOption").value;
-			var PayPageId = document.getElementsByName("LitlePayPage$requestPayPageId")[0].value;
-			var ReportGroupId = document.getElementsByName("LitlePayPage$requestReportGroupId")[0].value;
-			var MerchantTxnId = document.getElementsByName("LitlePayPage$requestMerchantTxnId")[0].value;
-			var PayPageUrl = document.getElementsByName("LitlePayPage$requestPayPageUrl")[0].value;
-			var params = "__VIEWSTATE=" + viewState + "&__VIEWSTATEGENERATOR=" + viewStateGenerator + "&__EVENTVALIDATION=%2FwEdAOkBjkzdio2E5DppIt0oT3cZU9qyhxJlcBXzwNkBlvLgMQ56XW5A8jViXnzBiORLsvq7TmzENSEY9CcpUuJ%2FkKbQWg7UmKwx9NH68HbI2TVBfrt7tANCH4hkc%2BufGN3MXQZIC8UaUa5rRwG0LWq8TQ0AX5laWHzWMHsEpGBa4NGdwUwTrRPlQhJse%2Bo2BAQxMaogl2Ogwuqm%2FvKVqIWaJqVO%2FTH2z7gY7m7pKKZfLTF8R1nL2fqrqz4rMxXZJ0s1ZGzjJPus0G%2BTTA%2FH2RhKUs%2F2FMxHahCzXucjtKpNDzxN4l7nhpceRTZL0wcw7JUVXCOGdrizS5aW4Snsxo1%2BZPApuKt%2BlgOZspypcDRsS4nGPvaAk6G%2F2Z6Imv2GFFY5O9LUld3hNo8runvVnAkfJ4n9hkuSnY866wI6WqWbiBXdf9diyvGjDgXf0JclmZaIkLcEtyZ6fKhxXnvpAhtiSuiTxxUE77kpQ66lizqiMLBK14ZXzLGkFQGssVcLbtyHeZ6n6YaYEv8ElwnmdImml1Qwi4qL4KrDGq64t4jXGJPzhbXL3CS5CMK9xxygSU4V23%2BWsDRXHegUwm28rKxo1RIAMMlmrk1weh4TbEQuvkkBOfnR0M6JByBU0uw%2Bh%2FhH8wX6TOGRz6DlPpi51NBnYnL1i1R8R7WuPMTeSp%2BMECpH9%2BGw00iXLNLTdl6PxlQ7I%2B%2FZZ%2BQCBvzb0c%2FlasxvsyxvLVPQyUAN%2B6lXFoMPeVH6riQ0DIs%2BqbklaQUL7Rhs%2BNqTLL0iPX5zQIbN6rqeInDMX%2FQqqR5EMOu7ifC4PAAExCaE%2BEyZq5RyT4yrimwDZbR%2FDAdngBukfPeKY2t9kkEvsqXkTIU9GZEMS9YTNHiaMNe435v%2FXM0ei8RWiWn9ZdZdPiLYTP1vGL3Z1vEcRhj5RA6De77sj%2FRhL6E%2FxNiTNoDUb07h87AK%2Baj72PespnM2EQqqYJFLJmnLJn9%2FJUPfHhsr1xzBinkMPzGutJ%2BM%2FXET9bLVjMu5Vv0cGE%2BT4r92rhfPS%2BzJZnOMsIZK0ntUNlZFnysKSbxW0Uaj%2Bzgv7vZtVC5fu2l3Wf718fvpE34%2FKcRdyW1YxaWmxjI0DeKgPPDz1j3AzGX2MpWg1M9MInrPkRYQI6EvHcbjrhShVMMFfxZ24%2BP1iHqvd2DCVsGath%2Fw548u%2F0u9ZpC2swnFAuoyDsmZCjxy3TcdFfYeRxwzxbzqBHSdojAhnfYY6e16Lb0H2aZ9IzqQJVlxEZiJwf0hcdJyYeqplnl3rWuGQfw6CUMnoDnzGGJ%2BwfPP9YdPOXqukZVPL3ZWFhi4hcHz5x0pmUO2SqdyCKdOjeXOD%2FouL8%2F5J5w1AzBqGjspmGRfdsUHsamHN6XgshxUg%2BbfTVY9NHFOLUE%2FRXlKgC%2FptF9WgZeVdY5EDe%2B8yqGxiGpIcG37aj4tUd%2F10gSWGnllEdrgByv4IpfkGQ4tcCnH%2F%2BsCCcBUCITkUQAS31lxJwevzRa%2FJ6yvk7e3Suvsgf2waNg6kDDaMicgZJokEpuF3crzr3DJhdne08lAuAIOKFHOTfiERy4ZAkd8PCX5SiozUmIEzuDrmY9SqXAE1z6HypI22tc9BswgseFGDgCnbhlpNgoqCvzSwZwL4fB0S7CsP%2BgXOaPW2Ss330xuyt%2BruK2fsRWN0OMaiqb42jRhcaLQ%2FS7edz%2BILZDxdwcZ30w71r%2B1pQt6CpHmS%2FfQ%2Bx4YzxAPMysfMGJoLejKqRk%2FzARsGC0%2BAw0c%2FwCCE0kkdKfQQW6k0RGNi9UEIGQZ7D5T2nF1tISiZw4y5fVbCzOT0eg6rfBGZ00As0106DENJelI8vgX%2BcR308mNk9QGsYYQLBqjrz8F93XQC%2FBHeYWyVsVHHnchh16zx9evt7dZ%2FcCrvWhClwUpSdSxJUMMkWsJ5W6URuB2W2Cc%2FXL6Rry1o2PTw4axE6%2BWSqSBWONsqXwSyBxzNFBUvENsxsdx693xACbzLGTInBJtlzPXui6bnc8l2RhPglfAZUAQcFZ9LY9MZ9pFyH0SKRlDNxoXJyc%2B%2Bk8x%2Bu1wJdtvEIK4yW9O0qcOfSvj3q52C8Nfxkc8hw%2FoLnKm%2FVKrsS9VRss5QhDsAyKxzyo%2BYb6YKLnJeCZtqxLxR2WX%2BzMjaQKx2rr3gxuCE5jWVKgNvpOgXl6XcQyaKdzUa7%2Fdg9PhyEb2PP8zXJL5dxIltTCgTso9mFM5p9s%2FR0Y2fpbVrEGoD0fg9GFGf8l9heCG7ZgBiwJI2l7ZgnCQj7YMwWZiVW%2BYuf9b7wmWhJXMCiuGppFemUnEPBqLds3mUtiLVVLj9eEtxTGl8hSgYwLBqxRlqG2DS6SRyfXS9TkNMjtsZPhEvF7h2Lhwg61wIKV4nZbIbbBBxUMk%2FR0Y4%2FPiFUu%2FKkdPXWgog2%2BAkYoZIG3hn0osb%2F%2B8lkdxPe9Wf4JPFl5YdM7fmsESILAsUaiChbO%2FcNfM4OwwxLFIjDcpPu4OkUblDVZlZKo8tDJu%2BIl0IhsEaVUEwqmIWxcGUlZ%2F57%2BtyY2KGWnAWm9Njat9RKsYoVxKwV3K%2BTgFVZtBsiUFv1m0Vj4ROnrc%2FtcqGU%2B0ZNgP5GEO4NdfkTlDjXvQ4Si4Xl1Ti2ENVOkbDm3m4LBRWblqtbDBle57m%2Foc%2FGdhI9pSajARNW9BXOeaRSZfH8ZR28K8qzvUwmlpMx3zHvdMescXKn%2BuIYrjvMHwUkZnTRYMAUob12ehxkW6pwWsGm8VyDixqTwbojo1m5aQMR5F0DFvDdqUgy%2FpViCXXXXJBAiJnM%2B3lwWmR6dITrIa4r7oxWSTfXcZfB1evWohKgGiXQmCGrCrbGF7807%2BBRsz2TDlgrfHsiR9sfp7u0%2Fnn2D6CvBLHMtY1veoOj%2BWlTHrZJNPtzZ4lb75%2Bz55mU5fIekyHKAf4AcRHZ%2BiyKEbal3jlo1C00TteePKaATfRG%2FH%2Bp0oun7PEPrQr%2FrQHGb2Pejo4i7cHtYJI4Rhlkdzxem%2FpKbYAkqxTi4pKMstf1nNXs9dQgP6NrHBh%2F%2B325BpmbH2pQ%2FLaBO8BJZlFThp%2FRQgNssIEUahF631bs%2B2BJhXFxm5t4YRBT%2BO%2F8kvUL1HtUfIefz8n6mwBDb5ZZ8Xo3moB7fIOdUI5EqFz68NYH9%2BmG5lRhc302egijPr08syVUqOP5FOLuQSsmIvyGmXBI12YlRwgFnRIqp0xrkqIUV22RttVp5w5H%2FlmyCVWV2afKP71d%2B%2BzVbDPukXi6DHCMwddjA9%2FfDtzvbDfD57EFLn0pOUAmPrp8hASGiRvbvvx31SnDkDLinOTYolU%2Fk%2FwZD27VXtnYRdieHUQ%2BZrQzxCYMaMlzJlgmRjKSrbRjGGtodnbxnk5mTafbnJsIM3dpepF9b6sowANoeNmtJcCv6v9bZaRU349hGujHdOlvoYAiM2WSAiLayH8hYjGnCiu2sWX3QZqG455sLNK4chuNO%2FyyANTRm9gThMLUc5mzFP67CTO6f0aEZEpm6YIQ1zL9dR66yM9eFIR%2F%2BXPa%2BjWHcHmqu30NU1Di5CEckHtNKdw411HvuP3K2m8hRApdKSeYrCJ5wvax7a%2Blucmj8gJrdk91LvsrIi4L6Nn0g3pQS1ypAUN2X%2Bwd8%2FPdMrjKTKQzHP%2BW2aGr2a9DnAIUbQDKc7si7L81AMnQkxVdB9C9WNendRoAHp24ViCQEVXdb%2F7XwPBlu%2Bpr1yGkknEF4ym7%2BmcAyPNnIyV7mwVGiiLO00wTdrPJlvHfarCLi3gdIVrO9grklxRuyZrBy28deIQ0K44ZwJ6K3OLAOXIAht7wZYlHHCX8lZsvzGd8Mw%2FqOzN0GXV9GUOjDST0hM8C8TAl4nXA8T2sKIO745ndidrsvfdAUMSNJAIW6PEzpiSwJLbc%2FRF9bCgWiR81B%2BUK4NfZzt8fEdXlofucp7UFgfiZYB%2FJ6gp23gzApL5YHe5u9VEySMqGX6HAsWvpx3Q3seyuv4aU8y0ssUy32L8BCsbJSFIm266srhLMfUkGE1%2FIKCXpTNA8wcFwND4y3j2M831VesTYfEYgTuEtM9z039tGj9Iia%2FfqiuHTfILla5bPV2leYISkUk8aUD%2BRUDHZnQIPDFN7Q0s1CN5UFSzjOBo90ZJwATveA9ZMaHzl59322GJiZ%2FAzIURn3ozvI9sW6GDLB6XJNtJkCxpA8IWXvdc60q8kcMTlv9UlTWJpQ6rtV85Idy%2F9Mde975gDkqsETGNHA8WZDkHvEFQ2OTXG4pcxKBK6dHKKFtHb0v1Mnzx1O%2BR%2BVV%2FpwLmL1LpxQmKvihnUkK6AZvfC4Uzcz%2Fuu8GeqsmgiwvwUky7%2F6Mwb%2BUVFZ2mcDgW3T3IrpLa9brBAecyPjPgyolKC6Mb03p5QMy70YZrG9MWJqQYSWYtandVEbI2edyHdX9ARmSIMiJoV8YxyoimtE2PDfB70jYCIampsMpqzxriTspHmodJiveCtGVP4%2B7XscVwUU84eI%2FNSVyWlw6%2FfXEYUybCv3%2FI2iweAdY6ybBtO3Zz7W2OVIqY7A5cuySdxh7VcGUV2iek7SE2owdsb%2BI3x8Mip%2FzuilwKG7Q5xtS7Dr7hrEztNaYX0bcXSNz87NtbuH4AH0N9%2BD3WkxwdZUh6v6pDbQ36WPbnl4OFCEPkzwa2xIhsX5bATPs85%2BZrlVTIOcvc9wPA%2FPBx0EwjW7WRtS%2BYRMbrRF2xl5vCBcLHywwuHxZreaPbLoT5ia5VhQT3wf%2F9N5L1mdceKWw3ocNbaAxbyEE%2B%2B8TUc9aUi2A0LsTK2DQ4ELRx4R9y%2BLrNJNJjrPZj3JgDDKdKbBiaO5w7KO6OEHY6UwQnoXY65S3Do%2FFAEGTA%2FrQqgjowATkR%2BSyfArLgDJc%2FwCfaadKUoloyfPTkbJuvFLS%2BVqMEA89FZdCjmV40xKdQqOqWb912sIfsi7hN4hiKMfk5hTBN8PK8oLglx2EAYhxNCwJ3tGIu2P0xH68VMteywqFBCwVBLJU0FICBHQ0RpkgSZA3Jw%3D%3D&IsEdit=&cafeCashValue=" + cafeCashValue + "&cafeCashL10nValue=" + cafeCashL10nValue + "&gcValue=" + gcValue + "&gcL10nValue=" + gcL10nValue + "&minShippingId=" + minShippingId + "&pmChecked=" + pmChecked + "&BillName=&BillingCompanyName=&BillCountry=" + BillCountry + "&BillStreet1=&BillStreet2=&hfCurrentRedoClassification=&BillCity=&BillState=&BillZip=&BillPhone=&BillEmail=&cbStoreSpecial=on&ShipDestination=billaddress&ShipName=&ShippingCompanyName=&ShipCountry=" + ShipCountry + "&ShipStreet1=&ShipStreet2=&ShipCity=&ShipState=&ShipZip=&GiftMessage=&countdown=" + countdown + "&shipping-radio=" + shippingradio + "&ShippingTableOption=" + ShippingTableOption + "&PaymentMethod=PayByCC&maskedCreditCard=&ccExp%24MonthDrop=06+%28June%29&ccExp%24YearDrop=2018&txtCoupon=" + couponCode + "&LitlePayPage%24requestPayPageId=" + PayPageId + "&LitlePayPage%24requestReportGroupId=" + ReportGroupId + "&LitlePayPage%24requestMerchantTxnId=" + MerchantTxnId + "&LitlePayPage%24requestPayPageUrl=" + PayPageUrl + "&LitlePayPage%24responsePayPageRegistrationId=&LitlePayPage%24responseBin=&LitlePayPage%24responseCode=&LitlePayPage%24responseMessage=&LitlePayPage%24responseTime=&LitlePayPage%24responseType=&LitlePayPage%24responseTransactionId=&LitlePayPage%24payPageResponseTime=&LitlePayPage%24payPageSubmit=false&btnApplyCoupon=Apply";
+			var n = CurrHref.split("/");
+			var cartGuid = n[n.length - 1];
+			var cartId = n[n.length - 2];
+
+			var cafepressCouponCodeApi = cafepressCouponApi + cartId +"/"+ cartGuid + "/" + couponCode;
+
+			var params = '{"shippingOptions":[],"shippingAddress":{"addressId":-1,"memberNo":0,"name":"","firstName":null,"lastName":null,"companyName":null,"addressLine1":null,"addressLine2":null,"city":null,"state":null,"country":"US","postalCode":null,"phoneNumber":null,"addressDisplayInfo":",, , US, , ","email":null,"isDefault":false,"saveInAddressBook":false},"billingAddress":{"addressId":-1,"memberNo":0,"name":"","firstName":null,"lastName":null,"companyName":null,"addressLine1":null,"addressLine2":null,"city":null,"state":null,"country":"US","postalCode":null,"phoneNumber":null,"addressDisplayInfo":",, , US, , ","email":null,"isDefault":false,"saveInAddressBook":false},"countries":[],"country":{"countryCode":"US","name":"United States","requiresPostalCode":true,"politicalDivisionUserProvided":false,"politicalDivisionRequired":true,"isShippable":true,"isBillable":true,"internationalCountryName":"United States"},"billingCountry":{"countryCode":"US","name":"United States","requiresPostalCode":true,"politicalDivisionUserProvided":false,"politicalDivisionRequired":true,"isShippable":true,"isBillable":true,"internationalCountryName":"United States"},"states":[],"state":{"countryCode":"US","politicalDivision1Code":"AA","politicalDivision1Name":"Armed Forces US/Canada"},"billingStates":[],"billingState":{"countryCode":"US","politicalDivision1Code":"AA","politicalDivision1Name":"Armed Forces US/Canada"},"cartSummary":{"cartItemCount":0,"cartItemTotal":0,"coupons":[],"giftCertificates":null,"cafeCash":{"memberNo":0,"amount":0,"amountApplied":0,"amountAvailable":0},"selectedShippingOption":{"minimumArrivalDate":"2021-06-14T08:13:12.2330342Z","arrivalDate":"2021-06-16T08:13:12.2330342Z","minimumDateToShipFromFacility":"2021-06-08T08:13:12.2330342Z","dateToShipFromFacility":"2021-06-08T08:13:12.2330342Z","cost":0,"shippingOptionDefId":5,"shippingOptionDefDescription":"Flat Rate Shipping","currencyPrefix":"$","currencyCode":"USD"},"tax":0,"total":0,"shippingDiscount":0,"productIds":[]},"isSubscribedForPromotions":true,"payment":{"paymentType":0,"token":null,"maskedCardNo":null,"specialCardNo":null,"expirationMonth":6,"expirationYear":2021,"vantivPayPageId":"","vantivReportGroupId":"","vantivMerchantTxnId":"","paymentMethodToken":null},"currencyPrefix":"$","currencyCode":"USD","couponListValid":false,"isShippingAddressSameAsBillingAddress":true,"isCafeCashApplied":false,"cartNo":'+cartId+',"lastSearchedTerm":null,"sessionId":null,"payPalMode":"production","payPalKey":null,"creditCardClientId":"","deviceData":"","savedAddresses":[],"savedPaymentMethods":[],"email":null,"useStoredAddress":false,"useStoredPayment":false,"saveNewAddress":false,"saveNewPayment":false,"recaptchaToken":null,"attemptedCouponCode":null,"processingCheckout":false,"checkoutExceptionOccurred":false,"billingStateError":false,"addressError":false,"paymentMethodId":-1}';
+
 			var cafehttp = new XMLHttpRequest();
 			cafehttp.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
 					try {
-						var parser = new DOMParser();
-						var doc = parser.parseFromString(this.responseText, "text/html");
-						var couponamountId = doc.getElementById('couponamount');
-						if (couponamountId) {
-							var saving = couponamountId.innerText.replace(/[-$,]/g, '');
-							saving = Number(saving);
-							if (saving > 0) {
-								cafepressCoupArr.push(couponCode);
-								cafepressDiscArr.push(saving);
+						var jsonObj = JSON.parse(this.response);
+						// console.log(jsonObj.cartSummary);
+						var cafeCoupons = jsonObj.cartSummary.coupons;
+						for(var i = 0; i < cafeCoupons.length; i++){
+							if(cafeCoupons[i].amountApplied > 0){
+								cafepressCoupArr.push(cafeCoupons[i].couponCode);
+								cafepressDiscArr.push(cafeCoupons[i].amountApplied);
 							}
 						}
 					} catch (e) {
@@ -4134,14 +4572,14 @@ function applyCodes(couponCode) {
 					}
 				}
 			};
-			cafehttp.open("POST", cafepressCouponApi, false);
-			cafehttp.setRequestHeader("content-type", "application/x-www-form-urlencoded");
-			cafehttp.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
+			cafehttp.open("POST", cafepressCouponCodeApi , false);
+			cafehttp.setRequestHeader("content-type", "application/json");
 			cafehttp.send(params);
 		} catch (e) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+
 	if (CurrHref.indexOf("www.catherines.com") > -1) {
 		try {
 			var dynamicSesion = document.getElementById('checkout-form').getElementsByTagName('input')[1].value;
@@ -4205,41 +4643,42 @@ function applyCodes(couponCode) {
 		contactshttp.setRequestHeader("content-type", "application/json;charset=UTF-8");
 		contactshttp.send(params);
 	}
-	if (CurrHref.indexOf("www.mypillow.com") > -1) {
-		var params = "remove=0&coupon_code=" + couponCode + "";
+
+	/////////////////// mypillow.com ////////////////
+	if (CurrHref.indexOf("mypillow.com") > -1) {
+		try{
+		if(document.getElementsByClassName("grand totals")[0]){
+			var grandTotal = Number(document.getElementsByClassName("grand totals")[0].getElementsByClassName("price")[0].innerText.replace(/[-$,]/g, ''));
+		}
+
+		var formKey = document.getElementsByName("form_key")[0].value;
+		var params = "remove=0&coupon_code=" + couponCode + "&form_key=" + formKey;
+
 		var pillowhttp = new XMLHttpRequest();
 		pillowhttp.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
 				try {
-					var parser = new DOMParser();
-					var doc = parser.parseFromString(this.responseText, "text/html");
-					var checkCondition = doc.getElementsByClassName('action cancel primary')[0];
-					if (checkCondition) {
-						var params1 = '{"addressInformation":{"address":{"countryId":"US","regionId":null,"postcode":null,"extension_attributes":{"advanced_conditions":{"payment_method":null,"billing_address_country":null}}}}}';
 						var pillowhttp1 = new XMLHttpRequest();
 						pillowhttp1.onreadystatechange = function () {
 							if (this.readyState == 4 && this.status == 200) {
 								try {
 									var pillowObj = JSON.parse(this.responseText);
-									var code = pillowObj.coupon_code;
-									if (code) {
-										pillowCoupArr.push(code);
-										var totalSave = pillowObj.discount_amount;
-										totalSave = totalSave.toString().replace(/[-$,]/g, '');
-										totalSave = Number(totalSave);
-										pillowDiscArr.push(totalSave);
+									var subTotal = Number(pillowObj.cart.subtotalAmount);
+									if (grandTotal != subTotal) {
+										var savings = grandTotal - subTotal;
+										pillowCoupArr.push(couponCode);
+										pillowDiscArr.push(savings);
 									}
 								} catch (e) {
 									Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
 								}
 							}
 						};
-						pillowhttp1.open("POST", "https://www.mypillow.com/rest/default/V1/guest-carts/2da6a23998c08df82430278ca2426f69/totals-information", false);
+						pillowhttp1.open("GET", "https://www.mypillow.com/customer/section/load/?sections=cart%2Cmessages&force_new_section_timestamp=false", false);
 						pillowhttp1.setRequestHeader("content-type", "application/json");
 						pillowhttp1.setRequestHeader("accept", "*/*");
 						pillowhttp1.setRequestHeader("x-requested-with", "XMLHttpRequest");
-						pillowhttp1.send(params1);
-					}
+						pillowhttp1.send();
 				} catch (e) {
 					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
 				}
@@ -4249,7 +4688,11 @@ function applyCodes(couponCode) {
 		pillowhttp.setRequestHeader("content-type", "application/x-www-form-urlencoded");
 		pillowhttp.setRequestHeader("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
 		pillowhttp.send(params);
+	} catch (e) {
+		Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
 	}
+	}
+
 	if (CurrHref.indexOf("www.barenecessities.com") > -1) {
 		try {
 			var params = "action=applyPromo&code=" + couponCode + "";
@@ -4438,27 +4881,32 @@ function applyCodes(couponCode) {
 		}
 	}
 	
-	if (CurrHref.indexOf("www.aveda.com") > -1) {
-		var params = "JSONRPC=%5B%7B%22method%22%3A%22logic.checkout--viewcart%22%2C%22id%22%3A1%2C%22params%22%3A%5B%7B%22_SUBMIT%22%3A%22offer_code%22%2C%22OFFER_CODE%22%3A%22" + couponCode + "%22%7D%5D%7D%5D";
+	if (CurrHref.indexOf("aveda.com") > -1) {
+		var token = document.getElementsByName("_TOKEN")[0].value;
+
+		var params = "JSONRPC=%5B%7B%22method%22%3A%22logic.checkout--viewcart%22%2C%22id%22%3A6%2C%22params%22%3A%5B%7B%22_SUBMIT%22%3A%22offer_code%22%2C%22_TOKEN%22%3A%22 "+ token +"%22%2C%22OFFER_CODE%22%3A%22"+couponCode+"%22%7D%5D%7D%5D";
+
 		var avedahttp = new XMLHttpRequest();
 		avedahttp.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
-				try {
-					var jsonObj = JSON.parse(this.responseText);
-					if (jsonObj[0].result.data.dataLayer.datalayer_events.offerSuccessful.event_data) {
-						avedaCoupArr.push(couponCode);
-						var saving = jsonObj[0].result.value.transaction.order.samples[0].discountedPrice;
-						avedaDiscArr.push(saving);
-					}
-				} catch (e) {
-					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-				}
+				// try {
+					// var jsonObj = JSON.parse(this.responseText);
+					// var discount = jsonObj[0].result.value.transaction.trans.TOTAL_ITEMS_DISCOUNT.toString().replace(/[-$,]/g, '');
+					// if (Number(discount) > 0) {
+					// 	avedaCoupArr.push(couponCode);
+					// 	var saving = Number(discount);
+					// 	avedaDiscArr.push(saving);
+					// }
+				// } catch (e) {
+				// 	Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+				// }
 			}
 		};
 		avedahttp.open("POST", avedaCouponApi, false);
 		avedahttp.setRequestHeader("content-type", "application/x-www-form-urlencoded;charset=UTF-8");
 		avedahttp.send(params);
 	}
+
 	if (CurrHref.indexOf("ctshirts.com") > -1) {
 		try {
 			var ctshirtsCouponApi = document.getElementById("checkout-form").action;
@@ -4758,10 +5206,13 @@ function applyCodes(couponCode) {
 		}
 	}
 	
-	if (CurrHref.indexOf("www.claires.com") > -1) {
+	/////////////////// claires.com ////////////////
+	if (CurrHref.indexOf("claires.com") > -1) {
 		try {
 			var csrfToken = document.getElementsByName('csrf_token')[0].value;
-			var beforeSaving = document.getElementsByClassName('order-value')[0].innerText.replace(/[-$,]/g, '');
+			if(document.getElementsByClassName('v2-large v2-bold v2-claires-purple')[1]){
+				var beforeSaving = document.getElementsByClassName('v2-large v2-bold v2-claires-purple')[1].innerText.replace(/[-$,]/g, '');
+			}
 			beforeSaving = Number(beforeSaving);
 			var claireshttp = new XMLHttpRequest();
 			claireshttp.onreadystatechange = function () {
@@ -4777,10 +5228,20 @@ function applyCodes(couponCode) {
 								try {
 									var parser = new DOMParser();
 									var doc = parser.parseFromString(this.responseText, "text/html");
-									let afterSaving = doc.getElementsByClassName('order-value')[0].innerText.replace(/[-$,]/g, '');
+									let afterSaving = doc.getElementsByClassName('v2-large v2-bold v2-claires-purple')[1].innerText.replace(/[-$,]/g, '');
 									afterSaving = Number(afterSaving);
-									let totalSave = (beforeSaving - afterSaving);
+									let totalSave = beforeSaving - afterSaving;
 									clairesDiscArr.push(totalSave);
+
+									var params1 = "dwfrm_cart_shipments_i0_items_i0_quantity=1&dwfrm_cart_shipments_i0_items_i1_quantity=1&dwfrm_cart_coupons_i0_deleteCoupon=Remove&dwfrm_cart_updateCart=dwfrm_cart_updateCart&dwfrm_cart_couponCode=&csrf_token=" + csrfToken + "";
+									var claireshttp2 = new XMLHttpRequest();
+									claireshttp2.onreadystatechange = function () {
+										if (this.readyState == 4 && this.status == 200) {}
+									};
+									claireshttp2.open("POST", clairesRemCouponApi, false);
+									claireshttp2.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+									claireshttp2.setRequestHeader("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
+									claireshttp2.send(params1);
 								} catch (e) {
 									Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
 								}
@@ -4789,15 +5250,6 @@ function applyCodes(couponCode) {
 						claireshttp1.open("GET", CurrHref, true);
 						claireshttp1.send();
 					}
-					var params1 = "dwfrm_cart_shipments_i0_items_i0_quantity=1&dwfrm_cart_shipments_i0_items_i1_quantity=1&dwfrm_cart_coupons_i0_deleteCoupon=Remove&dwfrm_cart_updateCart=dwfrm_cart_updateCart&dwfrm_cart_couponCode=&csrf_token=" + csrfToken + "";
-					var claireshttp2 = new XMLHttpRequest();
-					claireshttp2.onreadystatechange = function () {
-						if (this.readyState == 4 && this.status == 200) {}
-					};
-					claireshttp2.open("POST", clairesRemCouponApi, false);
-					claireshttp2.setRequestHeader("content-type", "application/x-www-form-urlencoded");
-					claireshttp2.setRequestHeader("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
-					claireshttp2.send(params1);
 				}
 			};
 			claireshttp.open("GET", clairesCouponApi + couponCode, false);
@@ -4806,42 +5258,56 @@ function applyCodes(couponCode) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.ashleystewart.com") > -1) {
+
+	/////////////////// ashleystewart.com ////////////////
+	if (CurrHref.indexOf("ashleystewart.com") > -1) {
 		try {
-			var session = document.getElementById('car-top-login-form').action.split('=')[1];
-			var params = "dwfrm_cart_shipments_i0_items_i0_quantity=4&dwfrm_cart_couponCode=" + couponCode + "&dwfrm_cart_addCoupon=dwfrm_cart_addCoupon";
+			if(document.getElementsByClassName("order-total")[0]){
+				var grandTotal = Number(document.getElementsByClassName("order-total")[0].getElementsByClassName("order-total-value")[0].innerText.replace(/[-$,]/g, ''));
+			}
 			var ashleyhttp = new XMLHttpRequest();
 			ashleyhttp.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
-					var parser = new DOMParser();
-					var doc = parser.parseFromString(this.responseText, "text/html");
-					var condition = doc.getElementsByClassName('discount')[0];
-					if (condition) {
-						let code = doc.getElementsByClassName('cartcoupon')[0].getElementsByClassName('value')[0].innerText.split('\n')[1];
-						ashleyCoupArr.push(code);
-						let savings = doc.getElementsByClassName('discount')[0].getElementsByClassName('value')[0].innerText.replace(/[-$,()]/g, '');
-						savings = Number(savings);
-						ashleyDiscArr.push(savings);
-					}
-					var params1 = "dwfrm_cart_shipments_i0_items_i0_quantity=4&dwfrm_cart_coupons_i0_deleteCoupon=Remove";
 					var ashleyhttp2 = new XMLHttpRequest();
 					ashleyhttp2.onreadystatechange = function () {
-						if (this.readyState == 4 && this.status == 200) {}
+						if (this.readyState == 4 && this.status == 200) {
+					var parser = new DOMParser();
+					var doc = parser.parseFromString(this.responseText, "text/html");
+
+					if(doc.getElementsByClassName("order-total")[0]){
+						var cartTotal = Number(doc.getElementsByClassName("order-total")[0].getElementsByClassName("order-total-value")[0].innerText.replace(/[-$,]/g, ''));
+					}
+
+					if(grandTotal != cartTotal){
+						var savings = grandTotal - cartTotal; 
+						ashleyDiscArr.push(savings);
+						ashleyCoupArr.push(couponCode);
+					}
+	    					var ashleyhttp3 = new XMLHttpRequest();
+							ashleyhttp3.onreadystatechange = function () {
+								if (this.readyState == 4 && this.status == 200) {}
+							};
+							ashleyhttp3.open("POST", ashleyCouponApi + couponCode + "&removeCoupon=true", false);
+							ashleyhttp3.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+							ashleyhttp3.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
+							ashleyhttp3.send();
+						}
 					};
-					ashleyhttp2.open("POST", ashleyCouponApi + session, true);
+					ashleyhttp2.open("GET", CurrHref, false);
 					ashleyhttp2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 					ashleyhttp2.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
-					ashleyhttp2.send(params1);
+					ashleyhttp2.send();
 				}
 			};
-			ashleyhttp.open("POST", ashleyCouponApi + session, true);
+			ashleyhttp.open("POST", ashleyCouponApi + couponCode, false);
 			ashleyhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 			ashleyhttp.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
-			ashleyhttp.send(params);
+			ashleyhttp.send();
 		} catch (e) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+	
 	if (CurrHref.indexOf("www.build.com") > -1) {
 		try {
 			var buildhttp = new XMLHttpRequest();
@@ -4935,39 +5401,28 @@ function applyCodes(couponCode) {
 		}
 	}
 	
-	if (CurrHref.indexOf("www.mixbook.com") > -1) {
+	/////////////////// mixbook.com ////////////////
+	if (CurrHref.indexOf("mixbook.com") > -1) {
 		try {
-			var authenticity_token = document.getElementsByName("authenticity_token")[0].value;
-			var params = "utf8=%E2%9C%93&_method=put&authenticity_token=" + authenticity_token + "&quantities%5B18038172%5D%5B69%5D=1&country=United+States&postal_code=&shipping_option_id=1&coupon_code=" + couponCode;
 			var mixbookhttp = new XMLHttpRequest();
 			mixbookhttp.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
-					try {
-						var onlyhtml = JSON.parse(this.responseText);
-						var htmaldata = onlyhtml.html.summary;
-						var parser = new DOMParser();
-						var doc1 = parser.parseFromString(htmaldata, "text/html");
-						var jsonObj = JSON.parse(this.responseText);
-						var condition = jsonObj.errors.coupon
-							if (condition == null) {
-								var codelist = jsonObj.coupon;
-								mixbookCoupArr.push(codelist);
-								var savings = Number(doc1.getElementsByClassName("c-cart-summary--savings")[0].getElementsByTagName("strong")[0].innerText.replace(/[$,]/g, ''))
-									mixbookDiscArr.push(savings);
-							}
-					} catch (e) {
-						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-					}
+						var mixbookObj = JSON.parse(this.responseText);
+						if(mixbookObj.data.cart.coupon.amount_cents > 0){
+							var savings = mixbookObj.data.cart.coupon.amount_cents;
+							var promoCode = mixbookObj.data.cart.coupon.code;
+							mixbookCoupArr.push(promoCode);
+							mixbookDiscArr.push(savings);
+						}
 				}
 			};
-			mixbookhttp.open("PUT", mixbookCouponApi, false);
-			mixbookhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-			mixbookhttp.setRequestHeader("Accept", "application/json, text/javascript, */*; q=0.01");
-			mixbookhttp.send(params);
+			mixbookhttp.open("GET", mixbookCouponApi + couponCode, false);
+			mixbookhttp.send();
 		} catch (e) {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+
 	if (CurrHref.indexOf("www.katespade.com") > -1) {
 		try {
 			var grandTotal = document.getElementsByClassName("order-value")[1].innerText.replace(/[-$,]/g, '');
@@ -5113,57 +5568,28 @@ function applyCodes(couponCode) {
 		frederickshttp.setRequestHeader("content-type", "application/json;charset=UTF-8");
 		frederickshttp.send(params);
 	}
-	if (CurrHref.indexOf("www.perfumania.com") > -1) {
-		try {
-			var orderId = document.getElementById('ShopCartForm').getElementsByTagName('input')[8].value;
-			var catalogId = document.getElementById('headerSearchForm').getElementsByTagName('input')[0].value;
-			var storeId = document.getElementById('headerSearchForm').getElementsByTagName('input')[1].value;
-			var langId = document.getElementById('headerSearchForm').getElementsByTagName('input')[2].value;
-			var params = "orderId=" + orderId + "&URL=%2FOrderCalculate%3FstoreId%3D" + storeId + "%26catalogId%3D" + catalogId + "%26langId%3D-1%26orderId%3D" + orderId + "%26updatePrices%3D1%26calculationUsageId%3D-1%26calculationUsageId%3D-2%26calculationUsageId%3D-3%26calculationUsageId%3D-4%26calculationUsageId%3D-7%26URL%3D%252fCheckoutSignInView%253fstoreId%253d" + storeId + "%2526catalogId%253d" + catalogId + "%2526langId%253d-1%2526URL%253dOrderAddressUpdateView%2526checkout%253dtrue&updateURL=%2FOrderCalculate%3FstoreId%3D" + storeId + "%26catalogId%3D" + catalogId + "%26langId%3D-1%26orderId%3D" + orderId + "%26updatePrices%3D1%26calculationUsageId%3D-1%26calculationUsageId%3D-2%26calculationUsageId%3D-3%26calculationUsageId%3D-4%26calculationUsageId%3D-7%26URL%3DOrderItemDisplay&promoURL=%2FOrderCalculate%3FURL%3DOrderItemDisplay%26orderId%3D" + orderId + "%26updatePrices%3D1%26calculationUsageId%3D-1%26calculationUsageId%3D-2%26calculationUsageId%3D-3%26calculationUsageId%3D-4%26calculationUsageId%3D-7&taskType=A&promoCode=" + couponCode;
+
+	/////////////////// perfumania.com ////////////////
+	if (CurrHref.indexOf("perfumania.com") > -1) {
+		try{
+			var perfumaniaCouponApi = CurrHref.split("?")[0];
+	
+			var authenticateToken = document.getElementsByName("authenticity_token")[0].value;
+	
+			var params = "_method=patch&authenticity_token="+authenticateToken+"&step=payment_method&checkout%5Breduction_code%5D="+couponCode+"&checkout%5Bclient_details%5D%5Bbrowser_width%5D=850&checkout%5Bclient_details%5D%5Bbrowser_height%5D=667&checkout%5Bclient_details%5D%5Bjavascript_enabled%5D=1&checkout%5Bclient_details%5D%5Bcolor_depth%5D=24&checkout%5Bclient_details%5D%5Bjava_enabled%5D=false&checkout%5Bclient_details%5D%5Bbrowser_tz%5D=-330&checkout%5Bclient_details%5D%5Bbrowser_width%5D=850&checkout%5Bclient_details%5D%5Bbrowser_height%5D=667&checkout%5Bclient_details%5D%5Bjavascript_enabled%5D=1&checkout%5Bclient_details%5D%5Bcolor_depth%5D=24&checkout%5Bclient_details%5D%5Bjava_enabled%5D=false&checkout%5Bclient_details%5D%5Bbrowser_tz%5D=-330";
+	
 			var perfuhttp = new XMLHttpRequest();
 			perfuhttp.onreadystatechange = function () {
-				if (this.readyState == 4 && this.status == 200) {
-					var perfu2http = new XMLHttpRequest();
-					perfu2http.onreadystatechange = function () {
-						if (this.readyState == 4 && this.status == 200) {
-							try {
-								var parser = new DOMParser();
-								var doc = parser.parseFromString(this.responseText, "text/html");
-								var initialPrice = document.getElementById('orderTotals').getElementsByClassName('totalAmount')[0].innerText.replace(/[$,-]/g, '');
-								var initalPriceNum = Number(initialPrice);
-								var disPrice = doc.getElementById('orderTotals').getElementsByClassName('totalAmount')[0].innerText.replace(/[$,-]/g, '');
-								var disPriceNum = Number(disPrice);
-								var discount = initalPriceNum - disPriceNum;
-								var couponClass = doc.getElementsByClassName("applied-promos")[0];
-								if (couponClass) {
-									if (discount > 0) {
-										perfuCoupArr.push(couponCode);
-										perfuDiscArr.push(discount);
-									}
-								}
-							} catch (e) {
-								Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-							}
-						}
-					}
-					perfu2http.open("GET", CurrHref, false);
-					perfu2http.send();
-					var removeApi = "https://www.perfumania.com/OrderItemUpdate?langId=" + langId + "&storeId=" + storeId + "&catalogId=" + catalogId + "&taskType=R&orderId=" + orderId + "&promoCode=" + couponCode + "&URL=%2fOrderCalculate%3fURL%3dOrderItemDisplay%26orderId%3d" + orderId + "%26updatePrices%3d1%26calculationUsageId%3d-1%26calculationUsageId%3d-2%26calculationUsageId%3d-3%26calculationUsageId%3d-4%26calculationUsageId%3d-7&isShopCartSection=true&giftMsgText=&giftFlag=true";
-					var perfuRhttp = new XMLHttpRequest();
-					perfuRhttp.onreadystatechange = function () {
-						if (this.readyState == 4 && this.status == 200) {}
-					}
-					perfuRhttp.open("GET", removeApi, false);
-					perfuRhttp.send();
-				}
-			}
-			perfuhttp.open("POST", "https://www.perfumania.com/OrderItemUpdate?catalogId=" + catalogId + "&storeId=" + storeId + "&langId=-1&query=Search+entire+site", false);
-			perfuhttp.setRequestHeader("content-type", "application/x-www-form-urlencoded;charset=UTF-8");
+				if (this.readyState == 4 && this.status == 200) {}
+			};
+			perfuhttp.open("POST", perfumaniaCouponApi, false);
+			perfuhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
 			perfuhttp.send(params);
-		} catch (e) {
-			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-		}
+			} catch (e) {
+				Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+			}
 	}
+
 	if (CurrHref.indexOf("www.travelocity.com") > -1) {
 		try {
 			var tripid = document.getElementsByTagName("body")[0].getAttribute("data-tripid");
@@ -5287,7 +5713,7 @@ function savingsGenerate() {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	
+
 	if (CurrHref.indexOf("forever21.com") > -1) {
 		try {
 			var maxIndex = forever21DiscArr.indexOf(Math.max.apply(null, forever21DiscArr));
@@ -5297,23 +5723,22 @@ function savingsGenerate() {
 				totalSavings = "$" + savings.toFixed(2);
 			}
 			
-			var csrfToken = document.getElementsByName("csrf_token")[0].value;
+			if(finalCode){
+				var csrfToken = document.getElementsByName("csrf_token")[0].value;
 
-			var forever21CouponCodeApi = forever21CouponApi + "csrf_token="+csrfToken+"&couponCode=" + finalCode;
-
-			var forever21http = new XMLHttpRequest();
-			forever21http.onreadystatechange = function () {
-				if (this.readyState == 4 && this.status == 200) {
-					try {
-						  SavingsPopup(finalCode, totalSavings);	
-					} catch (e) {
-						SavingsPopup(finalCode, totalSavings);
-						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
+				var forever21CouponCodeApi = forever21CouponApi + "csrf_token="+csrfToken+"&couponCode=" + finalCode;
+	
+				var forever21http = new XMLHttpRequest();
+				forever21http.onreadystatechange = function () {
+					if (this.readyState == 4 && this.status == 200) {
+							  SavingsPopup(finalCode, totalSavings);
 					}
-				}
-			};
-			forever21http.open("GET", forever21CouponCodeApi, false);
-			forever21http.send();	
+				};
+				forever21http.open("GET", forever21CouponCodeApi, false);
+				forever21http.send();
+			}else{
+				SavingsPopup(finalCode, totalSavings);
+			}	
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
@@ -5438,12 +5863,10 @@ function savingsGenerate() {
 					var searObj = JSON.parse(this.responseText);
 					if (searObj.response.cartSummary) {
 						if (searObj.response.cartSummary.totalSavings) {
-						var searDiscount = searObj.response.cartSummary.totalSavings.items;
-						for (var m = 0; m < searDiscount.length; m++) {
-							if (searObj.response.cartSummary.totalSavings.items[m].name.includes("Use code")) {
-								totalSavings = searObj.response.cartSummary.totalSavings.items[m].amt.split('-')[1];
-								finalCode = searObj.response.cartSummary.totalSavings.items[m].name.split(" ").pop();
-							}
+						var totalSavings = searObj.response.cartSummary.totalSavings.totAmt;
+                        var jsonCoupon = searObj.response.cartSummary.couponSavings;
+						for (var attr in jsonCoupon) {
+						    finalCode = jsonCoupon[attr].promoTitle;
 						}
 				    	}
 					}
@@ -5457,24 +5880,38 @@ function savingsGenerate() {
 		searhttp.open("GET", searsWalletApi, false);
 		searhttp.send();
 	}
-	if (CurrHref.indexOf("www.payless.com") > -1) {
-		var maxIndex = paylessDisArr.indexOf(Math.max.apply(null, paylessDisArr));
-		finalCode = paylessCoupArr[maxIndex];
-		var paylesshttp = new XMLHttpRequest();
-		paylesshttp.onreadystatechange = function () {
-			if (this.readyState == 4 && this.status == 200) {
-				var payless2http = new XMLHttpRequest();
-				var saving = paylessDisArr[maxIndex];
-				if (saving > 0) {
-					var fixedSaving = saving.toFixed(2);
-					totalSavings = "$" + fixedSaving;
-				}
+	
+	
+	if (CurrHref.indexOf("payless.com") > -1) {
+		try{
+			var maxIndex = paylessDisArr.indexOf(Math.max.apply(null, paylessDisArr));
+			finalCode = paylessCoupArr[maxIndex];
+			var saving = paylessDisArr[maxIndex];
+			if (saving > 0) {
+				var fixedSaving = saving.toFixed(2);
+				totalSavings = "$" + fixedSaving;
+			}
+			if(finalCode){
+				var params = '{"text":"'+finalCode+'","expectedOrderFormSections":["items","totalizers","clientProfileData","shippingData","paymentData","sellers","messages","marketingData","clientPreferencesData","storePreferencesData","giftRegistryData","ratesAndBenefitsData","openTextField","commercialConditionData","customData"]}';
+	
+				var paylesshttp = new XMLHttpRequest();
+				paylesshttp.onreadystatechange = function () {
+					if (this.readyState == 4 && this.status == 200) {
+						SavingsPopup(finalCode, totalSavings);
+					}
+				};
+				paylesshttp.open("POST", paylessCouponApi, false);
+				paylesshttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+				paylesshttp.send(params);
+			} else {
 				SavingsPopup(finalCode, totalSavings);
 			}
-		};
-		paylesshttp.open("GET", "https://www.payless.com/on/demandware.store/Sites-payless-Site/default/Cart-AddCoupon?couponCode=" + finalCode + "&format=ajax&couponLoyaltyEmail=", false);
-		paylesshttp.send();
+		} catch (e) {
+			SavingsPopup(finalCode, totalSavings);
+			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+		}
 	}
+
 	if (CurrHref.indexOf("www.finishline.com") > -1) {
 		setTimeout(function () {
 			try {
@@ -5494,46 +5931,17 @@ function savingsGenerate() {
 			}
 		}, 800);
 	}
-	if (CurrHref.indexOf("www.footlocker.com") > -1) {
-		setTimeout(function () {
-			try {
-				var i = footDiscArr.indexOf(Math.max.apply(null, footDiscArr));
-				finalCode = footCoupArr[i];
-				var savings = footDiscArr[i];
-				if (savings > 0) {
-					totalSavings = "$" + savings.toFixed(2);
-				}
-				var par = document.getElementById("estimator_subtotal");
-				var subtotal = par.getElementsByTagName("td")[0].innerText;
-				subtotal = subtotal.replace(/[$,]/g, '');
-				var params = "estimateTotal=true&subtotal=" + subtotal + "&country=US&zipcode=10001&shipping=Z&sourcecode=" + finalCode + "&formSubmitProof=";
-				var foothttp = new XMLHttpRequest();
-				foothttp.onreadystatechange = function () {
-					if (this.readyState == 4) {
-						try {
-							document.getElementById('estimator_sourcecode').value = finalCode;
-							document.getElementById('estimator_submit').getElementsByTagName('a')[0].click();
-							SavingsPopup(finalCode, totalSavings);
-						} catch (e) {
-							SavingsPopup(finalCode, totalSavings);
-							Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-						}
-					}
-				};
-				foothttp.open("POST", footlockerWalletApi, false);
-				foothttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-				foothttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-				foothttp.send(params);
-			} catch (e) {
-				SavingsPopup(finalCode, totalSavings);
-				Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-			}
-		}, 1000);
+
+	if (CurrHref.indexOf("footlocker.com") > -1) {
+		localStorage.setItem("footlocker", true);
+		location.reload();
 	}
+
 	if (CurrHref.indexOf("shop.advanceautoparts.com/web/OrderItemDisplay") > -1) {
 		localStorage.setItem("autoparts", "true");
 		location.reload();
 	}
+
 	if (CurrHref.indexOf("www.bathandbodyworks.com") > -1) {
 		setTimeout(function () {
 			var bathttp = new XMLHttpRequest();
@@ -5572,9 +5980,34 @@ function savingsGenerate() {
 			bathttp.send();
 		}, 6000);
 	}
-	if (CurrHref.indexOf("www.ae.com") > -1) {
-		SavingsPopup(finalCode, totalSavings);
+	
+	if (CurrHref.indexOf("ae.com") > -1) {
+		var maxIndex = aeDiscArr.indexOf(Math.max.apply(null, aeDiscArr));
+		finalCode = aeCoupArr[maxIndex];
+		var savings = aeDiscArr[maxIndex];
+		if (savings > 0) {
+			totalSavings = "$" + savings.toFixed(2);
+		}
+		if(finalCode){
+			var aeotoken =  JSON.parse(localStorage.getItem("aeotoken"));
+			var accessToken = aeotoken.access_token;
+
+			var params = '{"id":"'+finalCode+'"}';
+			var aehttp = new XMLHttpRequest();
+			aehttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					SavingsPopup(finalCode, totalSavings);
+				}
+			};
+			aehttp.open("POST", aeCouponApi, false);
+			aehttp.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+			aehttp.setRequestHeader("x-access-token", accessToken);
+			aehttp.send(params);
+		}else{
+			SavingsPopup(finalCode, totalSavings);
+		}
 	}
+
 	if (CurrHref.indexOf("barnesandnoble.com") > -1) {
 		setTimeout(function () {
 			try {
@@ -5609,34 +6042,36 @@ function savingsGenerate() {
 			}
 		}, 1000);
 	}
-	if (CurrHref.indexOf("www.steinmart.com") > -1) {
+
+	if (CurrHref.indexOf("steinmart.com") > -1) {
+
+		var cartTotal = Number(document.getElementsByClassName("order-summary__emphasis total-recap__final-price skeleton-while-loading")[0].innerText.replace(/[$,]/g, ''));
+
 		var steinhttp = new XMLHttpRequest();
 		steinhttp.onreadystatechange = function () {
 			if (this.readyState == 4) {
 				try {
 					var parser = new DOMParser();
 					var doc = parser.parseFromString(this.responseText, "text/html");
-					for (var t = 0; t < doc.getElementsByClassName("ml-basket-input-wrapper").length; t++) {
-						if ((t != 0) && (t < 4)) {
-							var x = doc.getElementsByClassName("ml-basket-input-wrapper")[t];
-							var CouponCodes = x.querySelectorAll("span.messagediscount")[0].innerText;
-							steinCoupArr.push(CouponCodes);
-						}
-					}
-					finalCode = steinCoupArr.join(", ");
-					if (doc.getElementsByClassName("ml-basket-column ml-basket-total-value ml-basket-you-saved-value").length > 0) {
-						var totalSavings = doc.getElementsByClassName("ml-basket-column ml-basket-total-value ml-basket-you-saved-value")[0].innerText;
-					}
-					SavingsPopup(finalCode, totalSavings);
+
+					var finalCode = doc.getElementsByClassName("reduction-code__text")[0].innerText;
+			
+					var promoCartTotal = Number(doc.getElementsByClassName("order-summary__emphasis total-recap__final-price skeleton-while-loading")[0].innerText.replace(/[$,]/g, ''));
+
+					var totalSavings = cartTotal - promoCartTotal;
+		
+					SavingsPopup(finalCode, "$" + totalSavings);
 				} catch (e) {
 					SavingsPopup(finalCode, totalSavings);
 					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 				}
 			}
 		};
-		steinhttp.open("GET", steinmartWalletApi, false);
+		steinhttp.open("GET", CurrHref, false);
 		steinhttp.send();
 	}
+	
+	
 	if (CurrHref.indexOf("www.lanebryant.com") > -1) {
 		try {
 			var x = document.getElementsByClassName("asc-discount-message");
@@ -5677,11 +6112,9 @@ function savingsGenerate() {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.carters.com") > -1) {
+
+	if (CurrHref.indexOf("carters.com") > -1) {
 		try {
-			var carterWalletClass = document.getElementsByClassName("paypalcheckout")[0];
-			if(carterWalletClass)
-			{
 				var carthttp = new XMLHttpRequest();
 				carthttp.onreadystatechange = function () {
 					if (this.readyState == 4) {
@@ -5708,13 +6141,12 @@ function savingsGenerate() {
 				};
 				carthttp.open("GET", carterWalletApi, false);
 				carthttp.send();
-			}
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.cabelas.com") > -1) {
+	if (CurrHref.indexOf("cabelas.com") > -1) {
 		try {
 			var maxIndex = cabelasDiscArr.indexOf(Math.max.apply(null, cabelasDiscArr));
 			finalCode = cabelasCoupArr[maxIndex];
@@ -5722,25 +6154,57 @@ function savingsGenerate() {
 			if (savings > 0) {
 				totalSavings = "$" + savings.toFixed(2);
 			}
-			var params = "promoCode=" + finalCode + "&supportMovingToRebate=true";
-			var cabelashttp = new XMLHttpRequest();
-			cabelashttp.onreadystatechange = function () {
-				if (this.readyState == 4) {
-					SavingsPopup(finalCode, totalSavings);
-				}
-			};
-			cabelashttp.open("POST", cabelasWalletApi, true);
-			cabelashttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-			cabelashttp.send(params);
+			if(finalCode){
+				var params = "orderId="+orderId+"&taskType="+taskType+"&URL=&storeId="+storeId+"&catalogId="+catalogId+"&langId="+langId+"&finalView=AjaxOrderItemDisplayView&promoCode="+finalCode+"&employeeLastName=&empId=&requesttype=ajax";
+
+				var cabelashttp = new XMLHttpRequest();
+				cabelashttp.onreadystatechange = function () {
+					if (this.readyState == 4) {
+							// var cabelasObj = JSON.parse(this.responseText);
+							//console.log(cabelasObj);
+							SavingsPopup(finalCode, totalSavings);
+					}
+				};
+				cabelashttp.open("POST", cabelasCouponApi, false);
+				cabelashttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+				cabelashttp.setRequestHeader("Cache-Control", "no-cache");
+				cabelashttp.send(params);	
+			}else{
+				SavingsPopup(finalCode, totalSavings);
+			}
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.lordandtaylor.com") > -1) {
-		totalSavings = localStorage.getItem("lordandtaylor");
-		SavingsPopup(finalCode, totalSavings);
+
+	if (CurrHref.indexOf("lordandtaylor.com") > -1) {
+		var cartTotal = Number(document.getElementsByClassName("order-summary__emphasis total-recap__final-price skeleton-while-loading")[0].innerText.replace(/[$,]/g, ''));
+
+		var lordhttp = new XMLHttpRequest();
+		lordhttp.onreadystatechange = function () {
+			if (this.readyState == 4) {
+				try {
+					var parser = new DOMParser();
+					var doc = parser.parseFromString(this.responseText, "text/html");
+
+					var finalCode = doc.getElementsByClassName("reduction-code__text")[0].innerText;
+			
+					var promoCartTotal = Number(doc.getElementsByClassName("order-summary__emphasis total-recap__final-price skeleton-while-loading")[0].innerText.replace(/[$,]/g, ''));
+
+					var totalSavings = cartTotal - promoCartTotal;
+		
+					SavingsPopup(finalCode, "$" + totalSavings);
+				} catch (e) {
+					SavingsPopup(finalCode, totalSavings);
+					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+				}
+			}
+		};
+		lordhttp.open("GET", CurrHref, false);
+		lordhttp.send();
 	}
+
 	if (CurrHref.indexOf("www.partycity.com") > -1) {
 		try {
 			var maxIndex = partycityDiscArr.indexOf(Math.max.apply(null, partycityDiscArr));
@@ -5800,11 +6264,22 @@ function savingsGenerate() {
 		aeropohttp.open("GET", CurrHref, false);
 		aeropohttp.send();
 	}
-	if (CurrHref.indexOf("www.shutterfly.com") > -1) {
+	if (CurrHref.indexOf("shutterfly.com") > -1) {
 		try {
-			var totalSavings = document.getElementsByClassName("table-cell-currency")[2].innerText;
-			totalSavings = totalSavings.replace("-", "").trim();
-			totalSavings = Number(totalSavings);
+			// var totalSavings = document.getElementsByClassName("table-cell-currency")[2].innerText;
+			// totalSavings = totalSavings.replace("-", "").trim();
+			// totalSavings = Number(totalSavings);
+
+			var i = shutterflyDiscArr.indexOf(Math.max.apply(null, shutterflyDiscArr));
+			finalCode = shutterflyCoupArr[i];
+			var savings = shutterflyDiscArr[i];
+			if (savings > 0) {
+				totalSavings = "$" + savings.toFixed(2);
+			}
+
+			document.getElementsByName("omnibox-code")[0].value = finalCode;
+			document.getElementsByClassName("omnibox-claim btn-tertiary")[0].click();
+
 			SavingsPopup(finalCode, totalSavings);
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
@@ -5837,53 +6312,72 @@ function savingsGenerate() {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.dressbarn.com") > -1) {
-		try {
-			var params = "Action=Cart.validatePromo&sessionConfirmationNumber=7512911085531293020&promoCode=" + finalCode + "";
+		if (CurrHref.indexOf("dressbarn.com") > -1) {
+			var cartTotal = Number(document.getElementsByClassName("order-summary__emphasis total-recap__final-price skeleton-while-loading")[0].innerText.replace(/[$,]/g, ''));
+	
 			var dresshttp = new XMLHttpRequest();
 			dresshttp.onreadystatechange = function () {
 				if (this.readyState == 4) {
 					try {
-						var dressObj = JSON.parse(this.responseText);
-						var check = dressObj.data.promoCode;
-						var codePath = dressObj.data;
-						if (check.successMessage) {
-							finalCode = codePath.cartSummary.savingsNew[0].CouponId;
-							totalSavings = dressObj.data.cartSummary.savingsNew[0].value;
-						}
-						SavingsPopup(finalCode, totalSavings);
+						var parser = new DOMParser();
+						var doc = parser.parseFromString(this.responseText, "text/html");
+	
+						var finalCode = doc.getElementsByClassName("reduction-code__text")[0].innerText;
+				
+						var promoCartTotal = Number(doc.getElementsByClassName("order-summary__emphasis total-recap__final-price skeleton-while-loading")[0].innerText.replace(/[$,]/g, ''));
+	
+						var totalSavings = cartTotal - promoCartTotal;
+			
+						SavingsPopup(finalCode, "$" + totalSavings);
 					} catch (e) {
 						SavingsPopup(finalCode, totalSavings);
-						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
+						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 					}
 				}
 			};
-			dresshttp.open("POST", dressCouponApi, false);
-			dresshttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-			dresshttp.send(params);
-		} catch (e) {
-			SavingsPopup(finalCode, totalSavings);
-			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+			dresshttp.open("GET", CurrHref, false);
+			dresshttp.send();
 		}
-	}
-	if (CurrHref.indexOf("www.nastygal.com") > -1) {
-		try {
-			var x = document.getElementById("remove-coupon");
-			finalCode = x.getAttribute("data-coupon");
-			var j = document.getElementsByClassName("order-discount discount")[0];
-			totalSavings = j.getElementsByTagName("td")[1].innerText.split('-')[1];
-			SavingsPopup(finalCode, totalSavings);
-		} catch (e) {
-			SavingsPopup(finalCode, totalSavings);
-			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+
+		if (CurrHref.indexOf("nastygal.com") > -1) {
+			try {
+				// var x = document.getElementById("remove-coupon");
+				// finalCode = x.getAttribute("data-coupon");
+				// var j = document.getElementsByClassName("order-discount discount")[0];
+				// totalSavings = j.getElementsByTagName("td")[1].innerText.split('-')[1];
+				// SavingsPopup(finalCode, totalSavings);
+	
+				var i = nastygalDiscArr.indexOf(Math.max.apply(null, nastygalDiscArr));
+				finalCode = nastygalCoupArr[i];
+				var savings = nastygalDiscArr[i];
+				if (savings > 0) {
+					totalSavings = "$" + savings.toFixed(2);
+				}
+	
+				var nastygalhttp = new XMLHttpRequest();
+				nastygalhttp.onreadystatechange = function () {
+					if (this.readyState == 4) {
+						SavingsPopup(finalCode, totalSavings);
+					}
+				};
+				nastygalhttp.open("POST", nastygalCouponApi + finalCode, false);
+				nastygalhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+				nastygalhttp.send();
+			} catch (e) {
+				SavingsPopup(finalCode, totalSavings);
+				Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+			}
 		}
-	}
-	if (CurrHref.indexOf("www.hanes.com") > -1) {
+	
+	if (CurrHref.indexOf("hanes.com") > -1) {
 		setTimeout(function () {
 			try {
 				var i = hanesDiscArr.indexOf(Math.max.apply(null, hanesDiscArr));
-				document.getElementById("promoCode").value = hanesCoupArr[i];
-				document.getElementById('WC_PromotionCodeDisplay_links_1').click();
+				if(hanesCoupArr[i]){
+					document.getElementById("promoCode").value = hanesCoupArr[i];
+					document.getElementById('WC_PromotionCodeDisplay_links_1').click();
+				}
+			
 				setTimeout(function () {
 					finalCode = hanesCoupArr[i];
 					var savings = hanesDiscArr[i];
@@ -5898,6 +6392,7 @@ function savingsGenerate() {
 			}
 		}, 2000);
 	}
+
 	if (CurrHref.indexOf("www.vitacost.com") > -1) {
 		setTimeout(function () {
 			try {
@@ -5977,65 +6472,114 @@ function savingsGenerate() {
 			}
 		}, 2000);
 	}
-	if (CurrHref.indexOf("www.bebe.com") > -1) {
-		try {
-			var i = bebeDiscArr.indexOf(Math.max.apply(null, bebeDiscArr));
-			finalCode = bebeCoupArr[i];
-			var savings = bebeDiscArr[i];
-			if (savings > 0) {
-				totalSavings = "$" + savings.toFixed(2);
-			}
+
+	if (CurrHref.indexOf("bebe.com") > -1) {
+		// var i = bebeDiscArr.indexOf(Math.max.apply(null, bebeDiscArr));
+		// finalCode = bebeCoupArr[i];
+		// var savings = bebeDiscArr[i];
+		// if (savings > 0) {
+		// 	totalSavings = "$" + savings.toFixed(2);
+		// }
+		// var bebehttp = new XMLHttpRequest();
+		// bebehttp.onreadystatechange = function () {
+		// 	if (this.readyState == 4) {
+		// 		SavingsPopup(finalCode, totalSavings);
+		// 	}
+		// };
+		// bebehttp.open("GET", "https://www.bebe.com/checkout/update_promo_code_ajax.cmd?promoCode=" + finalCode + "&delete=false&form_state=updatePromoCodeForm&removePromoCode=", false);
+		// bebehttp.send();
+
+			var cartTotal = Number(document.getElementsByClassName("order-summary__emphasis total-recap__final-price skeleton-while-loading")[0].innerText.replace(/[$,]/g, ''));
+	
 			var bebehttp = new XMLHttpRequest();
 			bebehttp.onreadystatechange = function () {
 				if (this.readyState == 4) {
-					SavingsPopup(finalCode, totalSavings);
+					try {
+						var parser = new DOMParser();
+						var doc = parser.parseFromString(this.responseText, "text/html");
+	
+						var finalCode = doc.getElementsByClassName("reduction-code__text")[0].innerText;
+				
+						var promoCartTotal = Number(doc.getElementsByClassName("order-summary__emphasis total-recap__final-price skeleton-while-loading")[0].innerText.replace(/[$,]/g, ''));
+	
+						var totalSavings = cartTotal - promoCartTotal;
+			
+						SavingsPopup(finalCode, "$" + totalSavings);
+					} catch (e) {
+						SavingsPopup(finalCode, totalSavings);
+						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+					}
 				}
 			};
-			bebehttp.open("GET", "https://www.bebe.com/checkout/update_promo_code_ajax.cmd?promoCode=" + finalCode + "&delete=false&form_state=updatePromoCodeForm&removePromoCode=", false);
+			bebehttp.open("GET", CurrHref, false);
 			bebehttp.send();
-		} catch (e) {
-			SavingsPopup(finalCode, totalSavings);
-			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-		}
 	}
-	if (CurrHref.indexOf("www.brookstone.com") > -1) {
+	
+	if (CurrHref.indexOf("brookstone.com") > -1) {
 		try {
-			var brookCouponApi = document.getElementById('cart-items-form').action;
-			var paramss = "dwfrm_cart_couponCode=&dwfrm_cart_coupons_i0_deleteCoupon=Remove";
-			var brookshttp = new XMLHttpRequest();
-			brookshttp.onreadystatechange = function () {
+			// var brookCouponApi = document.getElementById('cart-items-form').action;
+			// var paramss = "dwfrm_cart_couponCode=&dwfrm_cart_coupons_i0_deleteCoupon=Remove";
+			// var brookshttp = new XMLHttpRequest();
+			// brookshttp.onreadystatechange = function () {
+			// 	if (this.readyState == 4) {
+			// 		var i = brookDiscArr.indexOf(Math.max.apply(null, brookDiscArr));
+			// 		finalCode = brookCoupArr[i];
+			// 		var params = "dwfrm_cart_couponCode=" + finalCode + "&dwfrm_cart_addCoupon=dwfrm_cart_addCoupon";
+			// 		var brookhttp = new XMLHttpRequest();
+			// 		brookhttp.onreadystatechange = function () {
+			// 			if (this.readyState == 4) {
+			// 				try {
+			// 					var parser = new DOMParser();
+			// 					var doc = parser.parseFromString(this.responseText, "text/html");
+			// 					var totalSavings = doc.getElementsByClassName("order-totals-row order-discount discount")[0].getElementsByTagName("span")[1].innerText.split('-')[1];
+			// 					SavingsPopup(finalCode, totalSavings);
+			// 				} catch (e) {
+			// 					SavingsPopup(finalCode, totalSavings);
+			// 					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+			// 				}
+			// 			}
+			// 		};
+			// 		brookhttp.open("POST", brookCouponApi, false);
+			// 		brookhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+			// 		brookhttp.send(params);
+			// 	}
+			// };
+			// brookshttp.open("POST", brookCouponApi, false);
+			// brookshttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+			// brookshttp.send(paramss);
+
+			var cartTotal = Number(document.getElementsByClassName("order-summary__emphasis total-recap__final-price skeleton-while-loading")[0].innerText.replace(/[$,]/g, ''));
+	
+			var brookhttp = new XMLHttpRequest();
+			brookhttp.onreadystatechange = function () {
 				if (this.readyState == 4) {
-					var i = brookDiscArr.indexOf(Math.max.apply(null, brookDiscArr));
-					finalCode = brookCoupArr[i];
-					var params = "dwfrm_cart_couponCode=" + finalCode + "&dwfrm_cart_addCoupon=dwfrm_cart_addCoupon";
-					var brookhttp = new XMLHttpRequest();
-					brookhttp.onreadystatechange = function () {
-						if (this.readyState == 4) {
-							try {
-								var parser = new DOMParser();
-								var doc = parser.parseFromString(this.responseText, "text/html");
-								var totalSavings = doc.getElementsByClassName("order-totals-row order-discount discount")[0].getElementsByTagName("span")[1].innerText.split('-')[1];
-								SavingsPopup(finalCode, totalSavings);
-							} catch (e) {
-								SavingsPopup(finalCode, totalSavings);
-								Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-							}
-						}
-					};
-					brookhttp.open("POST", brookCouponApi, false);
-					brookhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-					brookhttp.send(params);
+					try {
+						var parser = new DOMParser();
+						var doc = parser.parseFromString(this.responseText, "text/html");
+	
+						var finalCode = doc.getElementsByClassName("reduction-code__text")[0].innerText;
+				
+						var promoCartTotal = Number(doc.getElementsByClassName("order-summary__emphasis total-recap__final-price skeleton-while-loading")[0].innerText.replace(/[$,]/g, ''));
+	
+						var totalSavings = cartTotal - promoCartTotal;
+			
+						SavingsPopup(finalCode, "$" + totalSavings);
+					} catch (e) {
+						SavingsPopup(finalCode, totalSavings);
+						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+					}
 				}
 			};
-			brookshttp.open("POST", brookCouponApi, false);
-			brookshttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-			brookshttp.send(paramss);
+			brookhttp.open("GET", CurrHref, false);
+			brookhttp.send();
+
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.newbalance.com") > -1) {
+
+	if (CurrHref.indexOf("newbalance.com") > -1) {
 		try {
 			var maxIndex = newbalanceDiscArr.indexOf(Math.max.apply(null, newbalanceDiscArr));
 			finalCode = newbalanceCoupArr[maxIndex];
@@ -6043,58 +6587,74 @@ function savingsGenerate() {
 			if (savings > 0) {
 				totalSavings = "$" + savings.toFixed(2);
 			}
-			var newbalancehttp = new XMLHttpRequest();
+			
+			var csrfToken = document.getElementsByName("csrf_token")[0].value;
+
+			var newbalanceCouponCodeApi =  newbalanceCouponApi + "csrf_token="+csrfToken+"&couponCode=" + finalCode;
+
+			var  newbalancehttp = new XMLHttpRequest();
 			newbalancehttp.onreadystatechange = function () {
-				if (this.readyState == 4) {
-					SavingsPopup(finalCode, totalSavings);
+				if (this.readyState == 4 && this.status == 200) {
+					try {
+						  SavingsPopup(finalCode, totalSavings);	
+					} catch (e) {
+						SavingsPopup(finalCode, totalSavings);
+						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
+					}
 				}
 			};
-			newbalancehttp.open("GET", newbalanceCouponApi + finalCode, true);
+			newbalancehttp.open("GET", newbalanceCouponCodeApi, false);
 			newbalancehttp.send();
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.dollargeneral.com") > -1) {
+
+	if (CurrHref.indexOf("dollargeneral.com") > -1) {
 		setTimeout(function () {
 			try {
 				var i = dollarDiscArr.indexOf(Math.max.apply(null, dollarDiscArr));
 				finalCode = dollarCoupArr[i];
-				var dollarhttp = new XMLHttpRequest();
-				dollarhttp.onreadystatechange = function () {
-					if (this.readyState == 4) {
-						var dollarhttp = new XMLHttpRequest();
-						dollarhttp.onreadystatechange = function () {
-							if (this.readyState == 4) {
-								try {
-									var dollarObj = JSON.parse(this.responseText);
-									totalSavings = dollarObj.discount_amount;
-									totalSavings = totalSavings.toString().replace('-', '');
-									finalCode = finalCode.replace(/,/g, ', ');
-									SavingsPopup(finalCode, "$" + totalSavings);
-								} catch (e) {
-									SavingsPopup(finalCode, totalSavings);
-									Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
+				if(finalCode){
+					var dollarhttp = new XMLHttpRequest();
+					dollarhttp.onreadystatechange = function () {
+						if (this.readyState == 4) {
+							var dollarhttp = new XMLHttpRequest();
+							dollarhttp.onreadystatechange = function () {
+								if (this.readyState == 4) {
+									try {
+										var dollarObj = JSON.parse(this.responseText);
+										totalSavings = dollarObj.discount_amount;
+										totalSavings = totalSavings.toString().replace('-', '');
+										finalCode = finalCode.replace(/,/g, ', ');
+										SavingsPopup(finalCode, "$" + totalSavings);
+									} catch (e) {
+										SavingsPopup(finalCode, totalSavings);
+										Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
+									}
 								}
-							}
-						};
-						dollarhttp.open("GET", dollarWalletApi, false);
-						dollarhttp.setRequestHeader("Content-type", "application/json; charset=utf-8");
-						dollarhttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-						dollarhttp.send();
-					}
-				};
-				dollarhttp.open("PUT", dollarCouponApi + finalCode, false);
-				dollarhttp.setRequestHeader("Content-type", "application/json; charset=utf-8");
-				dollarhttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-				dollarhttp.send();
+							};
+							dollarhttp.open("GET", dollarWalletApi, false);
+							dollarhttp.setRequestHeader("Content-type", "application/json; charset=utf-8");
+							dollarhttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+							dollarhttp.send();
+						}
+					};
+					dollarhttp.open("PUT", dollarCouponApi + finalCode, false);
+					dollarhttp.setRequestHeader("Content-type", "application/json; charset=utf-8");
+					dollarhttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+					dollarhttp.send();
+				}else{
+					SavingsPopup(finalCode, totalSavings);
+				}
 			} catch (e) {
 				SavingsPopup(finalCode, totalSavings);
 				Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 			}
 		}, 5000);
 	}
+
 	if (CurrHref.indexOf("secure.bluenile.com") > -1) {
 		try {
 			var saving = document.getElementsByClassName('promo-code')[0].getElementsByClassName('right')[0].innerText.split("-")[1].replace(/[$,]/g, '');
@@ -6148,7 +6708,8 @@ function savingsGenerate() {
 		fromyouhttp.open("GET", fromyouCouponApi, false);
 		fromyouhttp.send();
 	}
-	if (CurrHref.indexOf("www.davidsbridal.com") > -1) {
+
+	if (CurrHref.indexOf("davidsbridal.com") > -1) {
 		setTimeout(function () {
 			try {
 				var totalSavingsId = document.getElementById("total_breakdown");
@@ -6174,57 +6735,64 @@ function savingsGenerate() {
 			}
 		}, 2000);
 	}
-	if (CurrHref.indexOf("www.eddiebauer.com") > -1) {
-		var eddiehttp = new XMLHttpRequest();
-		eddiehttp.onreadystatechange = function () {
-			if (this.readyState == 4) {
-				var parser = new DOMParser();
-				var doc = parser.parseFromString(this.responseText, "text/html");
-				try {
-					totalSavings = doc.getElementsByClassName('right bos-amountlbl')[0].innerText.split("-")[1];
-					finalCode = doc.getElementsByClassName('success-pro-code')[0].innerText;
-				} catch (e) {
-					SavingsPopup(finalCode, totalSavings);
-					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-				}
-				SavingsPopup(finalCode, totalSavings);
+
+	if (CurrHref.indexOf("eddiebauer.com") > -1) {
+		var maxIndex = eddiebauerDiscArr.indexOf(Math.max.apply(null, eddiebauerDiscArr));
+			finalCode = eddiebauerCoupArr[maxIndex];
+			var savings = eddiebauerDiscArr[maxIndex];
+			if (savings > 0) {
+				totalSavings = "$" + savings.toFixed(2);
 			}
-		};
-		eddiehttp.open("GET", eddieWalletApi, false);
-		eddiehttp.send();
+
+			if(finalCode){
+			var accessToken = localStorage.getItem("x-access-token").replace(/['"]+/g, '');
+
+			var params = '{"operationName":"applyPromo","variables":{"promoCode":"'+finalCode+'","customerLoyaltyId":null,"customerLoyaltyTier":null},"query":"mutation applyPromo($promoCode: String, $customerLoyaltyId: String, $customerLoyaltyTier: String) {  applyPromo(promoCode: $promoCode, customerLoyaltyId: $customerLoyaltyId, customerLoyaltyTier: $customerLoyaltyTier) {    ...CartFragment    __typename  }}fragment CartItemDetailsFragment on CartItemDetails {  code  title  image  variants {    label    name    value    __typename  }  hemming {    label    name    value    __typename  }  productCode  productGroups  attributes  isNew  __typename}fragment AddressFragment on Address {  id  firstName  lastName  address1  address2  zipCode  city  state  region  country  phone  email  kind  isDefaultShipTo  isDefaultBillTo  __typename}fragment ShippingAddressFragment on ShippingAddress {  id  firstName  lastName  address1  address2  zipCode  city  state  region  country  phone  email  kind  isDefaultShipTo  isVerified  additionalPickupPerson {    name    email    __typename  }  __typename}fragment CartFragment on Cart {  id  orderId  userId  shippingMethod {    id    minDays    maxDays    name    price {      amount      currency      __typename    }    __typename  }  tax  cartDiscount  discounts {    id    type    code    amount    balance    __typename  }  shippingAddress {    ...ShippingAddressFragment    __typename  }  billingAddress {    ...AddressFragment    __typename  }  subTotalAmount {    currency    amount    __typename  }  cartItemCount  items {    id    isGiftBox    giftBox    quantity    availableQuantity    shipsBy    extra    delivery {      mode      storeCode      __typename    }    price {      list {        currency        amount        kind        __typename      }      final {        currency        amount        kind        __typename      }      discount      __typename    }    totalPrice {      currency      amount      kind      __typename    }    discountDetails    eligibility {      isGiftboxable      __typename    }    item {      ...CartItemDetailsFragment      __typename    }    promoMessage    __typename  }  donations {    id    extra    quantity    price {      list {        currency        amount        kind        __typename      }      final {        currency        amount        kind        __typename      }      discount      __typename    }    totalPrice {      currency      amount      kind      __typename    }    item {      ...CartItemDetailsFragment      __typename    }    __typename  }  errors {    errorFor    message    __typename  }  extra  hasFreeShipping  shippingDiscount {    amount    displayName    __typename  }  __typename}"}';
+
+			var eddihttp = new XMLHttpRequest();
+			eddihttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					SavingsPopup(finalCode, totalSavings);
+				}
+			};
+			eddihttp.open("POST", eddieCouponApi, false);
+			eddihttp.setRequestHeader("Content-type", "application/json");
+			eddihttp.setRequestHeader("x-access-token", accessToken);
+			eddihttp.send(params);
+		} else{
+			SavingsPopup(finalCode, totalSavings);
+		}
 	}
-	if (CurrHref.indexOf("www.toms.com") > -1) {
-		setTimeout(function () {
-			try {
-				var session = document.getElementsByName('_dynSessConf')[0].value;
-				var i = tomspriceArr.indexOf(Math.max.apply(null, tomspriceArr));
-				finalCode = tomsCoupArr[i];
-				var params = "_dyncharset=UTF-8&_dynSessConf=" + session + "&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.couponCode=" + finalCode + "&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.couponCode=+&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.stage=shippingMethod&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.stage=+&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.multiStage=&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.multiStage=+&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.claimCoupon=+&_DARGS=%2Fcheckout%2Fcommon%2FcheckoutPromoCode.jsp.couponForm2&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.claimCoupon=Apply";
+
+	if (CurrHref.indexOf("toms.com") > -1) {
+		try {
+			var maxIndex = tomsDiscArr.indexOf(Math.max.apply(null, tomsDiscArr));
+			finalCode = tomsCoupArr[maxIndex];
+			var savings = tomsDiscArr[maxIndex];
+			if (savings > 0) {
+				totalSavings = "$" + savings.toFixed(2);
+			}
+
+			if(finalCode){
+				var csrfToken = document.getElementsByName("csrf_token")[0].value;
+				var tomsCouponCodeApi = tomsCouponApi + "csrf_token="+csrfToken+"&couponCode=" + finalCode;
 				var tomshttp = new XMLHttpRequest();
 				tomshttp.onreadystatechange = function () {
 					if (this.readyState == 4) {
-						try {
-							var parser = new DOMParser();
-							var doc = parser.parseFromString(this.responseText, "text/html");
-							var total = doc.getElementsByClassName('ln-amt')[2];
-							totalSavings = total.innerText.trim().replace(/–/g, "");
-							SavingsPopup(finalCode, totalSavings);
-						} catch (e) {
-							SavingsPopup(finalCode, totalSavings);
-							Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-						}
+						SavingsPopup(finalCode, totalSavings);	
 					}
 				};
-				tomshttp.open("POST", tomsCouponApi, false);
-				tomshttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-				tomshttp.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
-				tomshttp.send(params);
-			} catch (e) {
+				tomshttp.open("GET", tomsCouponCodeApi, false);
+				tomshttp.send();
+			}else{
 				SavingsPopup(finalCode, totalSavings);
-				Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 			}
-		}, 2500);
+		} catch (e) {
+			SavingsPopup(finalCode, totalSavings);
+			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+		}
 	}
+
 	if (CurrHref.indexOf("www.younkers.com") > -1) {
 		setTimeout(function () {
 			try {
@@ -6366,42 +6934,71 @@ function savingsGenerate() {
 			}
 		}, 1000);
 	}
+
 	if (CurrHref.indexOf("harryanddavid.com") > -1) {
-		setTimeout(function () {
 			try {
-				var i = harryDisArr.indexOf(Math.max.apply(null, harryDisArr));
-				finalCode = harryCoupArr[i];
-				var OrderId = document.getElementById('currentOrderId').value;
-				var params = "PiId=&storeccno=&storeccname=&ccExpMonth=&ccExpYear=&plccstoreccno=%2F&plccstoreccname=%2F&chkFlw=Y&selectedType=promotion&storeId=21051&langId=-1&orderId=" + OrderId + "&catalogId=16802&taskType=A&existingPromoCode=&existingCouponId=&existingCouponBalance=&addGiftRewardFlag=&appliedPromoCode=" + finalCode + "&currentPayment=creditcard&isPromoValid=true&previousPayment=&removeExistingPromo=&excludedPromoCode=&promoZipCodeID=&PaymentTypePromotion=PaymentTypePromotionCallBack%3FlangId%3D-1%26storeId%3D21051%26catalogId%3D16802%26orderId%3D" + OrderId + "&PaymentTypePromotionCmd=PaymentTypePromotion%3FlangId%3D-1%26storeId%3D21051%26catalogId%3D16802%26orderId%3D" + OrderId + "&RemovePromotionView=RemovePromotionView%3FlangId%3D-1%26storeId%3D21051%26catalogId%3D16802%26orderId%3D" + OrderId + "&PlaceOrderDisplayCmdURL=FDPlaceOrderDisplayCmd%3FlangId%3D-1%26storeId%3D21051%26catalogId%3D16802&AskSuggestionPromotionView=AskSuggestionPromotionView%3FlangId%3D-1%26storeId%3D21051%26catalogId%3D16802%26orderId%3D" + OrderId + "&AddOrRemovePromotionOrEGCView=AddOrRemovePromotionOrEGCView%3FlangId%3D-1%26storeId%3D21051%26catalogId%3D16802%26orderId%3D" + OrderId + "&promoCode=" + finalCode + "&membershipPromo=";
-				var harryhttp = new XMLHttpRequest();
-				harryhttp.onreadystatechange = function () {
-					if (this.readyState == 4) {
-						var savings = harryDisArr[i];
-						if (savings > 0) {
-							totalSavings = "$" + savings.toFixed(2);
+				var maxIndex = harryDisArr.indexOf(Math.max.apply(null, harryDisArr));
+				finalCode = harryCoupArr[maxIndex];
+				var savings = harryDisArr[maxIndex];
+				if (savings > 0) {
+					totalSavings = "$" + savings.toFixed(2);
+				}
+				if(finalCode){
+					var userInfo = localStorage.getItem("userInfo");
+					var userInfoObj = JSON.parse(userInfo);
+					var authToken = userInfoObj.token;
+		
+					var params = '{"orderId":"'+harryOrderId+'","promotionCode":"'+finalCode+'","membershipId":"","existingPromotionCode":"","promotionZipCode":"","currentPayment":"CreditCard"}';
+		
+					var harryhttp = new XMLHttpRequest();
+					harryhttp.onreadystatechange = function () {
+						if (this.readyState == 4) {
+							SavingsPopup(finalCode, totalSavings);
 						}
-						SavingsPopup(finalCode, totalSavings);
-					}
-				};
-				harryhttp.open("POST", harryCouponApi, false);
-				harryhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-				harryhttp.send(params);
+					};
+					harryhttp.open("POST", harryCouponApi, false);
+					harryhttp.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+					harryhttp.setRequestHeader("authorization", authToken);
+					harryhttp.send(params);
+				}else{
+					SavingsPopup(finalCode, totalSavings);
+				}
 			} catch (e) {
 				SavingsPopup(finalCode, totalSavings);
 				Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 			}
-		}, 5000);
 	}
+
 	if (CurrHref.indexOf("columbia.com") > -1) {
 		try {
-			totalSavings = document.getElementsByClassName("cart-order-totals")[0].getElementsByTagName('span')[1].innerText;
-			finalCode = document.getElementsByClassName("coupon-number")[0].getElementsByTagName('span')[1].innerText;
-			SavingsPopup(finalCode, totalSavings);
+			var maxIndex = columbiaDiscArr.indexOf(Math.max.apply(null, columbiaDiscArr));
+			finalCode = columbiaCoupArr[maxIndex];
+			var savings = columbiaDiscArr[maxIndex];
+			if (savings > 0) {
+				totalSavings = "$" + savings.toFixed(2);
+			}
+			
+			if(finalCode){
+				var csrfToken = document.getElementsByName("csrf_token")[0].value;
+				var columbiaCouponCodeApi = columbiaCouponApi + "csrf_token="+csrfToken+"&couponCode=" + finalCode;
+	
+				var columbiahttp = new XMLHttpRequest();
+				columbiahttp.onreadystatechange = function () {
+					if (this.readyState == 4) {
+						SavingsPopup(finalCode, totalSavings);
+					}
+				};
+				columbiahttp.open("GET", columbiaCouponCodeApi, false);
+				columbiahttp.send();
+			}else {
+				SavingsPopup(finalCode, totalSavings);
+			}	
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+
 	if (CurrHref.indexOf("www.torrid.com") > -1) {
 		var torrhttp = new XMLHttpRequest();
 		torrhttp.onreadystatechange = function () {
@@ -6451,39 +7048,38 @@ function savingsGenerate() {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+	
 	if (CurrHref.indexOf("avenue.com") > -1) {
 		try {
-			var session = "";
-			var sessionClass = document.getElementsByClassName('cart-action-continue-shopping')[0];
-			if (sessionClass) {
-				session = "?dwcont=" + sessionClass.action.split('=')[1];
-			}
-			var i = avenueDiscArr.indexOf(Math.max.apply(null, avenueDiscArr));
-			finalCode = avenueCoupArr[i];
-			var saving = avenueDiscArr[i];
-			if (saving > 0) {
-				totalSavings = "$" + saving.toFixed(2);
-			}
-			var params = "dwfrm_cart_updateCart=dwfrm_cart_updateCart&dwfrm_cart_couponCode=" + finalCode + "&dwfrm_cart_addCoupon=Apply";
-			var avenuehttp = new XMLHttpRequest();
-			avenuehttp.onreadystatechange = function () {
-				if (this.readyState == 4) {
-					try {
-						SavingsPopup(finalCode, totalSavings);
-					} catch (e) {
-						SavingsPopup(finalCode, totalSavings);
-						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-					}
-				}
-			};
-			avenuehttp.open("POST", avenueCouponApi + session, false);
-			avenuehttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-			avenuehttp.send(params);
-		} catch (e) {
-			SavingsPopup(finalCode, totalSavings);
-			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-		}
-	}
+		   if(avenueCoupArr[1]){
+			   finalCode = avenueCoupArr[1];
+		   }else if(avenueCoupArr[0]) {
+			   finalCode = avenueCoupArr[0];
+		   }
+			
+		   if(finalCode){
+			   var formKey = document.getElementsByName('form_key')[0].value;
+			   var params = "remove=0&coupon_code="+finalCode+"&form_key="+formKey;
+   
+			   var avenuehttp = new XMLHttpRequest();
+			   avenuehttp.onreadystatechange = function () {
+				   if (this.readyState == 4 && this.status == 200) {
+   
+					   localStorage.setItem("avenue", finalCode);
+					   location.reload();
+				   }
+			   };
+			   avenuehttp.open("POST", avenueCouponApi, false);
+			   avenuehttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+			   avenuehttp.send(params);	
+		   } else{
+			   SavingsPopup(finalCode, totalSavings);
+		   }
+	   } catch (e) {
+		   SavingsPopup(finalCode, totalSavings);
+		   Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+	   }
+   }
 	
 	if (CurrHref.indexOf("crocs.com") > -1) {
 		setTimeout(function () {
@@ -6514,9 +7110,12 @@ function savingsGenerate() {
 			if (saving > 0) {
 				totalSavings = "$" + saving.toFixed(2);
 			}
-			SavingsPopup(finalCode, totalSavings);
-			document.getElementById('CouponInput').value = finalCode;
-			document.getElementsByClassName('applyBtn button scTrack cta couponStackableBtn')[0].click();
+			if(finalCode){
+				document.getElementById('CouponInput').value = finalCode;
+				document.getElementsByName('CouponApplyButton')[0].click();
+			}
+		SavingsPopup(finalCode, totalSavings);
+		
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
@@ -6554,13 +7153,26 @@ function savingsGenerate() {
 
 	if (CurrHref.indexOf("bloomingdales.com") > -1) {
 		try {
-			if(document.getElementsByClassName('promo-applied-description promo-code-label')[0]){
-				var finalCode = document.getElementsByClassName('promo-applied-description promo-code-label')[0].innerText;
+			var i = bloomingDiscArr.indexOf(Math.max.apply(null, bloomingDiscArr));
+			finalCode = bloomingCoupArr[i];
+			var savings = bloomingDiscArr[i];
+			if (savings > 0) {
+				totalSavings = "$" + savings.toFixed(2);
 			}
-			if(document.getElementsByClassName('promo-applied-discount promo-code-value')[0]){
-				var totalSavings = document.getElementsByClassName('promo-applied-discount promo-code-value')[0].innerText.replace(/[-,]/g, '');
+
+			if(finalCode){
+				var bloominghttp = new XMLHttpRequest();
+				bloominghttp.onreadystatechange = function () {
+					if (this.readyState == 4 && this.status == 200) {
+						// var bloomingObj = JSON.parse(this.responseText);
+						SavingsPopup(finalCode, totalSavings);
+					}
+				};
+				bloominghttp.open("PUT", bloomingCouponApi + finalCode, false);
+				bloominghttp.send();
+			}else{
+				SavingsPopup(finalCode, totalSavings);
 			}
-			SavingsPopup(finalCode, totalSavings);
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
@@ -6588,7 +7200,7 @@ function savingsGenerate() {
 			}
 		}, 1000);
 	}
-	if (CurrHref.indexOf("www.dell.com") > -1) {
+	if (CurrHref.indexOf("dell.com") > -1) {
 		try {
 			var params = "{'CouponCode':'" + finalCode + "'}";
 			var dellhttp = new XMLHttpRequest();
@@ -6632,58 +7244,76 @@ function savingsGenerate() {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.ediblearrangements.com") > -1) {
+	if (CurrHref.indexOf("ediblearrangements.com") > -1) {
 		try {
 			var i = edibleDiscArr.indexOf(Math.max.apply(null, edibleDiscArr));
 			finalCode = edibleCoupArr[i];
-			var inputField = document.getElementById('ctl00_cpBody_rptSale_ctl00_txtCoupon');
-			inputField.value = finalCode;
-			document.getElementById('ctl00_cpBody_rptSale_ctl00_btnApplyCoupon').click();
-			var torrhttp = new XMLHttpRequest();
-			torrhttp.onreadystatechange = function () {
-				if (this.readyState == 4) {
-					try {
-						var parser = new DOMParser();
-						var doc = parser.parseFromString(this.responseText, "text/html");
-						totalSavings = doc.getElementById("ctl00_cpBody_rptSale_ctl00_Tr1").getElementsByClassName("boldText tRight")[0].innerText.replace(/\(|\)/g, '');
-						SavingsPopup(finalCode, totalSavings);
-					} catch (e) {
-						SavingsPopup(finalCode, totalSavings);
-						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+			if(finalCode){
+				var inputField = document.getElementById('ctl00_cpBody_rptSale_ctl00_txtCoupon');
+				inputField.value = finalCode;
+				document.getElementById('ctl00_cpBody_rptSale_ctl00_btnApplyCoupon').click();
+				var ediblehttp = new XMLHttpRequest();
+				ediblehttp.onreadystatechange = function () {
+					if (this.readyState == 4) {
+						try {
+							var parser = new DOMParser();
+							var doc = parser.parseFromString(this.responseText, "text/html");
+							var totalSavings = doc.getElementById("ctl00_cpBody_rptSale_ctl00_Tr1").getElementsByClassName("boldText tRight")[0].innerText.replace(/\(|\)/g, '');
+							SavingsPopup(finalCode, totalSavings);
+						} catch (e) {
+							SavingsPopup(finalCode, totalSavings);
+							Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+						}
 					}
-				}
-			};
-			torrhttp.open("GET", CurrHref, false);
-			torrhttp.send();
+				};
+				ediblehttp.open("GET", CurrHref, false);
+				ediblehttp.send();
+			} else{
+				SavingsPopup(finalCode, totalSavings);
+			}
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.reebok.com") > -1) {
-		var reebokhttp = new XMLHttpRequest();
-		reebokhttp.onreadystatechange = function () {
-			if (this.readyState == 4) {
-				try {
-					var parser = new DOMParser();
-					var doc = parser.parseFromString(this.responseText, "text/html");
-					finalCode = doc.getElementsByClassName("accepted-coupon-holder clearfix")[0].nextElementSibling.value.replace("Remove ", "");
-					var savings = doc.getElementsByClassName("totalsaving")[0].getElementsByClassName("value")[0].getAttribute("data-amount");
-					savings = Number(savings);
-					if (savings > 0) {
-						totalSavings = "$" + savings.toFixed(2);
+
+	if (CurrHref.indexOf("reebok.com") > -1) {
+		try {
+		var i = reebokDiscArr.indexOf(Math.max.apply(null, reebokDiscArr));
+		finalCode = reebokCoupArr[i];
+		var savings = reebokDiscArr[i];
+		if (savings > 0) {
+			totalSavings = "$" + savings.toFixed(2);
+		}
+		
+		if(finalCode) {
+			var authorizationToken = localStorage.getItem("jwtToken");
+			var params = '{"couponCode":"'+finalCode+'"}';
+			var reebokhttp = new XMLHttpRequest();
+			reebokhttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					try {
+						SavingsPopup(finalCode, totalSavings);
 					}
-					SavingsPopup(finalCode, totalSavings);
-				} catch (e) {
-					SavingsPopup(finalCode, totalSavings);
-					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+					catch (e) {
+						SavingsPopup(finalCode, totalSavings);
+						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+					}
 				}
-			}
-		};
-		reebokhttp.open("GET", reebokWalletApi, false);
-		reebokhttp.setRequestHeader("accept", "ext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
-		reebokhttp.send();
+			};
+			reebokhttp.open("POST", reebokCouponApi, false);
+			reebokhttp.setRequestHeader("Content-type", "application/json");
+			reebokhttp.setRequestHeader("checkout-authorization", authorizationToken);
+			reebokhttp.send(params);
+		} else {
+			SavingsPopup(finalCode, totalSavings);
+		}
+	} catch (e) {
+		SavingsPopup(finalCode, totalSavings);
+		Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 	}
+	}
+
 	if (CurrHref.indexOf("www.ralphlauren.com") > -1) {
 		try {
 			var check = document.getElementsByClassName('apply-promo-code-summary')[0];
@@ -6749,47 +7379,36 @@ function savingsGenerate() {
 			}
 		}, 3000);
 	}
-	if (CurrHref.indexOf("www.jcrew.com") > -1) {
-		setTimeout(function () {
-			finalCode = jcrewCoupArr[0];
-			var params = "bmForm=frm_shopping_cart_continue&bmFormID=mdbZclM%2F1634f16f9c0&bmUID=mdbZclN&bmIsForm=true&bmPrevTemplate=%2Fcheckout2%2Fshoppingbag.jsp&bmEditable=bmAction&bmArch=bmAction&bmAction=add_promo_code&bmEditable=bmSubmit&bmArch=bmSubmit&bmSubmit=add_promo_code&bmEditable=isPayPalExpress&bmHidden=isPayPalExpress&isPayPalExpress=&bmEditable=continueFromBag&bmHidden=continueFromBag&continueFromBag=&bmEditable=continueFromBagProductIDs&bmHidden=continueFromBagProductIDs&continueFromBagProductIDs=&bmEditable=checkoutVersion&bmHidden=checkoutVersion&checkoutVersion=2&bmEditable=isMasterPassExpress&bmHidden=isMasterPassExpress&isMasterPassExpress=&bmSingle=temp_quantity&temp_quantity=4&bmSingle=temp_quantity&temp_quantity=3&bmEditable=jc_country&bmHidden=jc_country&jc_country=US&bmText=GENERIC%3C%3Etax_postal&GENERIC%3C%3Etax_postal=&bmText=promotionCode1&promotionCode1=" + finalCode + "&bmEditable=delete_card_id&bmHidden=delete_card_id&delete_card_id=&bmText=ACCOUNT%3C%3EaccountNumber&ACCOUNT%3C%3EaccountNumber=&bmText=ACCOUNT%3C%3EpinNumber&ACCOUNT%3C%3EpinNumber=&bmFields=bmText%2CbmEditable%2CbmPrevTemplate%2CbmForm%2CbmIsForm%2CbmUID%2CbmHidden%2CbmArch%2CbmFormID%2CbmSingle&bmHash=352594f4f23c56be0af03c183c6115b35db7ba5f";
-			var jcrewhttp = new XMLHttpRequest();
-			jcrewhttp.onreadystatechange = function () {
-				if (this.readyState == 4) {
-					try {
-						var totalCost,
-						totalCostNum;
-						var totalCostClass = document.getElementsByClassName('summary-item summary-subtotal')[0].getElementsByClassName('summary-value notranslate')[0];
-						var parser = new DOMParser();
-						var doc = parser.parseFromString(this.responseText, "text/html");
-						var numberFinder = /\d+/;
-						var afterDisCost = doc.getElementsByClassName('summary-item summary-subtotal')[0].getElementsByClassName('summary-value notranslate')[0].innerText;
-						var afterDisCostWithoutCurrArray = afterDisCost.match(numberFinder);
-						var afterDisCostDigit = afterDisCostWithoutCurrArray[0];
-						var currencyWithDigit = afterDisCostWithoutCurrArray.input;
-						var currency = currencyWithDigit[0];
-						var afterDisCostNum = Number(afterDisCostDigit);
-						if (totalCostClass) {
-							totalCost = totalCostClass.innerText;
-							totalCostWithoutCurrArray = totalCost.match(numberFinder);
-							totalCostDigit = totalCostWithoutCurrArray[0];
-							totalCostNum = Number(totalCostDigit);
-						}
-						var totalSavingsNum = totalCostNum - afterDisCostNum;
-						if (totalSavingsNum > 0) {
-							totalSavings = "$" + totalSavingsNum.toFixed(2);
-						}
-						SavingsPopup(finalCode, totalSavings);
-					} catch (e) {
-						SavingsPopup(finalCode, totalSavings);
-						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-					}
-				}
-			};
-			jcrewhttp.open("POST", jcrewCouponApi, false);
-			jcrewhttp.send(params);
-		}, 2000);
+	if (CurrHref.indexOf("jcrew.com") > -1) {
+		var i = jcrewDiscArr.indexOf(Math.max.apply(null, jcrewDiscArr));
+		finalCode = jcrewCoupArr[i];
+		var savings = jcrewDiscArr[i];
+		if (savings > 0) {
+			savings = savings / 100;
+			totalSavings = "$" + savings.toFixed(2);
+		}
+
+		if(finalCode) {
+		var accessToken = localStorage.getItem("JcrewCart").replace(/['"]+/g, '');
+
+		var params = '{"operationName":"cartAddPromo","variables":{"input":{"promoCode":"'+finalCode+'"}},"query":"mutation cartAddPromo($input: PromoInput) {  cartAddPromo(input: $input) {    ...CartFragment    __typename  }}fragment CartFragment on Cart {  currency  quantity  isOnlyEGC  price {    discount    shipping    tax    subtotal    final    giftCardCharges    estimatedCharges    loyaltyDollars    totalSavings    rewardsAppliedStatus {      basketHasRewardsPaymentInstrument      basketHasGiftCardProductItem      __typename    }    __typename  }  items {    ...CartItemFragment    __typename  }  promos {    code    description    inactive    couponId    __typename  }  giftCards {    cardNumber    cardBalance    amount    balanceLeft    giftCardId    __typename  }  afterPayInstallments  gamificationPromoThreshold  __typename}fragment CartItemFragment on CartItem {  itemId  quantity  size  index  color  productCode  product {    code    sku    variant    skuCode    description {      short      __typename    }    mainImage {      url      __typename    }    price {      list      final      hasSalePrice      finalAfterPromo      __typename    }    itemPromo {      promoPrice      promoText      __typename    }    status {      allItemsOOS      code      details      backOrdered      finalSale      marketPlace      marketPlaceMessage      otherVariantsAvailable      freeGift      preOrdered      excludedFromPromo      eligibleForFreeReturn      countryRestricted      countryRestrictedMsg      __typename    }    personalization {      personalizeType      style      type      text      threadColor      usePromoPrice      monogramLocation      monogramPrice {        displayPrice        salePrice        unitPrice        totalPrice        __typename      }      __typename    }    giftCard {      giftMessage1      giftMessage2      giftCardValue      recipientEmail      recipientName      senderName      type      sentDate      __typename    }    __typename  }  __typename}"}';
+
+		var jcrewhttp = new XMLHttpRequest();
+		jcrewhttp.onreadystatechange = function () {
+			if (this.readyState == 4 && this.status == 200) {
+				SavingsPopup(finalCode, totalSavings);
+			}
+		};
+		jcrewhttp.open("POST", jcrewCouponApi, false);
+		jcrewhttp.setRequestHeader("Content-type", "application/json");
+		jcrewhttp.setRequestHeader("x-cart", accessToken);
+		jcrewhttp.setRequestHeader("x-brand", "jc");
+		jcrewhttp.send(params);
+	} else{
+		SavingsPopup(finalCode, totalSavings);
 	}
+	}
+
 	if (CurrHref.indexOf("www.bodybuilding.com") > -1) {
 		try {
 			var session = document.getElementsByName("_dynSessConf")[0].value;
@@ -6860,35 +7479,40 @@ function savingsGenerate() {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.victoriassecret.com") > -1) {
+	if (CurrHref.indexOf("victoriassecret.com") > -1) {
 		try {
 			var oldTotal = document.getElementsByClassName('totalSection')[0].getElementsByTagName('b')[0].innerText.replace(/[$,]/g, '');
 			var oldTotalNum = Number(oldTotal);
-			var params = "dataSaveType=flow&offerModel%5B0%5D.index=0&offerModel%5B0%5D.offerCode=" + finalCode + "&offerModel%5B1%5D.index=1&offerModel%5B1%5D.offerCode=&offerModel%5B2%5D.index=2&offerModel%5B2%5D.offerCode=";
-			var victohttp = new XMLHttpRequest();
-			victohttp.onreadystatechange = function () {
-				if (this.readyState == 4) {
-					try {
-						var totalResponseobj = JSON.parse(this.responseText);
-						if (totalResponseobj.offersModel[0].code2) {
-							var newTotal = totalResponseobj.orderModel.inStockTotal.ordrTotal;
-							var newTotalNum = Number(newTotal);
-							var savings = oldTotalNum - newTotalNum;
-							if (savings > 0) {
-								totalSavings = "$" + savings.toFixed(2);
+
+			if(finalCode){
+				var params = "dataSaveType=flow&offerModel%5B0%5D.index=0&offerModel%5B0%5D.offerCode=" + finalCode + "&offerModel%5B1%5D.index=1&offerModel%5B1%5D.offerCode=&offerModel%5B2%5D.index=2&offerModel%5B2%5D.offerCode=";
+				var victohttp = new XMLHttpRequest();
+				victohttp.onreadystatechange = function () {
+					if (this.readyState == 4) {
+						try {
+							var totalResponseobj = JSON.parse(this.responseText);
+							if (totalResponseobj.offersModel[0].code2) {
+								var newTotal = totalResponseobj.orderModel.inStockTotal.ordrTotal;
+								var newTotalNum = Number(newTotal);
+								var savings = oldTotalNum - newTotalNum;
+								if (savings > 0) {
+									totalSavings = "$" + savings.toFixed(2);
+								}
 							}
+							SavingsPopup(finalCode, totalSavings);
+						} catch (e) {
+							SavingsPopup(finalCode, totalSavings);
+							Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
 						}
-						SavingsPopup(finalCode, totalSavings);
-					} catch (e) {
-						SavingsPopup(finalCode, totalSavings);
-						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid JSON, " + e);
 					}
-				}
-			};
-			victohttp.open("POST", victoCouponApi, false);
-			victohttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
-			victohttp.setRequestHeader("x-requested-with", "XMLHttpRequest");
-			victohttp.send(params);
+				};
+				victohttp.open("POST", victoCouponApi, false);
+				victohttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+				victohttp.setRequestHeader("x-requested-with", "XMLHttpRequest");
+				victohttp.send(params);
+			}else{
+				SavingsPopup(finalCode, totalSavings);
+			}
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
@@ -6955,28 +7579,35 @@ function savingsGenerate() {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.ebags.com") > -1) {
+
+	if (CurrHref.indexOf("ebags.com") > -1) {
 		try {
-			var params = "SourceCode=" + couponCode;
+				var i = ebagsDiscArr.indexOf(Math.max.apply(null, ebagsDiscArr));
+		finalCode = ebagsCoupArr[i];
+		var savings = ebagsDiscArr[i];
+		if (savings > 0) {
+			totalSavings = "$" + savings.toFixed(2);
+		}
+		
+		if(finalCode) {
+			var ebagsCouponApi = document.getElementById("cart-line-items").action;
+			var csrfToken = document.getElementsByName("csrf_token")[0].value;
+	
+			var params = "csrf_token="+csrfToken+"dwfrm_cart_couponCode="+finalCode+"&dwfrm_cart_addCoupon=dwfrm_cart_addCoupon&format=ajax";
+	
 			var ebagshttp = new XMLHttpRequest();
 			ebagshttp.onreadystatechange = function () {
 				if (this.readyState == 4) {
-					try {
-						var parser = new DOMParser();
-						var doc = parser.parseFromString(this.responseText, "text/html");
-						finalCode = doc.getElementById("enterMeCode").value;
-						totalSavings = doc.getElementById("discountsavingstotal").innerText;
-						SavingsPopup(finalCode, totalSavings);
-					} catch (e) {
-						SavingsPopup(finalCode, totalSavings);
-						Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-					}
+					SavingsPopup(finalCode, totalSavings);
 				}
 			};
 			ebagshttp.open("POST", ebagsCouponApi, false);
 			ebagshttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 			ebagshttp.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
 			ebagshttp.send(params);
+		} else {
+			SavingsPopup(finalCode, totalSavings);
+		}
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
@@ -7003,7 +7634,8 @@ function savingsGenerate() {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.orvis.com") > -1) {
+
+	if (CurrHref.indexOf("orvis.com") > -1) {
 		try {
 			var maxIndex = orvisDiscArr.indexOf(Math.max.apply(null, orvisDiscArr));
 			finalCode = orvisCoupArr[maxIndex];
@@ -7011,17 +7643,22 @@ function savingsGenerate() {
 			if (saving > 0) {
 				totalSavings = "$" + saving.toFixed(2);
 			}
-			var params = "{'specialOfferCode':'" + finalCode + "'}";
-			var orvishttp = new XMLHttpRequest();
-			orvishttp.onreadystatechange = function () {
-				if (this.readyState == 4) {
-					SavingsPopup(finalCode, totalSavings);
-				}
-			};
-			orvishttp.open("POST", orvisCouponApi, true);
-			orvishttp.setRequestHeader("content-type", "application/json");
-			orvishttp.setRequestHeader("accept", "application/json, text/javascript, */*; q=0.01");
-			orvishttp.send(params);
+			if(finalCode){
+				var csrfToken = document.getElementsByName("csrf_token")[0].value;
+
+				var orvisCouponCodeApi = orvisCouponApi + "csrf_token="+csrfToken+"&couponCode=" + finalCode;
+	
+				var orvishttp = new XMLHttpRequest();
+				orvishttp.onreadystatechange = function () {
+					if (this.readyState == 4 && this.status == 200) {
+							  SavingsPopup(finalCode, totalSavings);	
+					}
+				};
+				orvishttp.open("GET", orvisCouponCodeApi, false);
+				orvishttp.send();	
+			}else{
+				SavingsPopup(finalCode, totalSavings);
+			}
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
@@ -7195,7 +7832,8 @@ function savingsGenerate() {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.blair.com") > -1) {
+
+	if (CurrHref.indexOf("blair.com") > -1) {
 		try {
 			var i = blairDiscArr.indexOf(Math.max.apply(null, blairDiscArr));
 			finalCode = blairCoupArr[i];
@@ -7203,27 +7841,25 @@ function savingsGenerate() {
 			if (savings > 0) {
 				totalSavings = "$" + savings.toFixed(2);
 			}
-			var params = "form_state=updatePromoCodeForm&delete=false&promoCode=" + finalCode + "";
-			var blairhttp = new XMLHttpRequest();
-			blairhttp.onreadystatechange = function () {
-				if (this.readyState == 4) {
-					var blairObj = JSON.parse(this.responseText);
-					var successmsg = blairObj.applied;
-					if (successmsg == "true") {
+			if(finalCode){
+				var blairhttp = new XMLHttpRequest();
+				blairhttp.onreadystatechange = function () {
+					if (this.readyState == 4 && this.status == 200) {
+						var blairObj = JSON.parse(this.responseText);
 						SavingsPopup(finalCode, totalSavings);
 					}
-				}
-			};
-			blairhttp.open("POST", blairCouponApi, false);
-			blairhttp.setRequestHeader("content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-			blairhttp.setRequestHeader("accept", "text/html, */*; q=0.01");
-			blairhttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-			blairhttp.send(params);
+				};
+				blairhttp.open("PUT", blairCouponApi + couponCode, false);
+				blairhttp.send();
+			}else {
+				SavingsPopup(finalCode, totalSavings);
+			}
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+
 	if (CurrHref.indexOf("www.speckproducts.com") > -1) {
 		try {
 			if (specksavings) {
@@ -7235,27 +7871,41 @@ function savingsGenerate() {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.jimmyjazz.com") > -1) {
+
+	if (CurrHref.indexOf("jimmyjazz.com") > -1) {
 		try {
-			var i = jimmyDiscArr.indexOf(Math.max.apply(null, jimmyDiscArr));
-			finalCode = jimmyCoupArr[i];
-			var savings = jimmyDiscArr[i];
-			if (savings > 0) {
-				totalSavings = "$" + savings.toFixed(2);
-			}
-			var jimmyhttp = new XMLHttpRequest();
-			jimmyhttp.onreadystatechange = function () {
-				if (this.readyState == 4) {
+			var cartTotal = Number(document.getElementsByClassName("order-summary__emphasis total-recap__final-price skeleton-while-loading")[0].innerText.replace(/[$,]/g, ''));
+
+		var jimmyhttp = new XMLHttpRequest();
+		jimmyhttp.onreadystatechange = function () {
+			if (this.readyState == 4) {
+				try {
+					var parser = new DOMParser();
+					var doc = parser.parseFromString(this.responseText, "text/html");
+
+					var promoCartTotal = Number(doc.getElementsByClassName("order-summary__emphasis total-recap__final-price skeleton-while-loading")[0].innerText.replace(/[$,]/g, ''));
+
+					var totalSavings = cartTotal - promoCartTotal;
+
+					if(totalSavings > 0){
+						var finalCode = doc.getElementsByClassName("reduction-code__text")[0].innerText;
+					}
+					
+					SavingsPopup(finalCode, "$" + totalSavings);
+				} catch (e) {
 					SavingsPopup(finalCode, totalSavings);
+					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 				}
-			};
-			jimmyhttp.open("GET", "http://www.jimmyjazz.com/cart-request/cart/option?promotion_code=" + finalCode + "&toggle=1&option=promotion", false);
-			jimmyhttp.send();
+			}
+		};
+		jimmyhttp.open("GET", CurrHref, false);
+		jimmyhttp.send();
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+	
 	if (CurrHref.indexOf("www.eyebuydirect.com") > -1) {
 		try {
 			var i = eyebuyDiscArr.indexOf(Math.max.apply(null, eyebuyDiscArr));
@@ -7281,49 +7931,45 @@ function savingsGenerate() {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+
 	if (CurrHref.indexOf("ashford.com") > -1) {
-		setTimeout(function () {
 			try {
-				var maxIndex = ashfordDiscArr.indexOf(Math.max.apply(null, ashfordDiscArr));
-				finalCode = ashfordCoupArr[maxIndex];
-				var dynamicSession = document.getElementById('continueShoppingForm').getElementsByTagName("input")._dynSessConf.value;
-				var params = "_dyncharset=UTF-8&_dynSessConf=" + dynamicSession + "&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.useForwards=true&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.useForwards=+&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.applyCouponSuccessURL=%2Fcart%2Fjson%2FcartContents_new.jsp&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.applyCouponSuccessURL=+&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.applyCouponErrorURL=%2Fcart%2Fjson%2FcartContents_new.jsp&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.applyCouponErrorURL=+&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.couponCode=" + finalCode + "&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.couponCode=+&%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.claimCoupon=&_D%3A%2Fatg%2Fstore%2Forder%2Fpurchase%2FCouponFormHandler.claimCoupon=+&_DARGS=%2Fcart%2Fgadgets%2FshoppingCartForms.jsp.applyCouponForm";
-				var ashfordhttp = new XMLHttpRequest();
-				ashfordhttp.onreadystatechange = function () {
-					if (this.readyState == 4) {
-						var ashfordSavinghttp = new XMLHttpRequest();
-						ashfordSavinghttp.onreadystatechange = function () {
-							if (this.readyState == 4) {
-								try {
-									var parser = new DOMParser();
-									var doc = parser.parseFromString(this.responseText, "text/html");
-									savingClass = doc.getElementsByClassName("checkout_text_color_red")[4];
-									if (savingClass) {
-										var saving = Number(savingClass.innerText.replace(/[-$,]/g, ""));
-										if (saving > 0) {
-											totalSavings = "$" + saving.toFixed(2);
-										}
-									}
-									SavingsPopup(finalCode, totalSavings);
-								} catch (e) {
-									SavingsPopup(finalCode, totalSavings);
-									Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-								}
-							}
-						}
-						ashfordSavinghttp.open("GET", CurrHref, false);
-						ashfordSavinghttp.send();
-					}
+				// var maxIndex = ashfordDiscArr.indexOf(Math.max.apply(null, ashfordDiscArr));
+				// finalCode = ashfordCoupArr[maxIndex];
+				// var savings = ashfordDiscArr[maxIndex];
+				// if (savings > 0) {
+				// 	totalSavings = "$" + savings.toFixed(2);
+				// }
+
+				if(ashfordCoupArr[1]){
+					finalCode = ashfordCoupArr[1];
+				}else if(ashfordCoupArr[0]) {
+					finalCode = ashfordCoupArr[0];
 				}
-				ashfordhttp.open("POST", ashfordCouponApi, false);
-				ashfordhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-				ashfordhttp.send(params);
-			} catch (e) {
-				SavingsPopup(finalCode, totalSavings);
-				Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-			}
-		}, 2000);
+
+				if(finalCode){
+					var formKey = document.getElementsByName('form_key')[0].value;
+					var params = "remove=0&coupon_code="+finalCode+"&form_key="+formKey;
+	
+					var ashfordhttp = new XMLHttpRequest();
+					ashfordhttp.onreadystatechange = function () {
+						if (this.readyState == 4) {
+							localStorage.setItem("ashford", finalCode);
+						    location.reload();
+						}
+					}
+					ashfordhttp.open("POST", ashfordCouponApi, false);
+					ashfordhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+					ashfordhttp.send(params);
+				}else{
+					SavingsPopup(finalCode, totalSavings);
+				}
+		} catch (e) {
+			SavingsPopup(finalCode, totalSavings);
+			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+		}
 	}
+
 	if (CurrHref.indexOf("www.rockbottomgolf.com") > -1) {
 		try {
 			var maxIndex = rockbottomgolfDiscArr.indexOf(Math.max.apply(null, rockbottomgolfDiscArr));
@@ -7555,7 +8201,8 @@ function savingsGenerate() {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.cafepress.com") > -1) {
+	
+	if (CurrHref.indexOf("cafepress.com") > -1) {
 		try {
 			var i = cafepressDiscArr.indexOf(Math.max.apply(null, cafepressDiscArr));
 			finalCode = cafepressCoupArr[i];
@@ -7563,40 +8210,32 @@ function savingsGenerate() {
 			if (savings > 0) {
 				totalSavings = "$" + savings.toFixed(2);
 			}
-			var viewState = document.getElementById("__VIEWSTATE").value;
-			var viewStateGenerator = document.getElementById("__VIEWSTATEGENERATOR").value;
-			var eventValidation = document.getElementById("__EVENTVALIDATION").value;
-			var cafeCashValue = document.getElementById("cafeCashValue").value;
-			var cafeCashL10nValue = document.getElementById("cafeCashL10nValue").value;
-			var gcValue = document.getElementById("gcValue").value;
-			var gcL10nValue = document.getElementById("gcL10nValue").value;
-			var minShippingId = document.getElementById("minShippingId").value;
-			var pmChecked = document.getElementById("pmChecked").value;
-			var BillCountry = document.getElementById("BillCountry").value;
-			var ShipCountry = document.getElementById("ShipCountry").value;
-			var countdown = document.getElementsByName("countdown")[0].value;
-			var shippingradio = document.getElementsByName("shipping-radio")[0].value;
-			var ShippingTableOption = document.getElementById("ShippingTableOption").value;
-			var PayPageId = document.getElementsByName("LitlePayPage$requestPayPageId")[0].value;
-			var ReportGroupId = document.getElementsByName("LitlePayPage$requestReportGroupId")[0].value;
-			var MerchantTxnId = document.getElementsByName("LitlePayPage$requestMerchantTxnId")[0].value;
-			var PayPageUrl = document.getElementsByName("LitlePayPage$requestPayPageUrl")[0].value;
-			var params = "__VIEWSTATE=" + viewState + "&__VIEWSTATEGENERATOR=" + viewStateGenerator + "&__EVENTVALIDATION=%2FwEdAOkBjkzdio2E5DppIt0oT3cZU9qyhxJlcBXzwNkBlvLgMQ56XW5A8jViXnzBiORLsvq7TmzENSEY9CcpUuJ%2FkKbQWg7UmKwx9NH68HbI2TVBfrt7tANCH4hkc%2BufGN3MXQZIC8UaUa5rRwG0LWq8TQ0AX5laWHzWMHsEpGBa4NGdwUwTrRPlQhJse%2Bo2BAQxMaogl2Ogwuqm%2FvKVqIWaJqVO%2FTH2z7gY7m7pKKZfLTF8R1nL2fqrqz4rMxXZJ0s1ZGzjJPus0G%2BTTA%2FH2RhKUs%2F2FMxHahCzXucjtKpNDzxN4l7nhpceRTZL0wcw7JUVXCOGdrizS5aW4Snsxo1%2BZPApuKt%2BlgOZspypcDRsS4nGPvaAk6G%2F2Z6Imv2GFFY5O9LUld3hNo8runvVnAkfJ4n9hkuSnY866wI6WqWbiBXdf9diyvGjDgXf0JclmZaIkLcEtyZ6fKhxXnvpAhtiSuiTxxUE77kpQ66lizqiMLBK14ZXzLGkFQGssVcLbtyHeZ6n6YaYEv8ElwnmdImml1Qwi4qL4KrDGq64t4jXGJPzhbXL3CS5CMK9xxygSU4V23%2BWsDRXHegUwm28rKxo1RIAMMlmrk1weh4TbEQuvkkBOfnR0M6JByBU0uw%2Bh%2FhH8wX6TOGRz6DlPpi51NBnYnL1i1R8R7WuPMTeSp%2BMECpH9%2BGw00iXLNLTdl6PxlQ7I%2B%2FZZ%2BQCBvzb0c%2FlasxvsyxvLVPQyUAN%2B6lXFoMPeVH6riQ0DIs%2BqbklaQUL7Rhs%2BNqTLL0iPX5zQIbN6rqeInDMX%2FQqqR5EMOu7ifC4PAAExCaE%2BEyZq5RyT4yrimwDZbR%2FDAdngBukfPeKY2t9kkEvsqXkTIU9GZEMS9YTNHiaMNe435v%2FXM0ei8RWiWn9ZdZdPiLYTP1vGL3Z1vEcRhj5RA6De77sj%2FRhL6E%2FxNiTNoDUb07h87AK%2Baj72PespnM2EQqqYJFLJmnLJn9%2FJUPfHhsr1xzBinkMPzGutJ%2BM%2FXET9bLVjMu5Vv0cGE%2BT4r92rhfPS%2BzJZnOMsIZK0ntUNlZFnysKSbxW0Uaj%2Bzgv7vZtVC5fu2l3Wf718fvpE34%2FKcRdyW1YxaWmxjI0DeKgPPDz1j3AzGX2MpWg1M9MInrPkRYQI6EvHcbjrhShVMMFfxZ24%2BP1iHqvd2DCVsGath%2Fw548u%2F0u9ZpC2swnFAuoyDsmZCjxy3TcdFfYeRxwzxbzqBHSdojAhnfYY6e16Lb0H2aZ9IzqQJVlxEZiJwf0hcdJyYeqplnl3rWuGQfw6CUMnoDnzGGJ%2BwfPP9YdPOXqukZVPL3ZWFhi4hcHz5x0pmUO2SqdyCKdOjeXOD%2FouL8%2F5J5w1AzBqGjspmGRfdsUHsamHN6XgshxUg%2BbfTVY9NHFOLUE%2FRXlKgC%2FptF9WgZeVdY5EDe%2B8yqGxiGpIcG37aj4tUd%2F10gSWGnllEdrgByv4IpfkGQ4tcCnH%2F%2BsCCcBUCITkUQAS31lxJwevzRa%2FJ6yvk7e3Suvsgf2waNg6kDDaMicgZJokEpuF3crzr3DJhdne08lAuAIOKFHOTfiERy4ZAkd8PCX5SiozUmIEzuDrmY9SqXAE1z6HypI22tc9BswgseFGDgCnbhlpNgoqCvzSwZwL4fB0S7CsP%2BgXOaPW2Ss330xuyt%2BruK2fsRWN0OMaiqb42jRhcaLQ%2FS7edz%2BILZDxdwcZ30w71r%2B1pQt6CpHmS%2FfQ%2Bx4YzxAPMysfMGJoLejKqRk%2FzARsGC0%2BAw0c%2FwCCE0kkdKfQQW6k0RGNi9UEIGQZ7D5T2nF1tISiZw4y5fVbCzOT0eg6rfBGZ00As0106DENJelI8vgX%2BcR308mNk9QGsYYQLBqjrz8F93XQC%2FBHeYWyVsVHHnchh16zx9evt7dZ%2FcCrvWhClwUpSdSxJUMMkWsJ5W6URuB2W2Cc%2FXL6Rry1o2PTw4axE6%2BWSqSBWONsqXwSyBxzNFBUvENsxsdx693xACbzLGTInBJtlzPXui6bnc8l2RhPglfAZUAQcFZ9LY9MZ9pFyH0SKRlDNxoXJyc%2B%2Bk8x%2Bu1wJdtvEIK4yW9O0qcOfSvj3q52C8Nfxkc8hw%2FoLnKm%2FVKrsS9VRss5QhDsAyKxzyo%2BYb6YKLnJeCZtqxLxR2WX%2BzMjaQKx2rr3gxuCE5jWVKgNvpOgXl6XcQyaKdzUa7%2Fdg9PhyEb2PP8zXJL5dxIltTCgTso9mFM5p9s%2FR0Y2fpbVrEGoD0fg9GFGf8l9heCG7ZgBiwJI2l7ZgnCQj7YMwWZiVW%2BYuf9b7wmWhJXMCiuGppFemUnEPBqLds3mUtiLVVLj9eEtxTGl8hSgYwLBqxRlqG2DS6SRyfXS9TkNMjtsZPhEvF7h2Lhwg61wIKV4nZbIbbBBxUMk%2FR0Y4%2FPiFUu%2FKkdPXWgog2%2BAkYoZIG3hn0osb%2F%2B8lkdxPe9Wf4JPFl5YdM7fmsESILAsUaiChbO%2FcNfM4OwwxLFIjDcpPu4OkUblDVZlZKo8tDJu%2BIl0IhsEaVUEwqmIWxcGUlZ%2F57%2BtyY2KGWnAWm9Njat9RKsYoVxKwV3K%2BTgFVZtBsiUFv1m0Vj4ROnrc%2FtcqGU%2B0ZNgP5GEO4NdfkTlDjXvQ4Si4Xl1Ti2ENVOkbDm3m4LBRWblqtbDBle57m%2Foc%2FGdhI9pSajARNW9BXOeaRSZfH8ZR28K8qzvUwmlpMx3zHvdMescXKn%2BuIYrjvMHwUkZnTRYMAUob12ehxkW6pwWsGm8VyDixqTwbojo1m5aQMR5F0DFvDdqUgy%2FpViCXXXXJBAiJnM%2B3lwWmR6dITrIa4r7oxWSTfXcZfB1evWohKgGiXQmCGrCrbGF7807%2BBRsz2TDlgrfHsiR9sfp7u0%2Fnn2D6CvBLHMtY1veoOj%2BWlTHrZJNPtzZ4lb75%2Bz55mU5fIekyHKAf4AcRHZ%2BiyKEbal3jlo1C00TteePKaATfRG%2FH%2Bp0oun7PEPrQr%2FrQHGb2Pejo4i7cHtYJI4Rhlkdzxem%2FpKbYAkqxTi4pKMstf1nNXs9dQgP6NrHBh%2F%2B325BpmbH2pQ%2FLaBO8BJZlFThp%2FRQgNssIEUahF631bs%2B2BJhXFxm5t4YRBT%2BO%2F8kvUL1HtUfIefz8n6mwBDb5ZZ8Xo3moB7fIOdUI5EqFz68NYH9%2BmG5lRhc302egijPr08syVUqOP5FOLuQSsmIvyGmXBI12YlRwgFnRIqp0xrkqIUV22RttVp5w5H%2FlmyCVWV2afKP71d%2B%2BzVbDPukXi6DHCMwddjA9%2FfDtzvbDfD57EFLn0pOUAmPrp8hASGiRvbvvx31SnDkDLinOTYolU%2Fk%2FwZD27VXtnYRdieHUQ%2BZrQzxCYMaMlzJlgmRjKSrbRjGGtodnbxnk5mTafbnJsIM3dpepF9b6sowANoeNmtJcCv6v9bZaRU349hGujHdOlvoYAiM2WSAiLayH8hYjGnCiu2sWX3QZqG455sLNK4chuNO%2FyyANTRm9gThMLUc5mzFP67CTO6f0aEZEpm6YIQ1zL9dR66yM9eFIR%2F%2BXPa%2BjWHcHmqu30NU1Di5CEckHtNKdw411HvuP3K2m8hRApdKSeYrCJ5wvax7a%2Blucmj8gJrdk91LvsrIi4L6Nn0g3pQS1ypAUN2X%2Bwd8%2FPdMrjKTKQzHP%2BW2aGr2a9DnAIUbQDKc7si7L81AMnQkxVdB9C9WNendRoAHp24ViCQEVXdb%2F7XwPBlu%2Bpr1yGkknEF4ym7%2BmcAyPNnIyV7mwVGiiLO00wTdrPJlvHfarCLi3gdIVrO9grklxRuyZrBy28deIQ0K44ZwJ6K3OLAOXIAht7wZYlHHCX8lZsvzGd8Mw%2FqOzN0GXV9GUOjDST0hM8C8TAl4nXA8T2sKIO745ndidrsvfdAUMSNJAIW6PEzpiSwJLbc%2FRF9bCgWiR81B%2BUK4NfZzt8fEdXlofucp7UFgfiZYB%2FJ6gp23gzApL5YHe5u9VEySMqGX6HAsWvpx3Q3seyuv4aU8y0ssUy32L8BCsbJSFIm266srhLMfUkGE1%2FIKCXpTNA8wcFwND4y3j2M831VesTYfEYgTuEtM9z039tGj9Iia%2FfqiuHTfILla5bPV2leYISkUk8aUD%2BRUDHZnQIPDFN7Q0s1CN5UFSzjOBo90ZJwATveA9ZMaHzl59322GJiZ%2FAzIURn3ozvI9sW6GDLB6XJNtJkCxpA8IWXvdc60q8kcMTlv9UlTWJpQ6rtV85Idy%2F9Mde975gDkqsETGNHA8WZDkHvEFQ2OTXG4pcxKBK6dHKKFtHb0v1Mnzx1O%2BR%2BVV%2FpwLmL1LpxQmKvihnUkK6AZvfC4Uzcz%2Fuu8GeqsmgiwvwUky7%2F6Mwb%2BUVFZ2mcDgW3T3IrpLa9brBAecyPjPgyolKC6Mb03p5QMy70YZrG9MWJqQYSWYtandVEbI2edyHdX9ARmSIMiJoV8YxyoimtE2PDfB70jYCIampsMpqzxriTspHmodJiveCtGVP4%2B7XscVwUU84eI%2FNSVyWlw6%2FfXEYUybCv3%2FI2iweAdY6ybBtO3Zz7W2OVIqY7A5cuySdxh7VcGUV2iek7SE2owdsb%2BI3x8Mip%2FzuilwKG7Q5xtS7Dr7hrEztNaYX0bcXSNz87NtbuH4AH0N9%2BD3WkxwdZUh6v6pDbQ36WPbnl4OFCEPkzwa2xIhsX5bATPs85%2BZrlVTIOcvc9wPA%2FPBx0EwjW7WRtS%2BYRMbrRF2xl5vCBcLHywwuHxZreaPbLoT5ia5VhQT3wf%2F9N5L1mdceKWw3ocNbaAxbyEE%2B%2B8TUc9aUi2A0LsTK2DQ4ELRx4R9y%2BLrNJNJjrPZj3JgDDKdKbBiaO5w7KO6OEHY6UwQnoXY65S3Do%2FFAEGTA%2FrQqgjowATkR%2BSyfArLgDJc%2FwCfaadKUoloyfPTkbJuvFLS%2BVqMEA89FZdCjmV40xKdQqOqWb912sIfsi7hN4hiKMfk5hTBN8PK8oLglx2EAYhxNCwJ3tGIu2P0xH68VMteywqFBCwVBLJU0FICBHQ0RpkgSZA3Jw%3D%3D&IsEdit=&cafeCashValue=" + cafeCashValue + "&cafeCashL10nValue=" + cafeCashL10nValue + "&gcValue=" + gcValue + "&gcL10nValue=" + gcL10nValue + "&minShippingId=" + minShippingId + "&pmChecked=" + pmChecked + "&BillName=&BillingCompanyName=&BillCountry=" + BillCountry + "&BillStreet1=&BillStreet2=&hfCurrentRedoClassification=&BillCity=&BillState=&BillZip=&BillPhone=&BillEmail=&cbStoreSpecial=on&ShipDestination=billaddress&ShipName=&ShippingCompanyName=&ShipCountry=" + ShipCountry + "&ShipStreet1=&ShipStreet2=&ShipCity=&ShipState=&ShipZip=&GiftMessage=&countdown=" + countdown + "&shipping-radio=" + shippingradio + "&ShippingTableOption=" + ShippingTableOption + "&PaymentMethod=PayByCC&maskedCreditCard=&ccExp%24MonthDrop=06+%28June%29&ccExp%24YearDrop=2018&txtCoupon=" + finalCode + "&LitlePayPage%24requestPayPageId=" + PayPageId + "&LitlePayPage%24requestReportGroupId=" + ReportGroupId + "&LitlePayPage%24requestMerchantTxnId=" + MerchantTxnId + "&LitlePayPage%24requestPayPageUrl=" + PayPageUrl + "&LitlePayPage%24responsePayPageRegistrationId=&LitlePayPage%24responseBin=&LitlePayPage%24responseCode=&LitlePayPage%24responseMessage=&LitlePayPage%24responseTime=&LitlePayPage%24responseType=&LitlePayPage%24responseTransactionId=&LitlePayPage%24payPageResponseTime=&LitlePayPage%24payPageSubmit=false&btnApplyCoupon=Apply";
+			var n = CurrHref.split("/");
+			var cartGuid = n[n.length - 1];
+			var cartId = n[n.length - 2];
+
+			if(finalCode){
+			var cafepressCouponCodeApi = cafepressCouponApi + cartId +"/"+ cartGuid + "/" + finalCode;
+
+			var params = '{"shippingOptions":[],"shippingAddress":{"addressId":-1,"memberNo":0,"name":"","firstName":null,"lastName":null,"companyName":null,"addressLine1":null,"addressLine2":null,"city":null,"state":null,"country":"US","postalCode":null,"phoneNumber":null,"addressDisplayInfo":",, , US, , ","email":null,"isDefault":false,"saveInAddressBook":false},"billingAddress":{"addressId":-1,"memberNo":0,"name":"","firstName":null,"lastName":null,"companyName":null,"addressLine1":null,"addressLine2":null,"city":null,"state":null,"country":"US","postalCode":null,"phoneNumber":null,"addressDisplayInfo":",, , US, , ","email":null,"isDefault":false,"saveInAddressBook":false},"countries":[],"country":{"countryCode":"US","name":"United States","requiresPostalCode":true,"politicalDivisionUserProvided":false,"politicalDivisionRequired":true,"isShippable":true,"isBillable":true,"internationalCountryName":"United States"},"billingCountry":{"countryCode":"US","name":"United States","requiresPostalCode":true,"politicalDivisionUserProvided":false,"politicalDivisionRequired":true,"isShippable":true,"isBillable":true,"internationalCountryName":"United States"},"states":[],"state":{"countryCode":"US","politicalDivision1Code":"AA","politicalDivision1Name":"Armed Forces US/Canada"},"billingStates":[],"billingState":{"countryCode":"US","politicalDivision1Code":"AA","politicalDivision1Name":"Armed Forces US/Canada"},"cartSummary":{"cartItemCount":0,"cartItemTotal":0,"coupons":[],"giftCertificates":null,"cafeCash":{"memberNo":0,"amount":0,"amountApplied":0,"amountAvailable":0},"selectedShippingOption":{"minimumArrivalDate":"2021-06-14T08:13:12.2330342Z","arrivalDate":"2021-06-16T08:13:12.2330342Z","minimumDateToShipFromFacility":"2021-06-08T08:13:12.2330342Z","dateToShipFromFacility":"2021-06-08T08:13:12.2330342Z","cost":0,"shippingOptionDefId":5,"shippingOptionDefDescription":"Flat Rate Shipping","currencyPrefix":"$","currencyCode":"USD"},"tax":0,"total":0,"shippingDiscount":0,"productIds":[]},"isSubscribedForPromotions":true,"payment":{"paymentType":0,"token":null,"maskedCardNo":null,"specialCardNo":null,"expirationMonth":6,"expirationYear":2021,"vantivPayPageId":"","vantivReportGroupId":"","vantivMerchantTxnId":"","paymentMethodToken":null},"currencyPrefix":"$","currencyCode":"USD","couponListValid":false,"isShippingAddressSameAsBillingAddress":true,"isCafeCashApplied":false,"cartNo":'+cartId+',"lastSearchedTerm":null,"sessionId":null,"payPalMode":"production","payPalKey":null,"creditCardClientId":"","deviceData":"","savedAddresses":[],"savedPaymentMethods":[],"email":null,"useStoredAddress":false,"useStoredPayment":false,"saveNewAddress":false,"saveNewPayment":false,"recaptchaToken":null,"attemptedCouponCode":null,"processingCheckout":false,"checkoutExceptionOccurred":false,"billingStateError":false,"addressError":false,"paymentMethodId":-1}';
 			var cafehttp = new XMLHttpRequest();
 			cafehttp.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
 					SavingsPopup(finalCode, totalSavings);
 				}
 			};
-			cafehttp.open("POST", cafepressCouponApi, false);
-			cafehttp.setRequestHeader("content-type", "application/x-www-form-urlencoded");
-			cafehttp.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
+			cafehttp.open("POST", cafepressCouponCodeApi , false);
+			cafehttp.setRequestHeader("content-type", "application/json");
 			cafehttp.send(params);
+		} else {
+			SavingsPopup(finalCode, totalSavings);
+		}
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+
 	if (CurrHref.indexOf("www.catherines.com") > -1) {
 		try {
 			var maxIndex = catherinesDiscArr.indexOf(Math.max.apply(null, catherinesDiscArr));
@@ -7650,15 +8289,19 @@ function savingsGenerate() {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.mypillow.com") > -1) {
-		try {
-			var i = pillowDiscArr.indexOf(Math.max.apply(null, pillowDiscArr));
-			finalCode = pillowCoupArr[i];
-			var savings = pillowDiscArr[i];
-			if (savings > 0) {
-				totalSavings = "$" + savings.toFixed(2);
-			}
-			var params = "remove=0&coupon_code=" + finalCode + "";
+	
+	if (CurrHref.indexOf("mypillow.com") > -1) {
+		try{
+		var i = pillowDiscArr.indexOf(Math.max.apply(null, pillowDiscArr));
+		finalCode = pillowCoupArr[i];
+		var savings = pillowDiscArr[i];
+		if (savings > 0) {
+			totalSavings = "$" + savings.toFixed(2);
+		}
+
+		if(finalCode){
+			var formKey = document.getElementsByName("form_key")[0].value;
+			var params = "remove=0&coupon_code=" + finalCode + "&form_key=" + formKey;
 			var pillowhttp = new XMLHttpRequest();
 			pillowhttp.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
@@ -7669,11 +8312,15 @@ function savingsGenerate() {
 			pillowhttp.setRequestHeader("content-type", "application/x-www-form-urlencoded");
 			pillowhttp.setRequestHeader("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
 			pillowhttp.send(params);
-		} catch (e) {
+		}else{
 			SavingsPopup(finalCode, totalSavings);
-			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
+	} catch (e) {
+		SavingsPopup(finalCode, totalSavings);
+		Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 	}
+	}
+
 	if (CurrHref.indexOf("www.barenecessities.com") > -1) {
 		try {
 			var i = barenDiscArr.indexOf(Math.max.apply(null, barenDiscArr));
@@ -7819,30 +8466,39 @@ function savingsGenerate() {
 	}
 
 	if (CurrHref.indexOf("aveda.com") > -1) {
-		var maxIndex = avedaDiscArr.indexOf(Math.max.apply(null, avedaDiscArr));
-		finalCode = avedaCoupArr[maxIndex];
-		var params = "JSONRPC=%5B%7B%22method%22%3A%22logic.checkout--viewcart%22%2C%22id%22%3A1%2C%22params%22%3A%5B%7B%22_SUBMIT%22%3A%22offer_code%22%2C%22OFFER_CODE%22%3A%22" + finalCode + "%22%7D%5D%7D%5D";
-		var avedahttp = new XMLHttpRequest();
-		avedahttp.onreadystatechange = function () {
-			if (this.readyState == 4) {
-				try {
-					var jsonObj = JSON.parse(this.response);
-					var saving = document.getElementsByClassName("shipping value order-summary-content__value order-summary-content__value--shipping pc-hidden")[0].innerText.replace(/[-$,]/g, '');
-					var savingNum = Number(saving);
-					if (savingNum > 0) {
-						totalSavings = "$" + savingNum.toFixed(2);
-					}
-					SavingsPopup(finalCode, totalSavings);
-				} catch (e) {
-					SavingsPopup(finalCode, totalSavings);
-					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
+		// var maxIndex = avedaDiscArr.indexOf(Math.max.apply(null, avedaDiscArr));
+		// finalCode = avedaCoupArr[maxIndex];
+		// let saving = avedaDiscArr[maxIndex];
+		// if (saving > 0) {
+		// 	totalSavings = '$' + saving.toFixed(2);
+		// }
+		// if(finalCode){
+			// var token = document.getElementsByName("_TOKEN")[0].value;
+			// var params = "JSONRPC=%5B%7B%22method%22%3A%22logic.checkout--viewcart%22%2C%22id%22%3A6%2C%22params%22%3A%5B%7B%22_SUBMIT%22%3A%22offer_code%22%2C%22_TOKEN%22%3A%22 "+ token +"%22%2C%22OFFER_CODE%22%3A%22"+finalCode+"%22%7D%5D%7D%5D";
+			
+			var avedahttp = new XMLHttpRequest();
+			avedahttp.onreadystatechange = function () {
+				if (this.readyState == 4) {
+					var parser = new DOMParser();
+								var doc = parser.parseFromString(this.responseText, "text/html");
+								if (doc.getElementsByClassName("offer-code-content__value")[0]) {
+									var finalCode = document.getElementsByClassName("offer-code-content__value")[0].innerText;
+								}
+								if(doc.getElementsByClassName("discount value order-summary-content__value order-summary-content__value--discount")[0]){
+									var totalSavings = doc.getElementsByClassName("discount value order-summary-content__value order-summary-content__value--discount")[0].innerText.replace(/[-,]/g, '');
+								}
+								SavingsPopup(finalCode, totalSavings);
 				}
-			}
-		};
-		avedahttp.open("POST", avedaCouponApi, false);
-		avedahttp.setRequestHeader("content-type", "application/x-www-form-urlencoded;charset=UTF-8");
-		avedahttp.send(params);
+			};
+			avedahttp.open("GET", CurrHref, false);
+			//avedahttp.setRequestHeader("content-type", "application/x-www-form-urlencoded;charset=UTF-8");
+			avedahttp.setRequestHeader("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
+			avedahttp.send();
+		// }else{
+		// 	SavingsPopup(finalCode, totalSavings);
+		// }
 	}
+
 	if (CurrHref.indexOf("ctshirts.com") > -1) {
 		try {
 			var maxIndex = ctshirtsDiscArr.indexOf(Math.max.apply(null, ctshirtsDiscArr));
@@ -8099,7 +8755,8 @@ function savingsGenerate() {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.claires.com") > -1) {
+
+	if (CurrHref.indexOf("claires.com") > -1) {
 		try {
 			var maxIndex = clairesDiscArr.indexOf(Math.max.apply(null, clairesDiscArr));
 			finalCode = clairesCoupArr[maxIndex];
@@ -8107,20 +8764,25 @@ function savingsGenerate() {
 			if (saving > 0) {
 				totalSavings = '$' + saving.toFixed(2);
 			}
-			var claireshttp = new XMLHttpRequest();
-			claireshttp.onreadystatechange = function () {
-				if (this.readyState == 4) {
-					SavingsPopup(finalCode, totalSavings);
-				}
-			};
-			claireshttp.open("GET", clairesCouponApi + finalCode, false);
-			claireshttp.send();
+			if(finalCode){
+				var claireshttp = new XMLHttpRequest();
+				claireshttp.onreadystatechange = function () {
+					if (this.readyState == 4) {
+						SavingsPopup(finalCode, totalSavings);
+					}
+				};
+				claireshttp.open("GET", clairesCouponApi + finalCode, false);
+				claireshttp.send();
+			}else{
+				SavingsPopup(finalCode, totalSavings);
+			}
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.ashleystewart.com") > -1) {
+
+	if (CurrHref.indexOf("ashleystewart.com") > -1) {
 		try {
 			var maxIndex = ashleyDiscArr.indexOf(Math.max.apply(null, ashleyDiscArr));
 			finalCode = ashleyCoupArr[maxIndex];
@@ -8128,23 +8790,26 @@ function savingsGenerate() {
 			if (saving > 0) {
 				totalSavings = '$' + saving.toFixed(2);
 			}
-			var session = document.getElementById('car-top-login-form').action.split('=')[1];
-			var params = "dwfrm_cart_shipments_i0_items_i0_quantity=4&dwfrm_cart_couponCode=" + finalCode + "&dwfrm_cart_addCoupon=dwfrm_cart_addCoupon";
-			var ashleyhttp = new XMLHttpRequest();
-			ashleyhttp.onreadystatechange = function () {
-				if (this.readyState == 4) {
-					SavingsPopup(finalCode, totalSavings);
-				}
-			};
-			ashleyhttp.open("POST", ashleyCouponApi + session, true);
-			ashleyhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-			ashleyhttp.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
-			ashleyhttp.send(params);
+			if(finalCode){
+				var ashleyhttp = new XMLHttpRequest();
+				ashleyhttp.onreadystatechange = function () {
+					if (this.readyState == 4 && this.status == 200) {
+						SavingsPopup(finalCode, totalSavings);
+					}
+				};
+				ashleyhttp.open("POST", ashleyCouponApi + finalCode, false);
+				ashleyhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				ashleyhttp.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
+				ashleyhttp.send();
+			}else{
+				SavingsPopup(finalCode, totalSavings);
+			}
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+
 	if (CurrHref.indexOf("www.build.com") > -1) {
 		try {
 			var maxIndex = buildDiscArr.indexOf(Math.max.apply(null, buildDiscArr));
@@ -8206,31 +8871,33 @@ function savingsGenerate() {
 		}
 	}
 
-	if (CurrHref.indexOf("www.mixbook.com") > -1) {
+	if (CurrHref.indexOf("mixbook.com") > -1) {
 		try {
 			var maxIndex = mixbookDiscArr.indexOf(Math.max.apply(null, mixbookDiscArr));
 			finalCode = mixbookCoupArr[maxIndex];
 			var saving = mixbookDiscArr[maxIndex];
 			if (saving > 0) {
+				saving = saving / 100;
 				totalSavings = '$' + saving.toFixed(2);
 			}
-			var authenticity_token = document.getElementsByName("authenticity_token")[0].value;
-			var params = "utf8=%E2%9C%93&_method=put&authenticity_token=" + authenticity_token + "&quantities%5B18038172%5D%5B69%5D=1&country=United+States&postal_code=&shipping_option_id=1&coupon_code=" + finalCode;
-			var mixbookhttp = new XMLHttpRequest();
-			mixbookhttp.onreadystatechange = function () {
-				if (this.readyState == 4) {
-					SavingsPopup(finalCode, totalSavings);
-				}
-			};
-			mixbookhttp.open("PUT", mixbookCouponApi, false);
-			mixbookhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-			mixbookhttp.setRequestHeader("Accept", "application/json, text/javascript, */*; q=0.01");
-			mixbookhttp.send(params);
+			if(finalCode){
+				var mixbookhttp = new XMLHttpRequest();
+				mixbookhttp.onreadystatechange = function () {
+					if (this.readyState == 4 && this.status == 200) {
+						SavingsPopup(finalCode, totalSavings);
+					}
+				};
+				mixbookhttp.open("GET", mixbookCouponApi + finalCode, false);
+				mixbookhttp.send();
+			}else{
+				SavingsPopup(finalCode, totalSavings);
+			}
 		} catch (e) {
 			SavingsPopup(finalCode, totalSavings);
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+	
 	if (CurrHref.indexOf("www.katespade.com") > -1) {
 		try {
 			var maxIndex = kateDiscArr.indexOf(Math.max.apply(null, kateDiscArr));
@@ -8342,32 +9009,34 @@ function savingsGenerate() {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
-	if (CurrHref.indexOf("www.perfumania.com") > -1) {
-		try {
-			var maxIndex = perfuDiscArr.indexOf(Math.max.apply(null, perfuDiscArr));
-			finalCode = perfuCoupArr[maxIndex];
-			var orderId = document.getElementById('ShopCartForm').getElementsByTagName('input')[8].value;
-			var catalogId = document.getElementById('headerSearchForm').getElementsByTagName('input')[0].value;
-			var storeId = document.getElementById('headerSearchForm').getElementsByTagName('input')[1].value;
-			var params = "orderId=" + orderId + "&URL=%2FOrderCalculate%3FstoreId%3D" + storeId + "%26catalogId%3D" + catalogId + "%26langId%3D-1%26orderId%3D" + orderId + "%26updatePrices%3D1%26calculationUsageId%3D-1%26calculationUsageId%3D-2%26calculationUsageId%3D-3%26calculationUsageId%3D-4%26calculationUsageId%3D-7%26URL%3D%252fCheckoutSignInView%253fstoreId%253d" + storeId + "%2526catalogId%253d" + catalogId + "%2526langId%253d-1%2526URL%253dOrderAddressUpdateView%2526checkout%253dtrue&updateURL=%2FOrderCalculate%3FstoreId%3D" + storeId + "%26catalogId%3D" + catalogId + "%26langId%3D-1%26orderId%3D" + orderId + "%26updatePrices%3D1%26calculationUsageId%3D-1%26calculationUsageId%3D-2%26calculationUsageId%3D-3%26calculationUsageId%3D-4%26calculationUsageId%3D-7%26URL%3DOrderItemDisplay&promoURL=%2FOrderCalculate%3FURL%3DOrderItemDisplay%26orderId%3D" + orderId + "%26updatePrices%3D1%26calculationUsageId%3D-1%26calculationUsageId%3D-2%26calculationUsageId%3D-3%26calculationUsageId%3D-4%26calculationUsageId%3D-7&taskType=A&promoCode=" + finalCode;
-			var perfuhttp = new XMLHttpRequest();
-			perfuhttp.onreadystatechange = function () {
-				if (this.readyState == 4) {
-					var saving = perfuDiscArr[maxIndex];
-					if (saving) {
-						totalSavings = '$' + saving.toFixed(2);
-					}
+
+	if (CurrHref.indexOf("perfumania.com") > -1) {
+		var cartTotal = Number(document.getElementsByClassName("order-summary__emphasis total-recap__final-price skeleton-while-loading")[0].innerText.replace(/[$,]/g, ''));
+
+		var perfuhttp = new XMLHttpRequest();
+		perfuhttp.onreadystatechange = function () {
+			if (this.readyState == 4) {
+				try {
+					var parser = new DOMParser();
+					var doc = parser.parseFromString(this.responseText, "text/html");
+
+					var finalCode = doc.getElementsByClassName("reduction-code__text")[0].innerText;
+			
+					var promoCartTotal = Number(doc.getElementsByClassName("order-summary__emphasis total-recap__final-price skeleton-while-loading")[0].innerText.replace(/[$,]/g, ''));
+
+					var totalSavings = cartTotal - promoCartTotal;
+		
+					SavingsPopup(finalCode, "$" + totalSavings);
+				} catch (e) {
 					SavingsPopup(finalCode, totalSavings);
+					Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 				}
-			};
-			perfuhttp.open("POST", "https://www.perfumania.com/OrderItemUpdate?catalogId=" + catalogId + "&storeId=" + storeId + "&langId=-1&query=Search+entire+site", false);
-			perfuhttp.setRequestHeader("content-type", "application/x-www-form-urlencoded;charset=UTF-8");
-			perfuhttp.send(params);
-		} catch (e) {
-			SavingsPopup(finalCode, totalSavings);
-			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
-		}
+			}
+		};
+		perfuhttp.open("GET", CurrHref, false);
+		perfuhttp.send();
 	}
+
 	if (CurrHref.indexOf("www.travelocity.com") > -1) {
 		try {
 			var maxIndex = traveloDiscArr.indexOf(Math.max.apply(null, traveloDiscArr));
@@ -8786,7 +9455,37 @@ function savingsAtOnload() {
 			Raven.captureException("AppVersion:" + appVersion + ", StoreName: " + CurrHost + ", Invalid Element, " + e);
 		}
 	}
+
+	var checkAvenue = localStorage.getItem("avenue");
+	if(checkAvenue){
+         var successClass = document.getElementsByClassName("totals discounts");
+		 if(successClass){
+			var totalSavings = Number(successClass[0].getElementsByClassName("price")[0].innerText.replace(/[-$,]/g, ''));
+			finalCode = checkAvenue;
+		 }
+		 SavingsPopup(finalCode, "$" + totalSavings);
+		localStorage.setItem("avenue", "");
+	}
+
+		setTimeout(() => {
+			var checkFootlocker = localStorage.getItem("footlocker");
+			if(checkFootlocker){
+				var orderSummaryClass = document.getElementsByClassName("OrderSummary-list");
+				for(var k=0 ; k < orderSummaryClass.length; k++){
+					if(orderSummaryClass[k].getElementsByTagName("dt")[0].innerText == "DISCOUNTS:"){
+					var totalSavings = orderSummaryClass[k].getElementsByTagName("dd")[0].innerText.replace(/[$,-]/g, '');
+					}
+				}
+				if(document.getElementsByClassName("OrderSummary-voucher")[0]){
+					var finalCode = document.getElementsByClassName("OrderSummary-voucher")[0].innerText.replace(/[Coupon Remove (),]/g, '');
+				}
+				SavingsPopup(finalCode, "$" + totalSavings);
+				localStorage.setItem("footlocker", "");
+			}
+		}, 4000);
+
 }
+
 var CryptoJSAesJson = {
 	stringify: function (cipherParams) {
 		var j = {
